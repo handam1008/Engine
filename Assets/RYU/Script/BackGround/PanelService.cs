@@ -1,13 +1,14 @@
-﻿using System;
-using DevLib.ServiceLocator;
+﻿using DevLib.ServiceLocator;
+using RYU.Script.XP;
 using UnityEngine;
 
-namespace RYU.Script.XP
+namespace RYU.Script.BackGround
 {
     public class PanelService : MonoBehaviour, IPanelService
     {
         [SerializeField] private GameObject volumePanel;
         [SerializeField] private GameObject charcterPanel;
+        [SerializeField] private GameObject windowPanel;
 
         private void Awake()
         {
@@ -18,17 +19,25 @@ namespace RYU.Script.XP
         {
             volumePanel.SetActive(false);
             charcterPanel.SetActive(false);
+            windowPanel.SetActive(false);
         }
 
 
-        public void volumePanelSetActivePanel(bool active)
+   
+
+        public void volumePanelSetActivePanel()
         {
-           volumePanel.SetActive(active);
+            volumePanel.SetActive(!volumePanel.activeSelf);
         }
 
         public void charcterPanelSetActivePanel(bool active)
         {
             charcterPanel.SetActive(active);
+        }
+
+        public void windowPanelSetActivePanel()
+        {
+            windowPanel.SetActive(!windowPanel.activeSelf);
         }
     }
 

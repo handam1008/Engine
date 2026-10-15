@@ -1,5 +1,6 @@
 using System;
 using DevLib.ServiceLocator;
+using RYU.Script.BackGround;
 using TMPro;
 using Unity.Android.Gradle.Manifest;
 using UnityEngine;
@@ -8,7 +9,7 @@ using UnityEngine.UI;
 
 namespace RYU.Script.XP
 {
-    public class XPDesktopIconSelection : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
+    public class XpDesktopIconSelection : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
     {
         private Image _image;
         private Material _material;
@@ -49,6 +50,7 @@ namespace RYU.Script.XP
             {
                 ServiceLocator.Get<IPanelService>().charcterPanelSetActivePanel(true);
             }
+           
         }
     }
 }
