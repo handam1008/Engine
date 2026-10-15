@@ -1,3 +1,4 @@
+using UnityEngine;
 
 public class BettleStart : GameState
 {
@@ -5,5 +6,15 @@ public class BettleStart : GameState
     {
     }
 
+    public override void Enter()
+    {
+        base.Enter();
+        Debug.Log("StartBettle");
+    }
+
+    public override void StateUpdate()
+    {
+        base.StateUpdate();
+    }
 
 }
