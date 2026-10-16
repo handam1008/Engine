@@ -1,0 +1,8 @@
+SUCCESS
+Scene and prefab updated
+500x350, 1280x860, 1700x960, 1500x500, 1920x1020 checked
+Title/browser/status follow window edges
+Body follows window width, preserves proportions and scrolls vertically when short
+Related video scrolling preserved
+No runtime source edits
+Previews: minimum.png, default.png, large.png, wide.png, fullscreen.png
