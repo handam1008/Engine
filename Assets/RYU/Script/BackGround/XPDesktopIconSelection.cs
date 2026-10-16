@@ -2,7 +2,6 @@ using System;
 using DevLib.ServiceLocator;
 using RYU.Script.BackGround;
 using TMPro;
-using Unity.Android.Gradle.Manifest;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
