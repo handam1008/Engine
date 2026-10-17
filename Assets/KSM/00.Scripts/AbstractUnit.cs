@@ -2,7 +2,7 @@ using UnityEngine;
 public enum UnitType
 {
     Enemy,
-    Player,
+    Charcter,
 }
 public abstract class AbstractUnit : MonoBehaviour
 {
@@ -43,8 +43,6 @@ public abstract class AbstractUnit : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, UnitSo.detectRange);
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, UnitSo.attackRange);
     }
