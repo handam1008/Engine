@@ -16,7 +16,6 @@ public class PrimeTween_Sequce_Maker : MonoBehaviour
     {
         if(Keyboard.current.aKey.wasPressedThisFrame)
         {
-            showitem.
         }
 
         if(Keyboard.current.bKey.wasPressedThisFrame)
