@@ -1,10 +1,9 @@
-using System;
 using DevLib.ServiceLocator;
-using RYU.Script.BackGround;
+using RYU.Script.Serivce;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace RYU.Script.XP
+namespace RYU.Script.UI
 {
     public class Character : MonoBehaviour
     {
@@ -12,7 +11,7 @@ namespace RYU.Script.XP
 
         private void Start()
         {
-            exitButton.onClick.AddListener(() => ServiceLocator.Get<IPanelService>().charcterPanelSetActivePanel(false));
+            exitButton.onClick.AddListener(() => ServiceLocator.Get<IPanelService>().SetCharacterPanelActive(false));
         }
     }
 }

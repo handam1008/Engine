@@ -1,14 +1,15 @@
 using System;
 using DevLib.ServiceLocator;
-using RYU.Script.BackGround;
+using RYU.Script.Serivce;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace RYU.Script.XP
+namespace RYU.Script.UI
 {
-    public class XpDesktopIconSelection : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
+    public class DesktopIconSelection : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
     {
         private Image _image;
         private Material _material;
@@ -16,10 +17,13 @@ namespace RYU.Script.XP
         private readonly int _selectionAmount = Shader.PropertyToID("_SelectionAmount");
         private readonly int _color = Shader.PropertyToID("_SelectionColor");
 
+        public UnityEvent onDoubleClick;
+
         private void Awake()
         {
             _image = GetComponent<Image>();
-            _material =  _image.material;
+            _material = new Material(_image.material);
+            _image.material = _material;
             _text = GetComponentInChildren<TextMeshProUGUI>();
         }
 
@@ -27,6 +31,12 @@ namespace RYU.Script.XP
         {
             _material.SetFloat(_selectionAmount, 0f);
             _text.color =  Color.white;
+        }
+
+        private void OnDestroy()
+        {
+            if(_material != null)
+                Destroy(_material);
         }
 
 
@@ -47,7 +57,7 @@ namespace RYU.Script.XP
         {
             if (eventData.clickCount >= 2)
             {
-                ServiceLocator.Get<IPanelService>().charcterPanelSetActivePanel(true);
+                onDoubleClick?.Invoke();
             }
            
         }
