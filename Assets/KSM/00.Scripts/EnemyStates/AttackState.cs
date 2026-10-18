@@ -14,11 +14,14 @@ using UnityEngine;
         public override void Exit()
         {
             base.Exit();
+             _abstractUnit.lastAttackTime = Time.time;
+             
         }
 
         public override void HandleAnimEnd()
         {
             base.HandleAnimEnd();
             _abstractUnit.Attack.Attacking(_abstractUnit);
+            _stateMachine.ChangeState(State.WaitAttack);
         }
     }

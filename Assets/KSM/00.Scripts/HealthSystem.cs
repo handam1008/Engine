@@ -18,7 +18,7 @@ public class HealthSystem : MonoBehaviour ,IDamageAble
     {
         if(Dead) return;
         _health -= dmg;
-        OnDamged?.Invoke();
+        if(_health <= _maxHealth / 2) OnDamged?.Invoke();
         if(Dead)
             OnDeath?.Invoke();
     }
