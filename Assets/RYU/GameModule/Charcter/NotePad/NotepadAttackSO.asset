@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RYU.Script.Charcter.Notepad.NotepadAttackSO
   bulletPrefab: {fileID: 366173570899541016, guid: 2900040b670a4cd4692fb27ead5794ad, type: 3}
   notepadEndParticles: {fileID: 5018435719672604392, guid: 63cd0eea30ad489da582d6fbc110db44, type: 3}
+  delay: 0.9

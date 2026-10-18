@@ -1,34 +1,42 @@
 using System;
+using DynamicPanels;
 using UnityEngine;
 
 public class UIFullScreenPanel : MonoBehaviour
 {
-   private RectTransform _rectTransform;
-   private bool _isFull;
-   private Vector2 _beforeoffestMix;
-   private Vector2 _beforeoffestMax;
+    private Panel _panel;
+    private bool _isFull;
 
-   private void Awake()
-   {
-      _rectTransform = GetComponent<RectTransform>();
-   }
+    private Vector2 _beforePosition;
+    private Vector2 _beforeSize;
 
-   public void FullScreen()
-   {
-      if (!_isFull)
-      {
-         _beforeoffestMix = _rectTransform.offsetMin;
-         _beforeoffestMax = _rectTransform.offsetMax;
-         _rectTransform.offsetMin = new Vector2(0, 60);
-         _rectTransform.offsetMax = new Vector2(0, 0);
-         _isFull = true;
-      }
-      else
-      {
-         _rectTransform.offsetMin = _beforeoffestMix;
-         _rectTransform.offsetMax = _beforeoffestMax;
-         _isFull = false;
-      }
+    public void FullScreen()
+    {
+        // 실제 창은 실행 중 생성되므로 버튼을 누를 때 찾는다.
+        if (_panel == null)
+            _panel = GetComponentInParent<Panel>();
+
+        RectTransform window = _panel.RectTransform;
+
+        if (!_isFull)
+        {
+            // 최대화하기 전 상태 저장
+            _beforePosition = window.anchoredPosition;
+            _beforeSize = window.sizeDelta;
+
+            // 작업 영역 전체를 채운다.
+            window.sizeDelta = _panel.Canvas.RectTransform.rect.size;
+            window.anchoredPosition = Vector2.zero;
+        }
+        else
+        {
+            // 이전 상태 복원
+            window.sizeDelta = _beforeSize;
+            window.anchoredPosition = _beforePosition;
+        }
+
+        _isFull = !_isFull;
+    }
          
-   }
 }
+

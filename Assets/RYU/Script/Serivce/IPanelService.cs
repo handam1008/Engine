@@ -8,9 +8,12 @@ namespace RYU.Script.Serivce
         public GameObject VolumePanel { get; set; }
         public GameObject CharcterPanel { get; set; }
         public GameObject WindowPanel { get; set; }
+        public GameObject MyComputerPanel { get; set; }
+        
         void SetVolumePanelActive();
         void SetCharacterPanelActive(bool active);
         void SetWindowPanelActive();
         void SetYoutubePanelActive(bool active);
+        void SetMyComputerPanelActive(bool active);
     }
 }
