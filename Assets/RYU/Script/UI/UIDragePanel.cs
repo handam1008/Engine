@@ -7,15 +7,17 @@ namespace RYU.Script.UI
     public class UIDragePanel : MonoBehaviour, IDragHandler
     {
         RectTransform _rectTransform;
+        private Canvas _canvas;
 
         private void Start()
         {
             _rectTransform = GetComponent<RectTransform>();
+            _canvas = GetComponentInParent<Canvas>();
         }
 
         public void OnDrag(PointerEventData eventData)
         {
-            _rectTransform.position += new Vector3(eventData.delta.x, eventData.delta.y);
+            _rectTransform.anchoredPosition += eventData.delta / _canvas.scaleFactor;
         }
     }
 }
