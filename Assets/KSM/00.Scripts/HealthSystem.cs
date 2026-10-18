@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class HealthSystem : MonoBehaviour ,IDamageAble
 {
-    private int _health;
+    [SerializeField] private int _health;
     private int _maxHealth;
     public event Action OnDamged;
     public event Action OnDeath;
@@ -11,7 +11,7 @@ public class HealthSystem : MonoBehaviour ,IDamageAble
 
     public void InitHp(int health)
     {
-        _maxHealth = health;
+        _maxHealth = _health;
         _health = _maxHealth;
     }
     public void Damage(int dmg)

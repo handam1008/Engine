@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1134c1333cd94407954cd5600c1f082d, type: 3}
   m_Name: NotePad
   m_EditorClassIdentifier: Assembly-CSharp::RYU.Script.Charcter.CharcterDataSO
-  Name: 
-  sprite: {fileID: 21300000, guid: b27fa8937f1f2b84d861d004e1085be4, type: 3}
-  animatorController: {fileID: 9100000, guid: c66b38510f87453d8598a12427eab398, type: 2}
+  Name: "\uBA54\uBAA8\uC7A5"
+  sprite: {fileID: 21300000, guid: 90be12548f3c4bb3b0287a38a47f18bc, type: 3}
+  animatorController: {fileID: 9100000, guid: d50f2cf21c8c4a09aeaea54fd97182db, type: 2}
   moveSpeed: 5
   maxHp: 20
   whatIsDetect:
