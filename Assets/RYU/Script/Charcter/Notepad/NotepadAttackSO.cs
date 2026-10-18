@@ -6,11 +6,16 @@ namespace RYU.Script.Charcter.Notepad
     public class NotepadAttackSO : AbstractAttackSO
     {
         [SerializeField] private NotepadBullet bulletPrefab;
+        [SerializeField] private ParticleSystem notepadEndParticles;
         public override void Attacking(AbstractUnit unit)
         {
-            BulletSet(unit, 1, 0.3f);
-            BulletSet(unit, 0, 0.6f);
-            BulletSet(unit, -1, 0.9f);
+            BulletSet(unit, 1, 0.5f);
+            BulletSet(unit, 0.5f, 0.4f);
+            BulletSet(unit, 0, 0.3f);
+            BulletSet(unit, -0.5f, 0.4f);
+            BulletSet(unit, -1, 0.5f);
+            ParticleSystem ps = Instantiate(notepadEndParticles);
+            ps.Play();
         }
 
         private void BulletSet(AbstractUnit unit, float height, float launchDelay)
