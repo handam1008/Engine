@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-public enum CurrentGameType {StartBettle, Bettling, EndBettle }
+public enum CurrentGameType {Prepare ,StartBettle, Bettling, Victory, Defeat }
 public class GameStateMachine
 {
     public GameState CurState;
