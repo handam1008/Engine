@@ -15,6 +15,7 @@ public abstract class AbstractUnit : MonoBehaviour
     public SpriteRenderer RenderCompo { get; private set; }
     public float Dir => UnitSo.unitType == UnitType.Enemy ? -1f : 1f;
     public Transform target;
+    public float lastAttackTime;
     
 
     protected virtual void Awake()
@@ -36,13 +37,32 @@ public abstract class AbstractUnit : MonoBehaviour
 
  
 
-    public Collider2D DetecPlayer()
+    public Collider2D[] DetecPlayer()
     {
-        return Physics2D.OverlapCircle(transform.position, UnitSo.attackRange,UnitSo.whatIsDetect);
+        return Physics2D.OverlapCircleAll(transform.position, UnitSo.attackRange,UnitSo.whatIsDetect);
+    }
+
+    public Collider2D NearTarget()
+    {
+        Collider2D[] targets = DetecPlayer();
+        Collider2D nearTarget = null;
+        float near = 500f;
+        foreach (Collider2D c in targets)
+        {
+            float t = Mathf.Abs(c.transform.position.x - transform.position.x);
+            if (t < near)
+            {
+                near = t;    
+                nearTarget = c;
+            }
+            
+        }
+        return nearTarget;
     }
 
     private void OnDrawGizmosSelected()
     {
+        if(UnitSo == null) return;
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, UnitSo.attackRange);
     }

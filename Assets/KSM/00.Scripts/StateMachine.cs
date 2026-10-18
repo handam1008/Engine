@@ -36,4 +36,5 @@ public enum State
     Attack,
     Hit,
     Dead,
+    WaitAttack,
 }
