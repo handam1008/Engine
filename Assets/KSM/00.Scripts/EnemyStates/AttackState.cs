@@ -9,6 +9,7 @@ using UnityEngine;
         public override void Enter()
         {
             base.Enter();
+            Debug.Log("attack");
         }
 
         public override void Exit()
@@ -21,7 +22,7 @@ using UnityEngine;
         public override void HandleAnimEnd()
         {
             base.HandleAnimEnd();
-            _abstractUnit.Attack.Attacking(_abstractUnit);
-            _stateMachine.ChangeState(State.WaitAttack);
+           _abstractUnit.Attack.Attacking(_abstractUnit);
+            _stateMachine.ChangeState(State.Chase);
         }
     }
