@@ -10,7 +10,7 @@ public class MoneyManager : MonoBehaviour
     {
         if (_moenyText == null) return;
 
-        _moenyText.SetText($"Money: {Mathf.Ceil(Money)}");
+        _moenyText.SetText($"Money: {(int)Money}");
     }
 
     public void PlusMoney(float amount)

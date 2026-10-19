@@ -18,7 +18,6 @@ public class BettleDefeat : GameState
 
         // 대충 졌을 때 해줘야 할거 
 
-        _machine.ChangeState(CurrentGameType.Defeat);
     }
 
 }
