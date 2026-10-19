@@ -271,16 +271,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RYU.Script.Charcter.Notepad.NotepadBullet
   texts:
   - "\uAC1C\uBC1C\uD558\uAE30\uC2EB\uB2E4"
-  - "\uB958\uD55C\uB2F4"
-  - "\uBC15\uC815\uC6B0"
-  - "\uC559\uAE30\uBAA8\uB760"
+  - "\uC548\uB155\uD558\uC138\uC694\uC6D0\uC774\uC785\uB2C8\uB2E4\uC798\uBD80\uD0C1\uB4DC\uB9BD\uB2C8\uB2E4"
+  - "\uC544\uC624\uB298\uAE08\uC694\uC77C4\uAD50\uC2DC\uB2E4"
+  - "\uC640!\uC0CC\uC988\uC544\uC2DC\uB294\uAD6C\uB098"
   - "\uC9D1\uAC00\uACE0\uC2F6\uB2E4"
-  - "\uAE40\uD604\uC900"
-  - "\uAE40\uC131\uBBFC"
-  - "10\uC810"
-  - "\uC548\uB155\uD558\uC138\uC694"
-  - "\uB9AC\uC13C\uB290"
-  <TextSpeed>k__BackingField: 30
+  <TextSpeed>k__BackingField: 40
   backDistance: 0.8
   backDuration: 0.2
   hitParticles: {fileID: 5018435719672604392, guid: 6b9bc4305ff749459a8978f5c153b1b2, type: 3}

@@ -9,6 +9,7 @@ namespace RYU.Script.Serivce
         [field:SerializeField] public GameObject VolumePanel { get; set; }
         [field:SerializeField] public GameObject CharcterPanel { get; set; }
         [field:SerializeField] public GameObject WindowPanel { get; set; }
+        [field:SerializeField] public GameObject MyComputerPanel { get; set; }
 
         private void Awake()
         {
@@ -17,6 +18,7 @@ namespace RYU.Script.Serivce
             CharcterPanel.SetActive(false);
             WindowPanel.SetActive(false);
             YoutubePanel.SetActive(false);
+            MyComputerPanel.SetActive(false);
         }
 
      
@@ -39,6 +41,11 @@ namespace RYU.Script.Serivce
         public void SetYoutubePanelActive(bool active)
         {
             YoutubePanel.SetActive(active);
+        }
+
+        public void SetMyComputerPanelActive(bool active)
+        {
+            MyComputerPanel.SetActive(active);
         }
     }
 

@@ -1,0 +1,23 @@
+{
+  "windowsChecked": 4,
+  "regionsPerWindow": 8,
+  "sizesChecked": [
+    [
+      500,
+      350
+    ],
+    [
+      1280,
+      860
+    ],
+    [
+      1920,
+      1080
+    ]
+  ],
+  "positiveBoundsAndNoRegionOverlap": "passed",
+  "bottomRightScriptAndInputPreserved": "passed",
+  "sevenOtherDirections": "UI prepared; input disabled pending user code",
+  "codeUnchanged": true,
+  "runtimeVerified": false
+}

@@ -8,6 +8,7 @@ namespace RYU.Script.UI
     {
         [SerializeField] private RectTransform targetPanel;
         [SerializeField] private Vector2 minimumSize = new Vector2(500, 350);
+        [SerializeField] private Vector2 maximumSize = new Vector2(1920, 1080);
         
         private RectTransform _parentRect;
         
@@ -39,8 +40,8 @@ namespace RYU.Script.UI
             //얼마나 움직였는지 계산
             Vector2 movement = currentMousePosition - _startMousePosition;
             
-            movement.x = Mathf.Max(movement.x, minimumSize.x - _startSize.x);
-            movement.y = Mathf.Min(movement.y, _startSize.y - minimumSize.y);
+            movement.x = Mathf.Clamp(movement.x, minimumSize.x - _startSize.x, maximumSize.x - _startSize.x);
+            movement.y = Mathf.Clamp(movement.y, _startSize.y - maximumSize.y,  _startSize.y - minimumSize.y);
             
             targetPanel.offsetMax = new Vector2(_startOffsetMax.x + movement.x, _startOffsetMax.y);
             targetPanel.offsetMin = new Vector2(_startOffsetMin.x, _startOffsetMin.y + movement.y);
