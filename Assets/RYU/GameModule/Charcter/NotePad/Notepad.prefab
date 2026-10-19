@@ -144,7 +144,7 @@ GameObject:
   - component: {fileID: 1141330701433983017}
   m_Layer: 0
   m_Name: Notepad
-  m_TagString: Charcter
+  m_TagString: Character
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

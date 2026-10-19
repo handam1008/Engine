@@ -6,12 +6,14 @@ namespace RYU.Script.Charcter
 {
     public class NotepadCharcter : AbstractUnit
     {
-        private void Update()
+        protected override void Awake()
         {
-            if (Keyboard.current.spaceKey.wasPressedThisFrame)
-            {
-                Attack.Attacking(this);
-            }
+            base.Awake();
+        }
+
+        protected override void Update()
+        {
+            base.Update();
         }
     }
 }

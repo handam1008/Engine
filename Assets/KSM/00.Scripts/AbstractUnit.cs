@@ -1,3 +1,5 @@
+using System;
+using KSM._00.Scripts;
 using UnityEngine;
 public enum UnitType
 {
@@ -16,6 +18,7 @@ public abstract class AbstractUnit : MonoBehaviour
     public float Dir => UnitSo.unitType == UnitType.Enemy ? -1f : 1f;
     public Transform target;
     public float lastAttackTime;
+    public StateMachine StateMachine { get; private set; }
     
 
     protected virtual void Awake()
@@ -26,7 +29,25 @@ public abstract class AbstractUnit : MonoBehaviour
         HpCompo = GetComponent<HealthSystem>();
         MoveCompo = GetComponent<MoveSystem>();
         RenderCompo = GetComponentInChildren<SpriteRenderer>();
+        StateMachine = new();
+        StateMachine.Add(State.Attack,new AttackState(StateMachine,this,"Attack"));
+        StateMachine.Add(State.Chase,new ChaseState(StateMachine,this,"Chase"));
+        StateMachine.Add(State.Hit,new HitState(StateMachine,this,"Hit"));
+        StateMachine.Add(State.Dead, new DieState(StateMachine,this,"Dead"));
+        StateMachine.Add(State.WaitAttack, new WaitAttakState(StateMachine,this,"Wait"));
+        StateMachine.Init(State.Chase);
         InitInfo();
+    }
+
+    private void Start()
+    {
+        HpCompo.OnDeath += () => StateMachine.ChangeState(State.Dead);
+        HpCompo.OnDamged +=  () => StateMachine.ChangeState(State.Hit);
+    }
+
+    protected virtual void Update()
+    {
+        StateMachine.CurrentState.UpdateState();
     }
 
     protected virtual void InitInfo()
