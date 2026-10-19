@@ -1,6 +1,6 @@
 # Dynamic Panels 적용
 
-YouTube 창 한 개에 Dynamic Panels 1.3.5를 적용했다. 기존 XP 그림과 내용은 그대로 재사용한다.
+YouTube와 Character 창에 Dynamic Panels 1.3.5를 적용했다. 기존 XP 그림과 내용은 그대로 재사용한다.
 
 - 원본: https://github.com/yasirkula/UnityDynamicPanels
 - 원본 revision: 11036028b90df09212e2bc238c13983a4cfcd105
@@ -23,10 +23,16 @@ Inspector의 DynamicPanelsCanvas에서 Panel Resizable Area Length는 10, Free P
 
 닫기와 최소화는 기존 PanelService.SetYoutubePanelActive(false)를 호출해 컨테이너 전체를 숨긴다. 최소화는 작업표시줄 상태를 추적하는 구현이 아니라 창 숨김이다. 바탕화면 바로가기로 다시 열 수 있다.
 
-최대화 버튼은 Interactable을 끄고 기존 FullScreen 콜백을 해제했다. 사용자 요청대로 연결 C#은 작성하지 않았다. 기존 UIFullScreenPanel은 stretch 앵커 전제라 패키지 Panel에 그대로 적용할 수 없다. 최대화/원래 크기 복원과 최대 크기 제한은 사용자 코드에서 연결해야 한다.
+최대화 버튼은 사용자가 작성한 UIFullScreenPanel.FullScreen을 각 Content의 컴포넌트에 연결했다. 이 컴포넌트는 실행 중 부모 DynamicPanels.Panel을 찾아 최대화하고 원래 위치와 크기로 복원한다. C# 파일은 변경하지 않았다.
 
 나중에 실제 패널을 찾을 때는 YouTube Content의 연결된 탭(PanelUtils.GetAssociatedTab)에서 Panel을 가져오면 된다. 컨테이너에서 첫 Panel을 찾는 방법은 DummyPanel을 선택할 수 있어 피한다.
 
 Assets의 사용자 C#과 외부 패키지 C#은 수정하지 않았다. 수정한 패키지 자산은 Resources의 네이티브 프리팹 3개뿐이며, 이전 Unity UI GUID를 현재 GUID로 바꾸고 XP 콘텐츠를 가리지 않도록 배치했다.
 
 Backups에는 적용 전 씬/프리팹 파일을 텍스트로 보관했다. Setup.json, Validation.json에 연결과 검사 결과가 있다.
+
+## Character 창 적용 (2026-10-19)
+
+MainScene - DynamicPanels 씬의 Panel - Character를 같은 구조로 연결했다. Character Content가 기존 UI를 담으며, PanelService.CharcterPanel과 닫기 버튼 참조는 유지했다. 최소 크기는 800×450이고 YouTube는 500×350이다. 두 창은 Free Panels에 유효 탭을 하나씩 등록하고 빈 Free Panel을 제거했다. Resizable Area는 10, 두 Anchor Zone은 0, Leave Free Space는 해제했다.
+
+Play 모드에서 캐릭터 창 생성, 드래그, 우측 크기 조절, 최소 크기 제한, 최대화/복원, 닫기/재열기를 확인했다. YouTube 최대화/복원도 확인했으며 새 실행 오류는 없었다.

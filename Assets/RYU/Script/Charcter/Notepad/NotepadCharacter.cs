@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 
 namespace RYU.Script.Charcter
 {
-    public class NotepadCharcter : AbstractUnit
+    public class NotepadCharacter : AbstractUnit
     {
         protected override void Awake()
         {
