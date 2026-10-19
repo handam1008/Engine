@@ -12,6 +12,7 @@ namespace KSM._00.Scripts
         {
             base.Enter();
                 _abstractUnit.MoveCompo.InitMove(_abstractUnit.UnitSo.moveSpeed,_abstractUnit.Dir);
+                Debug.Log("Chase");
         }
 
         public override void Exit()

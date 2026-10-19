@@ -12,6 +12,7 @@ namespace KSM._00.Scripts
         {
             base.Enter();
             _abstractUnit.MoveCompo.InitMove(0,_abstractUnit.Dir);
+            Debug.Log("Die");
             
         }
 
