@@ -1,0 +1,18 @@
+{
+  "prefab": "Assets\\RYU\\GameModule\\Charcter\\NotePad\\HitEffect\\NotepadAttackEndParticle.prefab",
+  "burstCount": 48,
+  "burstTime": 0,
+  "startSize": [
+    1.4,
+    2.2
+  ],
+  "speed": [
+    55,
+    85
+  ],
+  "emissionRadius": 0.005,
+  "arcDegrees": 360,
+  "maxParticles": 128,
+  "oldHitEffectAssignmentPreserved": true,
+  "unityPlaybackVerified": false
+}
