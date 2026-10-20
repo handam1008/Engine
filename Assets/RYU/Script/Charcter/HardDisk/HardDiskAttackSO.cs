@@ -2,7 +2,7 @@
 
 namespace RYU.Script.Charcter.HardDisk
 {
-    [CreateAssetMenu(fileName = "HardDiskAttackSO", menuName = "SO/Character/HardDisk", order = 0)]
+    [CreateAssetMenu(fileName = "HardDiskAttackSO", menuName = "SO/Attack/HardDisk", order = 0)]
     public class HardDiskAttackSO : AbstractAttackSO
     {
         public override void Attacking(AbstractUnit unit)

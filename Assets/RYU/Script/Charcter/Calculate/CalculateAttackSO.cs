@@ -2,7 +2,7 @@
 
 namespace RYU.Script.Charcter.Calculate
 {
-    [CreateAssetMenu(fileName = "CalculateSO", menuName = "SO/Character/Calculate", order = 0)]
+    [CreateAssetMenu(fileName = "CalculateSO", menuName = "SO/Attack/Calculate", order = 0)]
     public class CalculateAttackSO : AbstractAttackSO
     {
         [SerializeField] private CalculateBullet calculateBullet;

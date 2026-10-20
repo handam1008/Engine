@@ -12,12 +12,8 @@ namespace RYU.Script.UI
         [SerializeField] private CharacterDataSoList charcters;
         [SerializeField] private GameObject characterSlot;
 
-        private Transform _parent;
 
-        private void Awake()
-        {
-            _parent = transform;
-        }
+     
 
 
         public void SetCharacter()
@@ -25,7 +21,7 @@ namespace RYU.Script.UI
             RemoveAllCharcters();
             foreach (var data in charcters.charcterDatas)
             {
-                GameObject slot = Instantiate(characterSlot, _parent);
+                GameObject slot = Instantiate(characterSlot, transform);
                 slot.GetComponent<CharacterSlot>().SetCharcterSlot(data.name, data.sprite);
             }
         }
@@ -37,10 +33,10 @@ namespace RYU.Script.UI
         
         public void RemoveAllCharcters()
         {
-            if (_parent.childCount == 0) return;
-            for (int i = 0; i < _parent.childCount; i++)
+            if (transform.childCount == 0) return;
+            for (int i = 0; i < transform.childCount; i++)
             {
-                Destroy(_parent.GetChild(i).gameObject);
+                Destroy(transform.GetChild(i).gameObject);
             }
         }
     }
