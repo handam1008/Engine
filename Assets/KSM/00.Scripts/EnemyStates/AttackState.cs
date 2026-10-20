@@ -22,7 +22,12 @@ using UnityEngine;
         public override void HandleAnimEnd()
         {
             base.HandleAnimEnd();
-           _abstractUnit.Attack.Attacking(_abstractUnit);
             _stateMachine.ChangeState(State.Chase);
+        }
+
+        public override void HandleAttacked()
+        {
+            base.HandleAttacked();
+            _abstractUnit.Attack.Attacking(_abstractUnit);
         }
     }
