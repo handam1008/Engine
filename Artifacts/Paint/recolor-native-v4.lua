@@ -29,7 +29,8 @@ for _,cel in ipairs(sprite.cels) do
   for pixel in image:pixels() do local value=map[pixel()];if value then pixel(value);changed=changed+1 end end
   cel.image=image
 end
-for _,palette in ipairs(sprite.palettes) do
+for paletteIndex=1,#sprite.palettes do
+  local palette=sprite.palettes[paletteIndex]
   for i=0,#palette-1 do local c=palette:getColor(i);local value=map[pc.rgba(c.red,c.green,c.blue,c.alpha)];if value then palette:setColor(i,value) end end
 end
 sprite.data=sprite.data.." Color revision v4: livelier red/yellow/blue, warmer honey wood; unchanged geometry, outline, metal and unpainted bristles."

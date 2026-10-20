@@ -21,8 +21,10 @@ namespace RYU.Script.Charcter
         
         [Header("저장공간")]
         public int spawnStorage;
-        public int attackStorage; 
-        
+        public int attackStorage;
+
+        public float weight { get; private set; }
+
 
     }
 }
