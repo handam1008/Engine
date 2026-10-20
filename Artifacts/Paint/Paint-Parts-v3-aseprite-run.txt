@@ -1,0 +1,2 @@
+Aseprite 1.3.18.6
+Native256x128; percell128x128; integer clusters2x2; PNG1024x512; flat palette colors=24

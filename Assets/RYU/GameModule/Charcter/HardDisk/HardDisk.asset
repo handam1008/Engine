@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1134c1333cd94407954cd5600c1f082d, type: 3}
+  m_Name: HardDisk
+  m_EditorClassIdentifier: Assembly-CSharp::RYU.Script.Charcter.CharcterDataSo
+  Name: "\uD558\uB4DC\uB514\uC2A4\uD06C"
+  sprite: {fileID: 1208040086343421634, guid: fa961128480bf944c8c61c159043a331, type: 3}
+  animatorController: {fileID: 9100000, guid: 65a3ba6e76ea2cb41b2815498d6fad47, type: 2}
+  moveSpeed: 0
+  maxHp: 2000
+  whatIsDetect:
+    serializedVersion: 2
+    m_Bits: 128
+  unitType: 1
+  attackRange: 10
+  attackCoolTime: 0
+  attackDmg: 0
+  charcterRank: 0
+  level: 1
+  spawnStorage: 0
+  attackStorage: 0

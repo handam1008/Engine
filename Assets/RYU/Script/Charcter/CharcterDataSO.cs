@@ -10,10 +10,14 @@ namespace RYU.Script.Charcter
     }
     
     [CreateAssetMenu(fileName = "CharcterDataSo", menuName = "RYU/CharcterDataSo", order = 0)]
-    public class CharcterDataSO : UnitSO
+    public class CharcterDataSo : UnitSO
     {
         [Header("기본")]
         public CharcterRank charcterRank;
+        
+        [Header("레벨")]
+        public int level = 1; // 맥스는 20
+        
         
         [Header("저장공간")]
         public int spawnStorage;

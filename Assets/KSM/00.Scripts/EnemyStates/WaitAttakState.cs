@@ -4,7 +4,10 @@ namespace KSM._00.Scripts
 {
     public class WaitAttakState : AbstractUnitState
     {
-        public WaitAttakState(StateMachine stateMachine, AbstractUnit abstractUnit, string hashName) : base(stateMachine, abstractUnit, hashName)
+        public bool _firstAttack = true;
+
+        public WaitAttakState(StateMachine stateMachine, AbstractUnit abstractUnit, string hashName) : base(
+            stateMachine, abstractUnit, hashName)
         {
         }
 
@@ -23,11 +26,14 @@ namespace KSM._00.Scripts
                 _stateMachine.ChangeState(State.Chase);
                 return;
             }
+
             _abstractUnit.target = target.transform;
-           
-            if (target != null&& _abstractUnit.lastAttackTime + _abstractUnit.UnitSo.attackCoolTime < Time.time)
+
+            if ((target != null && _abstractUnit.lastAttackTime + _abstractUnit.UnitSo.attackCoolTime < Time.time) 
+                || _firstAttack)
             {
                 _stateMachine.ChangeState(State.Attack);
+                _firstAttack = false;
                 return;
             }
             

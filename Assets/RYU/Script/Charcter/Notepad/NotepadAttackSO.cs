@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace RYU.Script.Charcter.Notepad
 {
-    [CreateAssetMenu(fileName = "NotepadAttackSO", menuName = "SO/Charcter/Notepad", order = 0)]
+    [CreateAssetMenu(fileName = "NotepadAttackSO", menuName = "SO/Attack/Notepad", order = 0)]
     public class NotepadAttackSO : AbstractAttackSO
     {
         [SerializeField] private NotepadBullet bulletPrefab;
