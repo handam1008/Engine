@@ -1,0 +1,25 @@
+{
+  "success": true,
+  "path": "Assets/RYU/Sprite/Charcter/HardDisk/image.png",
+  "guid": "fa961128480bf944c8c61c159043a331",
+  "fileID": "1208040086343421634",
+  "textureSize": "512x512",
+  "ppu": 400,
+  "pivot": "(256.00, 256.00)",
+  "rect": "(x:0.00, y:0.00, width:512.00, height:512.00)",
+  "worldSize": "(1.28, 1.28, 0.20)",
+  "dataMatches": true,
+  "sceneUses": [
+    {
+      "name": "Visual",
+      "scene": "Assets/RYU/Scene/FightScene.unity",
+      "rect": "(x:0.00, y:0.00, width:512.00, height:512.00)",
+      "worldScale": "(1.00, 1.00, 1.00)",
+      "bounds": "(1.28, 1.28, 0.20)",
+      "sameSprite": true
+    }
+  ],
+  "referencePreserved": true,
+  "sceneTransformsChanged": false,
+  "backup": "C:/Users/handa/.codex/visualizations/2026/10/15/01a13fc6-d153-7a42-9d8a-88fdbe72ad8d/disk-size-fix"
+}

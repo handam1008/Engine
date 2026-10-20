@@ -1,0 +1,63 @@
+Generation tool: built-in image_gen (generation + palette cleanup)
+Background: transparent
+Primary style reference: user's five-purple-virus sheet.
+Secondary body-plan reference: user's tiny flat green virus.
+
+INITIAL PROMPT
+
+Use case: stylized-concept.
+Create ONE polished, very simple, cute green computer-virus GAME SPRITE, with a genuine transparent background.
+
+TWO REFERENCES, DIFFERENT ROLES:
+REFERENCE 1, the five PURPLE VIRUSES: the PRIMARY ART DIRECTION. The new green sprite must look like it belongs in this existing game sprite set. Closely follow the FIRST, SMALL ROUND PURPLE MONSTER's friendly plump proportions, compact feet, readable tiny dot face, bold but proportionate charcoal outline, deliberate clean pixel clusters and confident silhouette. Match the reference's appeal and coherent pixel scale. Create only one character.
+REFERENCE 2, the tiny blurry GREEN VIRUS: BODY PLAN and POSE ONLY. One round body, two small round-tipped antennae, two short arms and two short feet, near-front idle stance. Do not trace its blurry edges, mustard background, pale border or screenshot marker.
+
+DESIGN:
+One slightly squashed chubby round body, a little wider below the middle; soft organic silhouette with modest natural asymmetry, NOT a mathematically perfect disc.
+Two SHORT gently splayed antennae with SMALL rounded bulbs, compact and charming. Bulbs should be much smaller than the torso, and antennae should not tower over it. Each antenna including bulb rises about ONE QUARTER of the torso height above the head.
+Two tiny rounded arm stubs low on the sides, without fingers or hands.
+Two short chunky feet under the body, a clear small gap between them. Comfortable balanced near-front standing idle pose, feet slightly turned outward. Limbs feel soft and attached, with no long angular joints.
+
+PROPORTIONS AND PIXEL CRAFT:
+Follow the compact, finished game-sprite appeal of reference 1. The body is the dominant mass; appendages stay small.
+Consistent coarse pixel grid and clean stair-step curves, with simple 1:1, 2:1 and short 3:1 pixel runs, clean joins and no stray pixels.
+The charcoal outline is bold and clearly readable but approximately only 1/25 of the torso width, like the purple sheet. It must not become a massive black frame or swallow the little limbs. Keep consistent outline thickness and coherent pixel scale on body, bulbs, arms and feet.
+Think of a carefully drawn roughly 64-pixel-tall sprite enlarged with nearest-neighbor clarity: a one-to-two logical pixel outline, tiny two-logical-pixel eye dots and a one-logical-pixel mouth. Do not literally draw a grid or pixel-size labels.
+The character should read as designed and appealing at small game size, not as a crude blocky tracing.
+
+FACE:
+Exactly TWO SMALL solid dark charcoal dot eyes, about 1/16 of torso width each, and ONE even smaller square dot mouth below between them. Gently spaced eyes, mild vacant innocent expression, both visible on the front.
+No whites, pupils, reflections, brows, eyelids, eye outlines, nose, teeth, tongue, blush or facial decorations. Keep the face small, not oversized eyes or a large gaping mouth.
+
+PALETTE AND SHADING:
+Keep the user's requested simple flat treatment: only TWO GREEN FILL TONES plus the charcoal-gray outline/face color.
+A clear fresh saturated leaf/lime GREEN base (bright and lively, not fluorescent) and a slightly darker natural GREEN shadow.
+Use one clean broad small shadow mass along the lower-right body contour for very slight volume. Keep the rest the flat green base. At most tiny dark-green undersides on bulb tips and feet.
+No additional pale/yellow highlight, no shiny spot, no gradient, glossy finish, complex shading, material texture or lighting effects.
+Preserve the plump coherent anatomy and pixel language of the purple reference even with this simpler two-green palette.
+
+OUTPUT:
+Exactly ONE complete monster centered on a square transparent canvas, occupying roughly the central 65–70 percent of canvas height with generous clear margins around antennae, arms and feet.
+Near-FRONT view, ordinary game idle pose, not isometric or top-down.
+Hard clean alpha cutout, crisp intentional pixel boundaries. No fuzzy edge, antialiasing, ambient halo, grain, dithering, colored haze, floor, cast shadow, particles or glow.
+No extra characters, text, border, white keyline, icon frame, patterns, horns, extra nubs, armor, clothes, props or weapons.
+
+PALETTE CLEANUP PROMPT
+
+Use case: precise-object-edit.
+Edit this ONE green virus sprite with a PALETTE-ONLY cleanup. Keep its existing plump body shape, exact outline, compact two antennae, two little arms, two little feet, small two-dot eyes and one tiny dot mouth, pose, proportions, placement, scale and transparent square canvas. Do not redesign or move any anatomy.
+
+Make the color fills truly SIMPLE, FLAT AND LIMITED, as requested by the user:
+Use ONLY these THREE solid colors plus full transparency:
+- Base green: #80D91D
+- Shadow green: #54AD21
+- Dark charcoal-gray for outline and face: #292D33
+No fourth color, no lighter green, no yellow-green specular highlights, no multiple shadow tones.
+Use the BASE GREEN as a single uniform flat fill over most of the body.
+Use ONE modest contiguous SHADOW GREEN patch on the lower-right body edge, occupying at most one quarter of the body. The patch follows the existing coarse pixel contour with one clean stair-stepped inner boundary.
+On the antenna bulbs, arms and feet, base green plus a tiny shadow-green lower-right patch only. Remove all separate shiny/highlight patches. Outline and face remain uniform charcoal gray, not a subtly textured gradient.
+
+This is a deliberately flat two-green-tone game sprite while preserving its appealing plump anatomy and existing chunky pixel-grid construction. Clean hard solid colors, no faint texture, mottling, gradients, noise, blur, antialiasing, gloss or lighting bloom. No white keyline.
+Both eye dots stay small and solid, mouth stays one smaller dark square dot. No other facial features.
+Preserve ample empty margin and genuine alpha transparency around the full character, between limbs and antennae.
+Exactly one finished sprite, no text, floor, shadow, effect, frame or new decoration.

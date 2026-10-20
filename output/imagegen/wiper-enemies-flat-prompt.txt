@@ -1,0 +1,22 @@
+Generation tool: built-in image_gen (image edit)
+Background: transparent
+Edit target: user's attached five gray/red wiper monsters.
+
+Use case: precise-object-edit.
+Flatten the colors of the ATTACHED FIVE-MONSTER SHEET. This is a COLOR SIMPLIFICATION edit only, not a redesign.
+
+Preserve the exact five existing silhouettes, pixel-grid contours, pose, size relationships, body proportions, antennae/nubs that already exist, arms, feet, small two-dot eyes and dot mouths, dark outlines and five-character horizontal layout. Preserve the existing thick dark perimeter outline and all necessary dark borders separating feet, arms and body. Keep both eyes and tiny mouth of each creature dark and fully readable. Do not change expressions or anatomy.
+
+REPLACE ALL SHADING WITH UNIFORM SOLID FILLS, with only THREE opaque palette colors plus transparent background:
+1. All GRAY body regions, exposed face, arms, feet and antenna stems use the SAME SINGLE FLAT MEDIUM GRAY, approximately #85858C.
+2. All currently RED/ORANGE regions, including lower-front eraser lobes, pointed lobe, belly strips, red-tipped nubs and existing red hand tips, use the SAME SINGLE FLAT VIVID RED, approximately #E93235. Orange highlights and dark red shadows become this same red.
+3. Existing OUTLINES and DOT FACES remain the same very DARK CHARCOAL, approximately #14161E.
+
+The entire interior of each gray body must be one uniform shade of gray, from upper-left to lower-right, without any pale face region or dark side plane. Each red part must also be one uniform red, from edge to edge. Feet are flat gray, no lighter toes. All five share the same gray fill, same red fill and same dark outline/face.
+Do not preserve highlight bands, shadow bands or intermediate colors.
+ZERO gradients, directional lighting, highlights, shadows, shine, reflections, texture, grain, dithering, translucent color shading or simulated 3D. Completely FLAT COLOR PIXEL ART.
+
+DO NOT ADD ANY DECORATION. No new nubs, horns, symbols, markings, clothing, jewelry, armor or accessories. Existing external shapes and red shapes are unchanged; merely flatten their colors. Red regions remain solid integrated body regions, not scarves or loose fabric.
+
+Keep ONE horizontal row, all five complete sprites separated with the original spacing and adequate outer margins, no overlap or cropping. Background stays genuinely TRANSPARENT alpha, also between legs and arms. Hard crisp pixel outlines, no white border, glow, halo or colored backdrop. No text, names, labels, floor, shadow, effect or extra characters.
+Output only the same five pixel monsters with preserved dark outlines and flat gray/red fills.

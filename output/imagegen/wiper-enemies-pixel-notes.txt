@@ -1,0 +1,19 @@
+Generation tool: built-in image_gen for cleanup, followed by fixed-grid export.
+
+Final deliverables:
+- wiper-enemies-pixel-native.png: 384 x 128 logical pixels
+- wiper-enemies-pixel-4x.png: 1536 x 512, exact 4 x 4 blocks
+
+Opaque palette: #14161E, #85858C, #E93235
+Alpha: 0 or 255 only
+Eyes: two 2 x 2 logical-pixel squares per character
+Mouths: one 1 x 1 logical-pixel dot per character
+No shading, antialiasing, intermediate colors or new decoration.
+Verification: all 786432 preview pixels match the corresponding native pixel; zero block errors.
+
+Cleanup prompt:
+Precise cleanup of the supplied five-monster gray/red sheet, for a native low-resolution pixel-art export.
+Keep the same five complete designs, gray bodies, red regions, tiny square black eyes and mouth, thick dark outlines, limbs, poses, scale relationships, horizontal positions and transparent canvas.
+Remove residual lighting, gradients, mottled texture and edge fuzz. Gray regions flat gray, red regions flat red, outlines and faces solid dark charcoal. No new decoration. Do not add or redesign anything.
+Make contours deliberate coarse pixel steps, not wobbly fine staircases. All eyes remain small true squares. Transparent empty space stays empty. No extra outlines, background, text, shadow, glow or effects.
+This will be exported to a fixed 384 by 128 logical pixel grid with an exact three-color palette, then displayed using integer nearest-neighbor scaling. Preserve all existing clear body boundaries and small facial features for that export.

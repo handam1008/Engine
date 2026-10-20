@@ -1,0 +1,26 @@
+Generation tool: built-in image_gen (image edit)
+Background: transparent
+Edit target: D:/Github/Engine/output/imagegen/ransomware-enemies.png
+
+Use case: precise-object-edit.
+Edit the supplied five-ransomware-monster sprite sheet. This is a STRICT LOCAL DECORATION REPLACEMENT, not a character redesign.
+
+PRESERVE EXACTLY: all five bodies, purple biological colors, tiny two-dot eyes and dot mouths, faces and expressions, feet, arms, armor geometry, overlapping plates, blue-gray armor colors, silhouettes, body sizes, idle poses, SCREEN LEFT facing direction, weak three-quarter side perspective, pixel size, thick dark outlines, discrete shading, upper-left light, single-row positions, feet baseline, spacing, transparent background and canvas dimensions. Do not add or remove characters or alter the anatomy. Keep the organic faces unobstructed and unchanged.
+
+REMOVE EVERY GOLD / YELLOW LOCK DECORATION AND EVERY KEYHOLE MOTIF completely from ALL FIVE monsters. Remove old lock shackles, hanging clasps, gold plates, gold borders, keyholes and any residual gold pixels. Restore clean matching blue-gray armor beneath those old ornaments. Do not leave any lock-shaped hardware. Do not merely recolor padlocks teal.
+
+REPLACE with SHORT FLAT TEAL ENCRYPTION SEAL STRIPS. These resemble thick flat adhesive seals bonded FLUSH to the armor surface and bridging the joins BETWEEN armor plates. They are short broad RECTANGULAR strips that follow the plane and perspective of the shell. Minimal thickness, only a simple dark edge/shadow as necessary, not projecting bulky objects. Color: clearly readable saturated teal/turquoise with a restrained pale teal lit tone and dark teal outline/shadow, NOT neon or emitting light.
+Inside each strip, add a VERY SIMPLE REPEATED SMALL SQUARE CODE PATTERN: just a row of a few clearly separated tiny square marks, high contrast enough to read at small game size, 2–4 square marks per short strip, no real letters, numbers or text. These are small repeated squares, NOT keyholes, buttons or circular lock symbols.
+
+EXACT COUNTS / PLACEMENT, LEFT TO RIGHT:
+1. Small case-armored monster: exactly ONE short teal strip ACROSS THE FRONT ARMOR SEAM below the face, in the lower-front region where the gold lock used to be. Flush short rectangle with repeated square pattern.
+2. Broad dome-shell monster: exactly ONE short teal strip ON THE VISIBLE SIDE OF THE SHELL, near the previous ornament position, binding the shell surface/join. Keep exposed organic face at lower-left completely clear.
+3. Layered-plate monster: exactly TWO SEPARATE SHORT TEAL STRIPS, each bridging an overlap seam between the LARGE ARMOR PLATES on the back/side. One at an upper plate join, the other at the next lower/rear join. Their flat rectangles follow the surfaces; each connects adjacent plates. No strip on the organic face or exposed arm.
+4. Tall ring-protected monster: exactly ONE short teal strip on the FRONT JOIN OF THE BLUE-GRAY TORSO RING, below the head, replacing the old gold hanging lock with a flush seal across the ring's connection. Do not modify the ring or cover the face.
+5. Large vault-armored monster: exactly TWO THICKER SHORT TEAL STRIPS on the BROAD FRONT ARMOR below the organic face, well separated side by side, each bridging an armor join. These are wider/heavier flat bands than the other species' strips, not a giant single teal panel. Remove the entire old gold seal plate and keyhole, restore armor, then add these TWO separate strips. Both remain below the face and entirely attached to armor.
+
+TOTAL: exactly SEVEN teal seal strips across the sheet, distributed 1 / 1 / 2 / 1 / 2. No extra seals anywhere.
+
+Do not draw scarves, hanging fabric, ribbons, loose strap ends, capes, clothes, glowing cables, orbit lines, bubbles or energy shields. Seals have no cloth folds and no dangling portions. No strong neon, bloom, halo or light spill around seals or characters. There must be ZERO GOLD DECORATIONS and ZERO KEYHOLES in the result.
+
+Maintain the exact chunky pixel-art style and hard crisp alpha cutouts. No gradient, blur, antialiasing, tiny noise or new texture. No labels, headings, names, numbers, stats, floor, ground, cast shadows, effects, particles or borders. Output the same five-character transparent sheet with ONLY the requested armor decoration changes.

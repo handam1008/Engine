@@ -1,0 +1,25 @@
+Mode: built-in imagegen, style-transfer from the user's disk drive and actual Folder/Trash/Notepad sprites.
+Final export: 512x512 RGBA, 128x128 logical grid, nearest-neighbor 4x. Alpha>=128 visible bounding crop, aspect-preserving fit into 116x116 logical bounds, centered transparent padding, hard alpha 0/255, RGB 0 outside alpha. High-resolution generation is an intermediate only.
+
+Use case: style-transfer.
+Asset type: one static raster object sprite for an existing Windows XP desktop-world game.
+
+INPUT ROLES:
+Image 1 is the subject and geometry reference: the user's squat gray disk-drive icon.
+Images 2, 3, and 4 are the game's actual folder, recycle bin, and notepad sprites. Their coarse pixel scale, thick contours, large connected shading planes and restrained texture are the binding art standard. IGNORE the baked checkerboard on the folder reference; output genuine transparency.
+
+REDRAW IMAGE 1 in that exact game art language. Preserve the recognizable INANIMATE disk-drive object, the same broad low rectangular silhouette and the same 3/4 view looking down on its top. The wide top plane is visible. The long left-facing side and the short front face on the right remain in the reference orientation. Keep its simple curved disk-like seam on the top lid, small black rectangular inset at upper-left of the lid, a few tiny simple screw marks, long horizontal seam on the left side, and broad dark gray inset on the front-right face with its small darker rectangle near the right. Simplify these details into coherent chunky pixel shapes. No added floppy disk, CD, cables, controls, panels, writing or extra ornament.
+
+ART STANDARD:
+- A coarse 128x128 logical-pixel sprite, subsequently enlarged exactly 4x to 512x512. Large deliberately stepped pixel edges throughout; no smooth vector curves or anti-aliased high-resolution contour.
+- Thick dark SLATE-GRAY external outline, approximately 2 to 3 logical pixels, matched in relative weight to recycle bin/notepad. Important interior seams are dark gray and chunky but subordinate to the outside contour.
+- Light gray and subtly warm aged off-white casing, subdued blue-gray/lavender-gray shadow on its front/right. Match the warmth and quiet material of the recycle bin, not brilliant pure white or silver chrome.
+- Only 3-4 substantial visible shade steps per material. Broad interconnected light, middle, and shadow faces. Light comes from upper left. Top lit plane is the largest and brightest; side and front establish simple depth.
+- Large pale highlight patches integrated into the lid and casing edges. Avoid long narrow white reflection stripes, glossy glare, tiny fragmented highlight slashes, smooth gradients, metallic rendering and dense dithering.
+- Restrained low-resolution texture matching the actual game sprites, never high-resolution grain. Readable at small game size.
+
+COMPOSITION:
+One complete drive only, centered on a square TRANSPARENT canvas. Keep the reference's squat wide proportions, don't make it tall or add a stand. Leave visible clear padding around every corner; its maximum dimension should occupy about 90% of the canvas. All corners and underside remain visible.
+No face, eyes, mouth, arms, hands, legs or feet. This is an allied object icon, NOT a virus creature.
+No text, numerals, logos, UI, background, checkerboard, floor, ground shadow, glow, attack effect, border, duplicate, variations or sprite sheet.
+Return only the single final object design.
