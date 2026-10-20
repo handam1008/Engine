@@ -87,20 +87,7 @@ namespace DynamicPanels
 
 		protected void RestrictPanelToBounds( Panel panel, Vector2 canvasSize )
 		{
-			Vector2 panelPosition = panel.RectTransform.anchoredPosition;
-			Vector2 panelSize = panel.RectTransform.sizeDelta;
-
-			if( panelPosition.y + panelSize.y < 50f )
-				panelPosition.y = 50f - panelSize.y;
-			else if( panelPosition.y + panelSize.y > canvasSize.y )
-				panelPosition.y = canvasSize.y - panelSize.y;
-
-			if( panelPosition.x < 0f )
-				panelPosition.x = 0f;
-			else if( canvasSize.x - panelPosition.x < 125f )
-				panelPosition.x = canvasSize.x - 125f;
-
-			panel.RectTransform.anchoredPosition = panelPosition;
+			// Allow floating windows to move outside the canvas bounds.
 		}
 
 		public override string ToString()

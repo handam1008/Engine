@@ -17,7 +17,7 @@ namespace RYU.Script.Charcter.Notepad
             BulletSet(unit, 0, 0.3f);
             BulletSet(unit, -0.5f, 0.4f);
             BulletSet(unit, -1, 0.5f);
-            WaitForParticles(delay, unit);
+            _ = WaitForParticles(delay, unit);
             
         }
 

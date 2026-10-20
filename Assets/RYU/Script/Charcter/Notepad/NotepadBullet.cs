@@ -38,7 +38,7 @@ namespace RYU.Script.Charcter.Notepad
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.CompareTag("Charcter")) return;
+            if (other.CompareTag("Character")) return;
             if (other.TryGetComponent(out HealthSystem healthSystem))
             {
                 healthSystem.Damage(_attackDamage);

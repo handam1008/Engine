@@ -3,6 +3,7 @@ using UnityEngine.InputSystem;
 using DG.Tweening;
 using UnityEngine.UIElements;
 using Unity.Properties;
+using System.Collections.Generic;
 
 public class DOTween_Sequce_Maker : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class DOTween_Sequce_Maker : MonoBehaviour
     private CanvasGroup selectImage;
     //private Sequence pointEnterAnim;
     //private Sequence pointExitAnim;
+
 
     private void OnEnable()
     {
