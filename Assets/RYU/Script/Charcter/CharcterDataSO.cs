@@ -23,7 +23,7 @@ namespace RYU.Script.Charcter
         public int spawnStorage;
         public int attackStorage;
 
-        public float weight { get; private set; }
+        [field:SerializeField] public float weight { get; private set; }
 
 
     }
