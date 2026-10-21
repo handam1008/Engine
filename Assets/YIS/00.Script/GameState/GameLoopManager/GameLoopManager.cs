@@ -1,8 +1,12 @@
+using System;
+using System.Threading;
 using UnityEngine;
 
 public class GameLoopManager : GameLoop
 {
-    GameStateMachine _machine;
+    GameStateMachine _machine = new GameStateMachine();
+    [SerializeField] private GameObject BlueScreen;
+    public bool isdefeated = false;
 
     private void Awake()
     {
@@ -15,8 +19,18 @@ public class GameLoopManager : GameLoop
         _machine.Initalize(CurrentGameType.Prepare);
     }
 
+    
+
     private void Update()
     {
         _machine.CurState.StateUpdate();
+        BlueScreen?.SetActive(isdefeated);
+        if(isdefeated)
+        {
+            _machine.ChangeState(CurrentGameType.Defeat);
+            Thread.Sleep(1000);
+        }
     }
+
+   
 }
