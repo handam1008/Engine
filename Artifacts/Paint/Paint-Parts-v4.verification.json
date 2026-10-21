@@ -47,8 +47,9 @@
     2
   ],
   "exportScale": 4,
-  "unityImported": false,
-  "animationCreated": false,
+  "unityImported": true,
+  "animationCreated": true,
+  "unityVerification": "Unity/unity-verification.json",
   "colorRevision": {
     "colorOnly": true,
     "changedColorEntries": 16,
