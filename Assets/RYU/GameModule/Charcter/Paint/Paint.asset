@@ -28,3 +28,4 @@ MonoBehaviour:
   level: 1
   spawnStorage: 10
   attackStorage: 20
+  <weight>k__BackingField: 5

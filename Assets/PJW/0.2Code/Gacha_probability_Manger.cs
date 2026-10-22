@@ -37,23 +37,25 @@ public class Gacha_probability_Manger : MonoBehaviour
         }
         for(int i = 0; i < CharacterData.charcterDatas.Length;i++)
         {
-            weighsDic.Add($"{CharacterData.charcterDatas[i].name}", (CharacterData.charcterDatas[i].weight)/sumWeigh*100);
+            weighsDic.Add($"{CharacterData.charcterDatas[i].name}", ((CharacterData.charcterDatas[i].weight)*sumWeigh*100));
         }
     }
 
     public void SelectCharacter()
     {
         if (sumWeigh <= 0) return;
+
         float n = Random.Range(0, sumWeigh);
 
         foreach (var pair in weighsDic)
         {
-            n -= pair.Value;
-            if (n > 0)
+            if(n<pair.Value)
             {
                 Debug.Log(pair.Key);
                 return;
             }
+
+            n -= pair.Value;
         }
     }
 }
