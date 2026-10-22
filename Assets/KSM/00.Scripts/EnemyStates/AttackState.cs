@@ -9,6 +9,7 @@ using UnityEngine;
 
         public override void Enter()
         {
+            _abstractUnit.PrepareAttack();
             base.Enter();
             Debug.Log("attack");
         }

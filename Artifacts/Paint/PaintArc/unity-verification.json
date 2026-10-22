@@ -1,0 +1,48 @@
+{
+  "verified": [
+    {
+      "color": "Red",
+      "sampledFrames": [
+        "PaintArc_Red_01",
+        "PaintArc_Red_02",
+        "PaintArc_Red_03",
+        "PaintArc_Red_04",
+        "PaintArc_Red_05",
+        "invisible"
+      ],
+      "loop": false,
+      "visibleDuration": 0.2,
+      "prefabReady": true
+    },
+    {
+      "color": "Yellow",
+      "sampledFrames": [
+        "PaintArc_Yellow_01",
+        "PaintArc_Yellow_02",
+        "PaintArc_Yellow_03",
+        "PaintArc_Yellow_04",
+        "PaintArc_Yellow_05",
+        "invisible"
+      ],
+      "loop": false,
+      "visibleDuration": 0.2,
+      "prefabReady": true
+    },
+    {
+      "color": "Blue",
+      "sampledFrames": [
+        "PaintArc_Blue_01",
+        "PaintArc_Blue_02",
+        "PaintArc_Blue_03",
+        "PaintArc_Blue_04",
+        "PaintArc_Blue_05",
+        "invisible"
+      ],
+      "loop": false,
+      "visibleDuration": 0.2,
+      "prefabReady": true
+    }
+  ],
+  "activeSceneUnchanged": true,
+  "sceneDirtyUnchanged": true
+}

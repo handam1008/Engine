@@ -21,10 +21,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   unitType: 1
-  attackRange: 7
+  attackRange: 2
   attackCoolTime: 1
   attackDmg: 10
   charcterRank: 0
   level: 1
   spawnStorage: 10
   attackStorage: 20
+  <weight>k__BackingField: 0

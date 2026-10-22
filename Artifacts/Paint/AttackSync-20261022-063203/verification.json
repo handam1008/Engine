@@ -1,0 +1,31 @@
+{
+  "verified": [
+    {
+      "name": "Paint_Attack_1_Red",
+      "length": 1.62,
+      "matchingMotionCurves": 3,
+      "matchingEvents": 2,
+      "brushColor": "Red",
+      "paletteUnchanged": true,
+      "overrideConnected": true
+    },
+    {
+      "name": "Paint_Attack_2_Yellow",
+      "length": 1.62,
+      "matchingMotionCurves": 3,
+      "matchingEvents": 2,
+      "brushColor": "Yellow",
+      "paletteUnchanged": true,
+      "overrideConnected": true
+    },
+    {
+      "name": "Paint_Attack_3_Blue",
+      "length": 1.62,
+      "matchingMotionCurves": 3,
+      "matchingEvents": 2,
+      "brushColor": "Blue",
+      "paletteUnchanged": true,
+      "overrideConnected": true
+    }
+  ]
+}
