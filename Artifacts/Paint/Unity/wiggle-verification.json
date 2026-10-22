@@ -1,0 +1,82 @@
+{
+  "strength": 0.8464,
+  "durationsMs": [
+    80,
+    80,
+    90
+  ],
+  "size": [
+    512,
+    512
+  ],
+  "maxDisplacementPixels": 4,
+  "method": "Aseprite128 integerpixel inversewarp, approved12x12 localfields, affine removed,3phase; nearest4x",
+  "parts": {
+    "Palette": {
+      "matchesApprovedStatic": true,
+      "newVisibleColors": 0,
+      "frames": [
+        {
+          "frame": 1,
+          "changedPixels": 4544,
+          "interiorChangedPixels": 3280,
+          "components": 1,
+          "partialAlpha": 0,
+          "nonuniform4pxBlocks": 0,
+          "sha256": "7b801018d9c1f23728cbb68065f2737164b645da9a0f90958663d1631685e255"
+        },
+        {
+          "frame": 2,
+          "changedPixels": 5872,
+          "interiorChangedPixels": 4784,
+          "components": 1,
+          "partialAlpha": 0,
+          "nonuniform4pxBlocks": 0,
+          "sha256": "853918accd599d65acf956bc2f96625db8e9393e20876a589bd790d1997c2760"
+        },
+        {
+          "frame": 3,
+          "changedPixels": 6192,
+          "interiorChangedPixels": 4912,
+          "components": 1,
+          "partialAlpha": 0,
+          "nonuniform4pxBlocks": 0,
+          "sha256": "bfbd702b5ea92235f33411ff76dd8adb4c4a222e91d751e3c4e967fcbfaf98bb"
+        }
+      ]
+    },
+    "Brush": {
+      "matchesApprovedStatic": true,
+      "newVisibleColors": 0,
+      "frames": [
+        {
+          "frame": 1,
+          "changedPixels": 2304,
+          "interiorChangedPixels": 1472,
+          "components": 1,
+          "partialAlpha": 0,
+          "nonuniform4pxBlocks": 0,
+          "sha256": "1822696034471c3045cb0096f7d3b924a95a9c775b0afbd599cbc781e08343c7"
+        },
+        {
+          "frame": 2,
+          "changedPixels": 3648,
+          "interiorChangedPixels": 2704,
+          "components": 1,
+          "partialAlpha": 0,
+          "nonuniform4pxBlocks": 0,
+          "sha256": "d88aee1aa1fe7436bab0c324cfe9fd3b4ba8d2cc3b3b19b3e7befface44809be"
+        },
+        {
+          "frame": 3,
+          "changedPixels": 1808,
+          "interiorChangedPixels": 1056,
+          "components": 1,
+          "partialAlpha": 0,
+          "nonuniform4pxBlocks": 0,
+          "sha256": "19a2fe3cb0fb6f9998117971839ac6fd902b435bdee35e58b9384254e94ec895"
+        }
+      ]
+    }
+  }
+}

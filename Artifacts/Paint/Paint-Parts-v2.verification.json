@@ -1,0 +1,46 @@
+{
+  "tool": "Aseprite1.3.18.6 --batch --script",
+  "nativeFile": "Paint-Parts-v2.aseprite",
+  "nativeSize": [
+    256,
+    128
+  ],
+  "outputSize": [
+    1024,
+    512
+  ],
+  "cells": [
+    {
+      "name": "Palette",
+      "rect": [
+        0,
+        0,
+        512,
+        512
+      ]
+    },
+    {
+      "name": "Brush",
+      "rect": [
+        512,
+        0,
+        512,
+        512
+      ]
+    }
+  ],
+  "opaqueColors": 23,
+  "paletteIncludingTransparency": 24,
+  "partialAlpha": 0,
+  "dirtyTransparentPixels": 0,
+  "nonuniform8pxBlocks": 0,
+  "exportMismatch": 0,
+  "construction": "integer pixel coordinate polygons drawn inAsepriteLua; fixedsolidcolors; noimagegeneratorbitmapresampling",
+  "primaryNativeClusterSize": [
+    2,
+    2
+  ],
+  "exportScale": 4,
+  "unityImported": false,
+  "animationCreated": false
+}
