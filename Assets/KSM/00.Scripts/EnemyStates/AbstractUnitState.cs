@@ -17,6 +17,12 @@ public abstract class AbstractUnitState
     {
         _abstractUnit.AnimCompo.SetBool(_hashName,true);
         _abstractUnit.UnitAnimCompo.OnAnimEnd += HandleAnimEnd;
+        _abstractUnit.UnitAnimCompo.OnAttacked += HandleAttacked;
+    }
+
+    public virtual void HandleAttacked()
+    {
+        
     }
 
     public virtual void HandleAnimEnd()
@@ -28,6 +34,7 @@ public abstract class AbstractUnitState
     {
         _abstractUnit.AnimCompo.SetBool(_hashName,false);
         _abstractUnit.UnitAnimCompo.OnAnimEnd -= HandleAnimEnd;
+        _abstractUnit.UnitAnimCompo.OnAttacked -= HandleAttacked;
 
     }
 
