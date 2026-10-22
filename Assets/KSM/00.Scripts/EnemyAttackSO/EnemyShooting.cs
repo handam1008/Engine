@@ -2,8 +2,8 @@
 
 namespace KSM._00.Scripts.EnemyAttackSO
 {
-    [CreateAssetMenu(fileName = "SO", menuName = "UnitAttackRange", order = 0)]
-    public class EnemyOneHitSO : AbstractAttackSO
+    [CreateAssetMenu(fileName = "ShootingEnemyAttack", menuName = "AttackSO/ShootingEnemyAttack", order = 0)]
+    public class EnemyShooting : AbstractAttackSO
     {
         public GameObject bulletPrefab;
         [SerializeField]private float speed;
@@ -14,8 +14,6 @@ namespace KSM._00.Scripts.EnemyAttackSO
             if (go.TryGetComponent<Rigidbody2D>(out Rigidbody2D rb))
             {
                 rb.linearVelocityX = speed *unit.Dir;
-               
-                Destroy(go, destroyTime); 
             }
         }
     }

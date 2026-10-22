@@ -5,6 +5,7 @@ using UnityEngine;
     public class BugEnemy : AbstractUnit
     {
         
+        
         protected override void Awake()
         {
             base.Awake();
