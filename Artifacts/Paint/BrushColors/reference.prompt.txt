@@ -1,0 +1,3 @@
+Built-in image_gen, transparent background.
+References: Assets/RYU/Sprite/Charcter/Paint/Brush_01.png and Palette_01.png.
+Create three identical diagonal brush color variants, red/yellow/blue painted bristles only. Preserve coarse pixel clusters, dark slate contour, blue handle, gray metal ferrule, upper-left light and three flat stepped shade planes. No drips, sparkles, gradients, antialiasing, anatomy, lettering or shadows. The generated sheet is a color reference; native Aseprite exports preserve the exact existing source pixels outside the bristles.

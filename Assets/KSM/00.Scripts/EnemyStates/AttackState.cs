@@ -9,6 +9,7 @@ using UnityEngine;
 
         public override void Enter()
         {
+            _abstractUnit.PrepareAttack();
             base.Enter();
             Debug.Log("attack");
         }
@@ -29,6 +30,7 @@ using UnityEngine;
         public override void HandleAttacked()
         {
             base.HandleAttacked();
+            Debug.Log(_abstractUnit.name + " attacked");
             _abstractUnit.Attack.Attacking(_abstractUnit);
         }
     }

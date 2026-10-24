@@ -1,0 +1,113 @@
+{
+  "source": "Assets/RYU/Sprite/Charcter/Paint/Brush_01.png",
+  "pivot": "(0.73108880, 0.67780720)",
+  "updatedCount": 15,
+  "backup": "Artifacts/Paint/PivotSync-20261022-061822",
+  "verified": [
+    {
+      "path": "Assets/RYU/Sprite/Charcter/Paint/Brush_02.png",
+      "before": "(0.73108880, 0.67780720)",
+      "after": "(0.73108880, 0.67780720)",
+      "pivotPixels": "(374.317400, 347.037300)",
+      "identityPreserved": true
+    },
+    {
+      "path": "Assets/RYU/Sprite/Charcter/Paint/Brush_03.png",
+      "before": "(0.73108880, 0.67780720)",
+      "after": "(0.73108880, 0.67780720)",
+      "pivotPixels": "(374.317400, 347.037300)",
+      "identityPreserved": true
+    },
+    {
+      "path": "Assets/RYU/Sprite/Charcter/Paint/Brush_Static.png",
+      "before": "(0.50000000, 0.50000000)",
+      "after": "(0.73108880, 0.67780720)",
+      "pivotPixels": "(374.317400, 347.037300)",
+      "identityPreserved": true
+    },
+    {
+      "path": "Assets/RYU/Sprite/Charcter/Paint/BrushColors/Brush_Blue_01.png",
+      "before": "(0.50000000, 0.50000000)",
+      "after": "(0.73108880, 0.67780720)",
+      "pivotPixels": "(374.317400, 347.037300)",
+      "identityPreserved": true
+    },
+    {
+      "path": "Assets/RYU/Sprite/Charcter/Paint/BrushColors/Brush_Blue_02.png",
+      "before": "(0.50000000, 0.50000000)",
+      "after": "(0.73108880, 0.67780720)",
+      "pivotPixels": "(374.317400, 347.037300)",
+      "identityPreserved": true
+    },
+    {
+      "path": "Assets/RYU/Sprite/Charcter/Paint/BrushColors/Brush_Blue_03.png",
+      "before": "(0.50000000, 0.50000000)",
+      "after": "(0.73108880, 0.67780720)",
+      "pivotPixels": "(374.317400, 347.037300)",
+      "identityPreserved": true
+    },
+    {
+      "path": "Assets/RYU/Sprite/Charcter/Paint/BrushColors/Brush_Red_01.png",
+      "before": "(0.50000000, 0.50000000)",
+      "after": "(0.73108880, 0.67780720)",
+      "pivotPixels": "(374.317400, 347.037300)",
+      "identityPreserved": true
+    },
+    {
+      "path": "Assets/RYU/Sprite/Charcter/Paint/BrushColors/Brush_Red_02.png",
+      "before": "(0.50000000, 0.50000000)",
+      "after": "(0.73108880, 0.67780720)",
+      "pivotPixels": "(374.317400, 347.037300)",
+      "identityPreserved": true
+    },
+    {
+      "path": "Assets/RYU/Sprite/Charcter/Paint/BrushColors/Brush_Red_03.png",
+      "before": "(0.50000000, 0.50000000)",
+      "after": "(0.73108880, 0.67780720)",
+      "pivotPixels": "(374.317400, 347.037300)",
+      "identityPreserved": true
+    },
+    {
+      "path": "Assets/RYU/Sprite/Charcter/Paint/BrushColors/Brush_TipMask_01.png",
+      "before": "(0.50000000, 0.50000000)",
+      "after": "(0.73108880, 0.67780720)",
+      "pivotPixels": "(374.317400, 347.037300)",
+      "identityPreserved": true
+    },
+    {
+      "path": "Assets/RYU/Sprite/Charcter/Paint/BrushColors/Brush_TipMask_02.png",
+      "before": "(0.50000000, 0.50000000)",
+      "after": "(0.73108880, 0.67780720)",
+      "pivotPixels": "(374.317400, 347.037300)",
+      "identityPreserved": true
+    },
+    {
+      "path": "Assets/RYU/Sprite/Charcter/Paint/BrushColors/Brush_TipMask_03.png",
+      "before": "(0.50000000, 0.50000000)",
+      "after": "(0.73108880, 0.67780720)",
+      "pivotPixels": "(374.317400, 347.037300)",
+      "identityPreserved": true
+    },
+    {
+      "path": "Assets/RYU/Sprite/Charcter/Paint/BrushColors/Brush_Yellow_01.png",
+      "before": "(0.50000000, 0.50000000)",
+      "after": "(0.73108880, 0.67780720)",
+      "pivotPixels": "(374.317400, 347.037300)",
+      "identityPreserved": true
+    },
+    {
+      "path": "Assets/RYU/Sprite/Charcter/Paint/BrushColors/Brush_Yellow_02.png",
+      "before": "(0.50000000, 0.50000000)",
+      "after": "(0.73108880, 0.67780720)",
+      "pivotPixels": "(374.317400, 347.037300)",
+      "identityPreserved": true
+    },
+    {
+      "path": "Assets/RYU/Sprite/Charcter/Paint/BrushColors/Brush_Yellow_03.png",
+      "before": "(0.50000000, 0.50000000)",
+      "after": "(0.73108880, 0.67780720)",
+      "pivotPixels": "(374.317400, 347.037300)",
+      "identityPreserved": true
+    }
+  ]
+}

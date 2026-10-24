@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a04a298b0dda448c84284a06bd2318cc, type: 3}
+  m_Name: EnemyFirstLineEnemySO
+  m_EditorClassIdentifier: Assembly-CSharp::KSM._00.Scripts.EnemySO
+  Name: GoggiBanpae
+  sprite: {fileID: 1060491199295421075, guid: ce96064113c69264cb5165250627b58d, type: 3}
+  animatorController: {fileID: 9100000, guid: 533896cf083b19e47bb50aa010e74d41, type: 2}
+  moveSpeed: 6
+  maxHp: 200
+  whatIsDetect:
+    serializedVersion: 2
+    m_Bits: 64
+  unitType: 0
+  attackRange: 3.11
+  attackCoolTime: 2
+  attackDmg: 2
+  vaccinegauge: 2
+  type: 0

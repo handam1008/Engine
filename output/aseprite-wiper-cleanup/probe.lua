@@ -1,0 +1,11 @@
+print('ASEPRITE_VERSION=' .. tostring(app.version))
+local input = 'C:/Users/handa/AppData/Local/Temp/codex-clipboard-69557268-4ca4-4a75-a4ec-86d9e81901b4.png'
+local sprite = assert(app.open(input), 'Cannot open source PNG')
+print('SOURCE=' .. sprite.width .. 'x' .. sprite.height)
+print('COLOR_MODE=' .. tostring(sprite.colorMode))
+print('IMAGE_API=' .. tostring(type(Image)) .. ',PALETTE_API=' .. tostring(type(Palette)))
+print('SAVE_API=' .. tostring(type(sprite.saveAs)))
+print('PIXEL_API=' .. tostring(type(app.pixelColor.rgba)))
+print('SCRIPT_OK')
+assert(sprite:saveAs('D:/Github/Engine/output/aseprite-wiper-cleanup/probe-open.aseprite'))
+sprite:close()

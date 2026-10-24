@@ -1,0 +1,33 @@
+{
+  "verified": [
+    {
+      "color": "Red",
+      "droplets": 8,
+      "minX": 0.2511808,
+      "maxX": 0.329079032,
+      "maxZ": 0.0,
+      "finishedBy": 0.65,
+      "nativeAutoDestroyConfigured": true
+    },
+    {
+      "color": "Yellow",
+      "droplets": 10,
+      "minX": 0.267095327,
+      "maxX": 0.352925062,
+      "maxZ": 0.0,
+      "finishedBy": 0.65,
+      "nativeAutoDestroyConfigured": true
+    },
+    {
+      "color": "Blue",
+      "droplets": 12,
+      "minX": 0.28301,
+      "maxX": 0.40304184,
+      "maxZ": 0.0,
+      "finishedBy": 0.65,
+      "nativeAutoDestroyConfigured": true
+    }
+  ],
+  "previewFrames": 16,
+  "work": "Artifacts/Paint/PaintHit-20261022"
+}
