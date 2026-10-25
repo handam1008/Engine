@@ -1,0 +1,58 @@
+{
+  "verified": [
+    {
+      "color": "Red",
+      "length": 1.72,
+      "motionCurvesPreserved": 3,
+      "events": [
+        {
+          "functionName": "Attack",
+          "time": 1.21
+        },
+        {
+          "functionName": "AnimEnd",
+          "time": 1.7
+        }
+      ],
+      "brushColorVerified": true,
+      "palettePreserved": true,
+      "overrideConnected": true
+    },
+    {
+      "color": "Yellow",
+      "length": 1.72,
+      "motionCurvesPreserved": 3,
+      "events": [
+        {
+          "functionName": "Attack",
+          "time": 1.21
+        },
+        {
+          "functionName": "AnimEnd",
+          "time": 1.7
+        }
+      ],
+      "brushColorVerified": true,
+      "palettePreserved": true,
+      "overrideConnected": true
+    },
+    {
+      "color": "Blue",
+      "length": 1.72,
+      "motionCurvesPreserved": 3,
+      "events": [
+        {
+          "functionName": "Attack",
+          "time": 1.21
+        },
+        {
+          "functionName": "AnimEnd",
+          "time": 1.7
+        }
+      ],
+      "brushColorVerified": true,
+      "palettePreserved": true,
+      "overrideConnected": true
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "pipeline": "UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset",
+  "shader": "Universal Render Pipeline/2D/Sprite-Unlit-Default",
+  "assets": [
+    {
+      "color": "Red",
+      "clip": "Assets/RYU/Sprite/Charcter/Paint/Effects/PaintArc/PaintArc_Red.anim",
+      "prefab": "Assets/RYU/Sprite/Charcter/Paint/Effects/PaintArc/PaintArc_Red.prefab",
+      "clipLength": 0.24000001,
+      "visibleDuration": 0.2,
+      "frames": 5
+    },
+    {
+      "color": "Yellow",
+      "clip": "Assets/RYU/Sprite/Charcter/Paint/Effects/PaintArc/PaintArc_Yellow.anim",
+      "prefab": "Assets/RYU/Sprite/Charcter/Paint/Effects/PaintArc/PaintArc_Yellow.prefab",
+      "clipLength": 0.24000001,
+      "visibleDuration": 0.2,
+      "frames": 5
+    },
+    {
+      "color": "Blue",
+      "clip": "Assets/RYU/Sprite/Charcter/Paint/Effects/PaintArc/PaintArc_Blue.anim",
+      "prefab": "Assets/RYU/Sprite/Charcter/Paint/Effects/PaintArc/PaintArc_Blue.prefab",
+      "clipLength": 0.24000001,
+      "visibleDuration": 0.2,
+      "frames": 5
+    }
+  ]
+}

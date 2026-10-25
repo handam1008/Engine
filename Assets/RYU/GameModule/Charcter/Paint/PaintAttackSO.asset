@@ -12,3 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d36e7670431d4cc08a6620bbddd5095e, type: 3}
   m_Name: PaintAttackSO
   m_EditorClassIdentifier: Assembly-CSharp::RYU.Script.Charcter.Paint.PaintAttackSO
+  boxSize: {x: 3, y: 2}
+  arcPrefabs:
+  - {fileID: 3594438610195759467, guid: 77f9c923dce1f9c4888a9ca6b683312e, type: 3}
+  - {fileID: 4002778676665852511, guid: d8521093699f50440bffd562e271e682, type: 3}
+  - {fileID: 4811904930656553493, guid: 24b5b50b6dfce8f4d9b12c4d32f66519, type: 3}
+  <AttackCount>k__BackingField: 0
+  particle:
+  - {fileID: 170659897758698005, guid: 91be1f1c2450e6b44ba6c6084cb3133e, type: 3}
+  - {fileID: 1040583153028542689, guid: 6750936f90c43d04291320414906c995, type: 3}
+  - {fileID: 8139252224524962493, guid: 79677cbad7e448b4bb2c032543ae42cb, type: 3}

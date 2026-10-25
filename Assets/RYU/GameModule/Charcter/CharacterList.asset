@@ -15,6 +15,8 @@ MonoBehaviour:
   charcterDatas:
   - {fileID: 11400000, guid: 4880228560edeeb479d5f687b0a452b8, type: 2}
   - {fileID: 11400000, guid: ee4d4012daef1d9499d0892c66f0cd76, type: 2}
+  - {fileID: 11400000, guid: 2762e0bbe4a0e884ab3738359838a72a, type: 2}
   currentCharacter:
   - {fileID: 11400000, guid: 4880228560edeeb479d5f687b0a452b8, type: 2}
   - {fileID: 11400000, guid: ee4d4012daef1d9499d0892c66f0cd76, type: 2}
+  - {fileID: 11400000, guid: 2762e0bbe4a0e884ab3738359838a72a, type: 2}

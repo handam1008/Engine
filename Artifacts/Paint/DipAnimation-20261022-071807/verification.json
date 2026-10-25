@@ -1,0 +1,96 @@
+{
+  "verified": [
+    {
+      "color": "Red",
+      "contacts": [
+        {
+          "time": 0.1,
+          "error": 1.49011612E-07,
+          "tip": "(0.262453, 0.354528, 0.000000)"
+        },
+        {
+          "time": 0.16,
+          "error": 1.1920929E-07,
+          "tip": "(0.262453, 0.354528, 0.000000)"
+        },
+        {
+          "time": 0.64,
+          "error": 1.88486439E-07,
+          "tip": "(0.262453, 0.354528, 0.000000)"
+        },
+        {
+          "time": 0.7,
+          "error": 1.68587391E-07,
+          "tip": "(0.262453, 0.354528, 0.000000)"
+        }
+      ],
+      "liftHeight": 0.2,
+      "restoredBeforeSwing": true,
+      "paletteUnchanged": true,
+      "originalRotationPreserved": true,
+      "eventsPreserved": true
+    },
+    {
+      "color": "Yellow",
+      "contacts": [
+        {
+          "time": 0.1,
+          "error": 1.53597654E-07,
+          "tip": "(-0.100976, 0.251951, 0.000000)"
+        },
+        {
+          "time": 0.16,
+          "error": 1.31814232E-07,
+          "tip": "(-0.100976, 0.251951, 0.000000)"
+        },
+        {
+          "time": 0.64,
+          "error": 1.77724075E-07,
+          "tip": "(-0.100976, 0.251951, 0.000000)"
+        },
+        {
+          "time": 0.7,
+          "error": 1.13728177E-07,
+          "tip": "(-0.100976, 0.251951, 0.000000)"
+        }
+      ],
+      "liftHeight": 0.2,
+      "restoredBeforeSwing": true,
+      "paletteUnchanged": true,
+      "originalRotationPreserved": true,
+      "eventsPreserved": true
+    },
+    {
+      "color": "Blue",
+      "contacts": [
+        {
+          "time": 0.1,
+          "error": 1.43099768E-07,
+          "tip": "(-0.360000, -0.012051, 0.000000)"
+        },
+        {
+          "time": 0.16,
+          "error": 1.29024315E-07,
+          "tip": "(-0.360000, -0.012051, 0.000000)"
+        },
+        {
+          "time": 0.64,
+          "error": 1.61505938E-07,
+          "tip": "(-0.360000, -0.012051, 0.000000)"
+        },
+        {
+          "time": 0.7,
+          "error": 1.29024315E-07,
+          "tip": "(-0.360000, -0.012051, 0.000000)"
+        }
+      ],
+      "liftHeight": 0.2,
+      "restoredBeforeSwing": true,
+      "paletteUnchanged": true,
+      "originalRotationPreserved": true,
+      "eventsPreserved": true
+    }
+  ],
+  "previewFrames": 34,
+  "work": "Artifacts/Paint/DipAnimation-20261022-071807"
+}

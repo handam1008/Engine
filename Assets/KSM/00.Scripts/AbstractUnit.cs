@@ -56,6 +56,11 @@ public abstract class AbstractUnit : MonoBehaviour
         MoveCompo.InitMove(UnitSo.moveSpeed,Dir);
     }
 
+    public virtual void PrepareAttack()
+    {
+        
+    }
+
  
 
     public Collider2D[] DetecPlayer()
