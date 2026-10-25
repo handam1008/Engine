@@ -1,0 +1,22 @@
+Mode: built-in image_gen, generation from project style references.
+Output: RushVirus-Idle-Left-v1.png
+Primary reference: BasicVirus-Idle-Left-v2.png
+Supporting references: project Trash_01.png and Folder_01.png.
+Review: compared with purple virus; chunky pixels, outline and limited broad planes match. Left-facing face reviewed at 64px. Elongated blunt-front/tapered-rear body, no legs or wings, idle hovering, no ground/shadow/effects, transparent padding verified.
+
+Use case: stylized-concept. Create ONE second enemy sprite for the SAME Windows XP computer-world side-scrolling game as reference image1.
+
+REFERENCE ROLES:
+1. Purple BasicVirus-Idle-Left-v2 is the PRIMARY mandatory art-style and facial-language reference: match its chunky pixel pitch, dark outline thickness, limited large shading planes and matte texture; use its simplified single-stroke angled eyebrows and ivory/dark-slate eyes.
+2. Project Trash_01 is a supporting style/outline/palette-treatment reference.
+3. Project Folder_01 is a supporting coarse pixel-cluster reference. Its checkerboard is NOT an intended background.
+The purple character is a STYLE reference, NOT a shape to recolor. The new silhouette must be DIFFERENT and has NO FEET.
+
+NEW CHARACTER: a red-orange cartoon computer-virus enemy with a SINGLE HORIZONTALLY ELONGATED body, about 1.8 times as wide as tall. Its FRONT at SCREEN LEFT is broad, blunt and rounded; its body smoothly narrows toward its BACK at SCREEN RIGHT. An asymmetrical compact tapered blob, NOT a round sphere. The taper is part of the body, not a separately attached tail. Keep the silhouette extremely simple, with only very few small body irregularities, no elaborate spikes or anatomy.
+Large ivory eye(s), a small dark mouth and SHORT SINGLE-STROKE angled brows all cluster at the LEFT FRONT. One large near eye and a small partly visible far eye may be used like the purple sprite, with pupils clearly looking SCREEN LEFT. Expression: impatient, snappy and fierce, still a readable family-friendly cartoon. Small simple mouth, at most one or two little ivory square teeth; no huge open jaws. Face must read at 64px.
+
+ANATOMY AND POSE: complete SIDE-VIEW full body facing LEFT, face shown just slightly obliquely for readability. It floats in the air using its BODY ALONE: NO LEGS, NO FEET, NO ARMS, NO HANDS, NO WINGS, NO FINS, NO APPENDAGES that look like limbs. Do not copy the purple character's foot nubs. No rocket fittings or mechanical accessories. Resting in a natural horizontal HOVERING IDLE pose; not lunging, not wound up, not squashed in anticipation, not moving. It will later body-ram forward, but NO action now. Its body should move and squash as a single simple unit.
+
+PIXEL STYLE AND COLORS: exactly the purple reference's chunky hard square stair steps across silhouette and face, roughly 128x128 logical-pixel workmanship enlarged with nearest-neighbor. 2–3 logical-pixel thick cool dark slate outline. About 3–4 broad flat purposeful shades for the body: red-orange/vermillion main plane, one broad warm orange light plane at upper-left, one broad brick-red shadow plane lower-right, optionally one intermediate red shade. No more detailed than the purple enemy. Keep the slightly aged matte colors of the project. No smooth gradients, airbrush, noise, dithering, tiny high-frequency bands, scattered sparkles, white glossy stripe or neon glow. Warm ivory eyes/teeth match the reference.
+
+OUTPUT: ONE character, ONE pose, ONE transparent RGBA image. Generous clear padding around the ENTIRE blunt nose and tapered rear and below the floating body. Nothing cropped. NO floor, ground plane, shadow of any kind, speed lines, flames, smoke, trails, effects, text, UI, labels, decorative frame, scene, additional objects, alternate versions or sprite sheet. Do not indicate hovering with a shadow or effect.

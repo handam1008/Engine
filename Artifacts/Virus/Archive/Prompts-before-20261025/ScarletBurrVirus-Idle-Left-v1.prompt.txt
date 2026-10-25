@@ -1,0 +1,19 @@
+Mode: built-in image_gen, original stylized enemy concept with game-art references
+Style references: Assets/RYU/Sprite/Charcter/Folder/Folder_01.png; Assets/RYU/Sprite/Charcter/Trash/Trash_01.png
+Output: ScarletBurrVirus-Idle-Left-v1.png
+
+Use case: stylized-concept, one original enemy character design.
+Design ONE appealing original living VIRUS MONSTER for a chunky pixel-art Windows XP computer-world game. This is an ORGANIC VIRUS CREATURE, with no paper, document, file, window, screen, device, icon prop or clothing. The user has not decided its design and wants an original art-direction proposal.
+
+The two attached pictures (yellow folder, ivory recycle bin) are ART-STYLE REFERENCES ONLY: match their large coarse pixel steps, thick dark slate-gray contour, strong simple silhouette, broad connected shade planes, upper-left lighting and restrained handmade texture. Do not include their subjects, text or checkerboard.
+
+Creature concept: a small plump mischievous "scarlet burr" virus. A soft, squat, slightly asymmetric RED body, somewhat like a rounded irregular five-point burr/star with a large fat central mass. FIVE SHORT FAT BLUNT-TRIANGULAR viral protrusions grow directly out of the body around the upper and side perimeter, irregularly spaced; each is a broad simple fleshy wedge with a softened tip, NOT long horns, narrow spikes, arms, flower petals, sticks or antenna stalks. Make the center much larger than the protrusions so it stays cute, heavy and compact. The front at screen LEFT is softly rounded and a bit squashed, the upper/rear outline is more lumpy and spiky. Exactly two very tiny rounded feet tucked under the body, partly hidden by its weight. No separate head or neck. Its whole simple body can later squash and bump an opponent.
+
+Palette: muted but lively scarlet/raspberry RED main plane, warm light coral highlight at upper left, a broad deep wine-red shadow at lower right, and the SAME thick cool charcoal-gray outline as the recycle bin. Around 3-4 broad shade values total for the body. Bright enough to read as a little dangerous pest, but not neon and not shiny candy. Plain uncluttered surface without stripes, spots, holes, patterns or glowing parts.
+
+Face: keep the user's established minimal dot-face language. Two small solid dark charcoal dot eyes and ONE smaller solid dark charcoal dot mouth, all entirely filled. No catchlights, whites of eyes, colored iris, teeth, lips, eyebrows or cheeks. Place the little face slightly toward the left/front of the big body, small enough that the body silhouette supplies the personality; gently uneven eye height can give it a curious cheeky deadpan expression. Cute enemy, no aggressive snarling or horror.
+
+View/pose: full-body 2D side-scrolling enemy, gentle three-quarter view facing LEFT, both dot eyes visible. Naturally resting on the two little feet, slight forward lean; calm idle pose, no attack, no running.
+Rendering: deliberately chunky low-resolution PIXEL ART, approximately 80-96 logical pixels across a square canvas enlarged with nearest-neighbor. Thick readable stair-step edges and very simple shade masses like the supplied game art. Avoid vector smoothness, airbrush gradients, detailed 3D materials, small highlight bands, excessive texture or antialias blur.
+Output ONE character, ONE pose, ONE square image, GENUINELY TRANSPARENT background. All five short body protrusions and both feet fully in frame with generous balanced 10-15 percent empty margins. No floor or shadow, text, UI, labels, symbols, white sticker border, floating particles, blood, speed lines, attack effects, extra props, extra characters, multiple options, sprite sheet or collage.
+
