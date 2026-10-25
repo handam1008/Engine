@@ -12,9 +12,7 @@ namespace KSM._00.Scripts.EnemyAttack
         [SerializeField] private int dmg;
         [Tooltip("도트딜이여서 0.2f이정도로 넣으셈")]
         [SerializeField] private float attackCool;
-
         [SerializeField] private float finishAttackRange;
-        
         [SerializeField] private int finishAttackDmg;
         private float currentTime;
 
