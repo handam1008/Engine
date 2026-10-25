@@ -18,14 +18,6 @@ public class Gacha_probability_Manger : MonoBehaviour
         Init();
     }
 
-    private void Update()
-    {
-        if(Keyboard.current.aKey.wasPressedThisFrame)
-        {
-            SelectCharacter();
-        }
-    }
-
     public void Init()
     {
         weighsDic.Clear();
