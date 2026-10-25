@@ -25,5 +25,7 @@ MonoBehaviour:
   attackCoolTime: 1
   attackDmg: 20
   charcterRank: 0
+  level: 1
   spawnStorage: 5
   attackStorage: 10
+  <weight>k__BackingField: 5
