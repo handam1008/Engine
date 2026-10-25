@@ -21,6 +21,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   unitType: 0
+  knockbackList:
+  - 0.5
   attackRange: 5.83
   attackCoolTime: 2
   attackDmg: 4

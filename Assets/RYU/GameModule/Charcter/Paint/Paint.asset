@@ -15,12 +15,14 @@ MonoBehaviour:
   Name: "\uADF8\uB9BC\uD310"
   sprite: {fileID: 21300000, guid: 2dcbb61639a0d834cb2e64cdade3bff4, type: 3}
   animatorController: {fileID: 9100000, guid: 08a83f0999d8e114b80a40c504889755, type: 2}
-  moveSpeed: 10
-  maxHp: 50
+  moveSpeed: 1
+  maxHp: 200
   whatIsDetect:
     serializedVersion: 2
     m_Bits: 128
   unitType: 1
+  knockbackList:
+  - 0.5
   attackRange: 2
   attackCoolTime: 1
   attackDmg: 10

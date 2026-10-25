@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8af9a1dd857946ae890140ccada46dff, type: 3}
   m_Name: Stage1
   m_EditorClassIdentifier: Assembly-CSharp::RYU.Script.Stage.StageSO
-  StageDatas:
-  - Enemy: {fileID: 11400000, guid: a1f64e0a094923646a5a8858f09d1b46, type: 2}
-    WaitTime: 2
-    Count: 3
+  stageDates:
+  - enemy: {fileID: 11400000, guid: f03ecdcedff879e4aaf1833f12951b47, type: 2}
+    nextWaitTime: 10
+    count: 0
+    percent: 0
+  - enemy: {fileID: 11400000, guid: 4b850bf4ea4df6b4fb127b66dbaa7d93, type: 2}
+    nextWaitTime: 2
+    count: 0
+    percent: 0

@@ -10,7 +10,7 @@ namespace RYU.Script.Charcter
     }
     
     [CreateAssetMenu(fileName = "CharcterDataSo", menuName = "RYU/CharcterDataSo", order = 0)]
-    public class CharcterDataSo : UnitSO
+    public class CharacterDataSO : UnitSO
     {
         [Header("기본")]
         public CharcterRank charcterRank;

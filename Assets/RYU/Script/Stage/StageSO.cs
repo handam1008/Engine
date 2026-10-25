@@ -9,8 +9,9 @@ namespace RYU.Script.Stage
     public struct StageData
     {
         public EnemySO enemy;
-        public float waitTime;
+        public float nextWaitTime;
         public int count;
+        public float percent;
     }
     
     [CreateAssetMenu(fileName = "StageSO", menuName = "RYU/StageSO", order = 0)]

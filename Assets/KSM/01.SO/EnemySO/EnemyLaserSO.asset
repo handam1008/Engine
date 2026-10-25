@@ -15,12 +15,14 @@ MonoBehaviour:
   Name: LaserBug
   sprite: {fileID: -5356029536506127832, guid: af16bcb4bcab1864bbcff011389aeef5, type: 3}
   animatorController: {fileID: 9100000, guid: 259df400c129e844db954979b2a0870b, type: 2}
-  moveSpeed: 2
+  moveSpeed: 1
   maxHp: 500
   whatIsDetect:
     serializedVersion: 2
     m_Bits: 64
   unitType: 0
+  knockbackList:
+  - 0.5
   attackRange: 10
   attackCoolTime: 2
   attackDmg: 2
