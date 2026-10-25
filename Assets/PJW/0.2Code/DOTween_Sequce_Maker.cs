@@ -90,6 +90,11 @@ public class DOTween_Sequce_Maker : MonoBehaviour
         scaleAnim.Append(transform.parent.DOScale(1.03f, 0.18f).SetEase(Ease.OutQuint)).Append(transform.parent.DOScale(1f, 0.5f).SetEase(Ease.OutQuint)).SetLoops(-1, LoopType.Restart).Pause();
     }
 
+    public void ScaleAnimStop()
+    {
+        scaleAnim.Pause();
+    }
+
     private void OnDisable()
     {
         showItemAnim.Kill();

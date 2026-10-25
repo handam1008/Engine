@@ -6,6 +6,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
+using TMPro;
+using UnityEditor;
 using UnityEngine;
 
 public class DOTween_FileBT_Manger : MonoBehaviour
@@ -18,9 +20,15 @@ public class DOTween_FileBT_Manger : MonoBehaviour
 
     [SerializeField] private RectTransform brid;
 
+    [SerializeField] private TextMeshProUGUI remainingTime;
+
     private Sequence selectAnim;
 
+    private Sequence bridSeq;
+
     private bool wasPlayed = false;
+
+    [SerializeField]private Gacha_probability_Manger probabilityManger;
 
     private void Awake()
     {
@@ -33,6 +41,7 @@ public class DOTween_FileBT_Manger : MonoBehaviour
         if (wasPlayed) return;  
         int a = 0;
         int b = 0;
+        int c = 0;
 
                 if(selectAnim != null && selectAnim.IsActive())
                 {
@@ -44,14 +53,17 @@ public class DOTween_FileBT_Manger : MonoBehaviour
             case 0:
                 a = 1;
                 b = 2;
+                c = 0;
                 break;
             case 1:
                 a = 0;
                 b = 2;
+                c = 1;
                 break;
             case 2:
                 a = 0;
                 b = 1;
+                c = 2;
                 break;
         }
 
@@ -60,6 +72,7 @@ public class DOTween_FileBT_Manger : MonoBehaviour
             .OnComplete(() =>
             {
                 wasPlayed = true;
+                bts[c].DOScale(0f, 0f);
                 ShowFile();
             });
     }
@@ -82,7 +95,26 @@ public class DOTween_FileBT_Manger : MonoBehaviour
 
     public void Brid()
     {
+        if(bridSeq == null || !bridSeq.IsActive())
+        {
+            bridSeq = DOTween.Sequence();
+        }
+
+        float timer = 0f;
         Vector3[] trms = new Vector3[] {brid.position+new Vector3(750,70),brid.position+Vector3.right *1500};
-        brid.DOPath(trms,3.5f,PathType.Linear);
+        bridSeq?.Append(brid.DOPath(trms, 3.5f, PathType.Linear))
+        ?.Join(DOVirtual.DelayedCall(0.26f, () => { timer++; remainingTime.text = $"남은 시간: {10-timer}초"; }).SetLoops(10)).
+        OnComplete(() =>
+        {
+            ShowCharacter();
+        })?.Play();
+    }
+
+    public void ShowCharacter()
+    {
+        Debug.Log("실행함");
+        panel.transform.DOScale(0f, 0f);
+        brid.transform.DOScale(0f, 0f);
+        probabilityManger.SelectCharacter();
     }
 }

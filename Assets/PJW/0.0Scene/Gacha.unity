@@ -217,6 +217,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 33221679}
+        m_TargetAssemblyTypeName: DOTween_Sequce_Maker, Assembly-CSharp
+        m_MethodName: ScaleAnimStop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &33221677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -585,6 +597,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 186851359}
+        m_TargetAssemblyTypeName: DOTween_Sequce_Maker, Assembly-CSharp
+        m_MethodName: ScaleAnimStop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &186851363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -760,6 +784,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 197327483}
   m_CullTransparentMesh: 1
+--- !u!1 &246137462
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 246137464}
+  - component: {fileID: 246137463}
+  m_Layer: 0
+  m_Name: Gacha_probability_Manger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &246137463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246137462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c821d36fc5294449bd2210174b62e9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Gacha_probability_Manger
+  <CharacterData>k__BackingField: {fileID: 11400000, guid: c1fe10547a837ae4ea7d2847df7117a1, type: 2}
+--- !u!4 &246137464
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246137462}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 198.90762, y: 292.42923, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &474292379
 GameObject:
   m_ObjectHideFlags: 0
@@ -1012,6 +1081,8 @@ MonoBehaviour:
   panel: {fileID: 4455598845970682471}
   bar: {fileID: 1736737577}
   brid: {fileID: 1749832375}
+  remainingTime: {fileID: 6091540304258279132}
+  probabilityManger: {fileID: 246137463}
 --- !u!4 &655263296
 Transform:
   m_ObjectHideFlags: 0
@@ -1750,6 +1821,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1542637253}
+        m_TargetAssemblyTypeName: DOTween_Sequce_Maker, Assembly-CSharp
+        m_MethodName: ScaleAnimStop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4346,3 +4429,4 @@ SceneRoots:
   - {fileID: 474292382}
   - {fileID: 1021064660}
   - {fileID: 655263296}
+  - {fileID: 246137464}
