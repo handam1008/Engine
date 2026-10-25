@@ -11,6 +11,7 @@ namespace KSM._00.Scripts.EnemyAttackSO
         public override void Attacking(AbstractUnit unit)
         {
             //해당 타입 복사및 해야할 행동하기
+           // Instantiate()
         }
     }
 }
