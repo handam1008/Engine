@@ -1,5 +1,0 @@
-Native canvas: 32x32
-Color mode: indexed
-Palette: transparent + ink + green
-Frames: 1
-Layers: body + face
