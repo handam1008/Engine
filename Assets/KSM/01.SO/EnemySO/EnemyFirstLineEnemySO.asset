@@ -17,7 +17,7 @@ MonoBehaviour:
   prefab: {fileID: 8015583553335203965, guid: b8ebe4241c573aa4bb2b41458c350481, type: 3}
   animatorController: {fileID: 9100000, guid: 533896cf083b19e47bb50aa010e74d41, type: 2}
   moveSpeed: 6
-  maxHp: 200
+  maxHp: 10
   whatIsDetect:
     serializedVersion: 2
     m_Bits: 64

@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 public class HealthSystem : MonoBehaviour ,IDamageAble
 {
     [field:SerializeField] public int Health { get; private set; }
-    private int _maxHealth;
+    [SerializeField] private int _maxHealth;
     public event Action OnDamged;
     public event Action OnDeath;
     public bool Dead => Health <= 0;

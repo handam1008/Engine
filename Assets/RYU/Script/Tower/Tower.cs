@@ -6,41 +6,37 @@ using UnityEngine;
 
 namespace RYU.Script.Tower
 {
-    public class Tower : MonoBehaviour
+    public class Tower : AbstractUnit
     {
-        public StageSO stage;
-        public int count= 0;
+        [SerializeField] private StageSO stage;
+        private int _count= 0;
         private bool _canCreate = true;
         private HealthSystem _healthSystem;
 
-        private void Awake()
+        protected override void Awake()
         {
+            base.Awake();
             _healthSystem = GetComponent<HealthSystem>();
         }
 
-        private void Start()
+        protected override void Update()
         {
-            StartCoroutine(CreateEnemy(stage.stageDates[count].enemy.prefab, stage.stageDates[count].nextWaitTime));
-        }
-
-        private void Update()
-        {
+            base.Update();
             if (!_canCreate) return;
-            if (count >= stage.stageDates.Count)
+            if (_count >= stage.stageDates.Count)
             {
-                count = 0;
-                StartCoroutine(CreateEnemy(stage.stageDates[count].enemy.prefab, stage.stageDates[count].nextWaitTime));
+                _count = 0;
             }
-            
+            StartCoroutine(CreateEnemy(stage.stageDates[_count].enemy.prefab, stage.stageDates[_count].nextWaitTime));
             
         }
 
 
         public IEnumerator CreateEnemy(GameObject gg, float waitTime)
         {
-            _canCreate = false;
+            _canCreate = false; 
             Instantiate(gg, transform.position, Quaternion.identity);
-            count++;
+            _count++;
             yield return new WaitForSeconds(waitTime);
             _canCreate = true;
         }

@@ -27,7 +27,7 @@ MonoBehaviour:
   - 0.1
   attackRange: 5
   attackCoolTime: 1
-  attackDmg: 20
+  attackDmg: 100
   charcterRank: 0
   level: 1
   spawnStorage: 5

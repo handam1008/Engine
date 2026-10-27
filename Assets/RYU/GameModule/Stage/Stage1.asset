@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RYU.Script.Stage.StageSO
   stageDates:
   - enemy: {fileID: 11400000, guid: f03ecdcedff879e4aaf1833f12951b47, type: 2}
-    nextWaitTime: 10
-    count: 0
+    nextWaitTime: 4
+    count: 1
     percent: 0
   - enemy: {fileID: 11400000, guid: 4b850bf4ea4df6b4fb127b66dbaa7d93, type: 2}
     nextWaitTime: 2
