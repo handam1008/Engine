@@ -14,21 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RYU.Script.Charcter.CharcterDataSo
   Name: "\uADF8\uB9BC\uD310"
   sprite: {fileID: 21300000, guid: 2dcbb61639a0d834cb2e64cdade3bff4, type: 3}
-  prefab: {fileID: 8990643378376136301, guid: bb55b842489f8504ab76f67952a1ea11, type: 3}
+  prefab: {fileID: 0}
   animatorController: {fileID: 9100000, guid: 08a83f0999d8e114b80a40c504889755, type: 2}
-  moveSpeed: 1
-  maxHp: 200
+  moveSpeed: 10
+  maxHp: 50
   whatIsDetect:
     serializedVersion: 2
     m_Bits: 128
   unitType: 1
-  knockbackList:
-  - 0.5
-  attackRange: 2
+  attackRange: 7
   attackCoolTime: 1
   attackDmg: 10
   charcterRank: 0
   level: 1
   spawnStorage: 10
   attackStorage: 20
-  <weight>k__BackingField: 0
+  <weight>k__BackingField: 5

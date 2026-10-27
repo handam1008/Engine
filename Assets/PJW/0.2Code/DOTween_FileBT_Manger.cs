@@ -112,7 +112,6 @@ public class DOTween_FileBT_Manger : MonoBehaviour
 
     public void ShowCharacter()
     {
-        Debug.Log("실행함");
         panel.transform.DOScale(0f, 0f);
         brid.transform.DOScale(0f, 0f);
         probabilityManger.SelectCharacter();
