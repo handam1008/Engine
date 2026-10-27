@@ -1,0 +1,7 @@
+PASS
+Native canvas: 32x32
+Color mode: indexed
+Palette: transparent, #1F242E, #FFFFFF
+Frames: 1
+Layers: body and face
+Face: three single-pixel dots

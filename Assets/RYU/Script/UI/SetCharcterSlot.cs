@@ -22,13 +22,13 @@ namespace RYU.Script.UI
             foreach (var data in charcters.charcterDatas)
             {
                 GameObject slot = Instantiate(characterSlot, transform);
-                slot.GetComponent<CharacterSlot>().SetCharcterSlot(data.name, data.sprite);
+                slot.GetComponent<CharacterSlot>().SetCharcterSlot(data.Name, data.sprite);
             }
         }
 
-        public void AddCharcter(CharcterDataSo charcter)
+        public void AddCharcter(CharacterDataSO character)
         {
-            charcters.charcterDatas.Append(charcter);
+            charcters.charcterDatas.Append(character);
         }
         
         public void RemoveAllCharcters()

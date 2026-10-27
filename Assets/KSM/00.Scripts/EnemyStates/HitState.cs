@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using RYU.Script.Charcter;
+using UnityEngine;
 
 namespace KSM._00.Scripts
 {
@@ -18,6 +19,7 @@ namespace KSM._00.Scripts
         public override void Exit()
         {
             base.Exit();
+            _abstractUnit.MoveCompo.InitMove(_abstractUnit.UnitSo.moveSpeed,_abstractUnit.Dir); 
         }
 
         public override void HandleAnimEnd()

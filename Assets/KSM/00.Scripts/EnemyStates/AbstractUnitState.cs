@@ -12,7 +12,6 @@ public abstract class AbstractUnitState
         _abstractUnit = abstractUnit;
         _hashName = Animator.StringToHash(hashName);
     }
-
     public virtual void Enter()
     {
         _abstractUnit.AnimCompo.SetBool(_hashName,true);

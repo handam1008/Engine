@@ -42,7 +42,10 @@ public abstract class AbstractUnit : MonoBehaviour
     private void Start()
     {
         HpCompo.OnDeath += () => StateMachine.ChangeState(State.Dead);
-        HpCompo.OnDamged +=  () => StateMachine.ChangeState(State.Hit);
+        HpCompo.OnDamged +=  () =>
+        {
+            StateMachine.ChangeState(State.Hit);
+        };
     }
 
     protected virtual void Update()
@@ -52,8 +55,13 @@ public abstract class AbstractUnit : MonoBehaviour
 
     protected virtual void InitInfo()
     {
-        HpCompo.InitHp(UnitSo.maxHp);
+        HpCompo.Init(UnitSo.maxHp,UnitSo);
         MoveCompo.InitMove(UnitSo.moveSpeed,Dir);
+    }
+
+    public virtual void PrepareAttack()
+    {
+        
     }
 
  
