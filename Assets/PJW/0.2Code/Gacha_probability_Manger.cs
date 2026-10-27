@@ -1,15 +1,22 @@
+using DG.Tweening;
 using JetBrains.Annotations;
 using RYU.Script.Charcter;
+using System.Collections;
 using System.Collections.Generic;
 using System.Net;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class Gacha_probability_Manger : MonoBehaviour
 {
     [field:SerializeField]public CharacterDataSoList CharacterData {  get;private set; }
 
-    private Dictionary<string, float> weighsDic = new();
+    public ParticleSystem showCH;
+
+    public Image showCharcter;
+
+    private Dictionary<int, float> weighsDic = new();
 
     private float sumWeigh;
 
@@ -22,14 +29,16 @@ public class Gacha_probability_Manger : MonoBehaviour
     {
         weighsDic.Clear();
         sumWeigh = 0;
+        showCharcter.transform.DOScale(0f, 0f);
 
-        for(int i = 0; i < CharacterData.charcterDatas.Length;i++)
+        for (int i = 0; i < CharacterData.charcterDatas.Length;i++)
         {
             sumWeigh += CharacterData.charcterDatas[i].weight;
         }
+
         for(int i = 0; i < CharacterData.charcterDatas.Length;i++)
         {
-            weighsDic.Add($"{CharacterData.charcterDatas[i].name}", ((CharacterData.charcterDatas[i].weight)*sumWeigh*100));
+            weighsDic.Add(i,CharacterData.charcterDatas[i].weight);
         }
     }
 
@@ -43,11 +52,26 @@ public class Gacha_probability_Manger : MonoBehaviour
         {
             if(n<pair.Value)
             {
-                Debug.Log(pair.Key);
+                StartCoroutine(StartParticle());
+                StartCoroutine(ShowCharacter(pair.Key));
                 return;
             }
-
             n -= pair.Value;
         }
+    }
+
+
+    IEnumerator StartParticle()
+    {
+        showCH.Play();
+        yield return new WaitForSeconds(0.49f);
+        showCH.Pause();
+    }
+
+    IEnumerator ShowCharacter(int value)
+    {
+        yield return new WaitForSeconds(0.5f);
+        showCharcter.transform.DOScale(1f, 0f);
+        showCharcter.sprite = CharacterData.charcterDatas[value].sprite;
     }
 }
