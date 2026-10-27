@@ -9,8 +9,14 @@ namespace RYU.Script.Tower
     public class Tower : MonoBehaviour
     {
         public StageSO stage;
-        public int count;
+        public int count= 0;
         private bool _canCreate = true;
+        private HealthSystem _healthSystem;
+
+        private void Awake()
+        {
+            _healthSystem = GetComponent<HealthSystem>();
+        }
 
         private void Start()
         {

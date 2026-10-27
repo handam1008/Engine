@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::KSM._00.Scripts.EnemySO
   Name: LaserBug
   sprite: {fileID: -5356029536506127832, guid: af16bcb4bcab1864bbcff011389aeef5, type: 3}
+  prefab: {fileID: 8015583553335203965, guid: 89e01154c5a49e94eba16fda8a6e145e, type: 3}
   animatorController: {fileID: 9100000, guid: 259df400c129e844db954979b2a0870b, type: 2}
   moveSpeed: 1
   maxHp: 500
