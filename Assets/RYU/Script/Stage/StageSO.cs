@@ -12,6 +12,7 @@ namespace RYU.Script.Stage
         public float nextWaitTime;
         public int count;
         public float percent;
+        public bool isSpawn;
     }
     
     [CreateAssetMenu(fileName = "StageSO", menuName = "RYU/StageSO", order = 0)]

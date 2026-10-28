@@ -2,6 +2,7 @@
 using System.Collections;
 using Cysharp.Threading.Tasks;
 using RYU.Script.Stage;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace RYU.Script.Tower
@@ -18,6 +19,23 @@ namespace RYU.Script.Tower
             base.Awake();
             _healthSystem = GetComponent<HealthSystem>();
         }
+
+        public void Start()
+        {
+            _healthSystem.OnDamged += HandleDamage;
+        }
+
+        private void HandleDamage()
+        {
+            foreach (var gg in stage.stageDates)
+            {
+                if (gg.isSpawn) return;
+                if (_healthSystem.GetPercentage() > gg.percent)
+                {
+                }
+            }
+        }
+
 
         protected override void Update()
         {
@@ -40,5 +58,6 @@ namespace RYU.Script.Tower
             yield return new WaitForSeconds(waitTime);
             _canCreate = true;
         }
+        
     }
 }

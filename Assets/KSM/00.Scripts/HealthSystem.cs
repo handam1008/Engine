@@ -24,12 +24,6 @@ public class HealthSystem : MonoBehaviour ,IDamageAble
     }
 
 
-    private void Update()
-    {
-        if(Keyboard.current.eKey.wasPressedThisFrame)
-            GetPercentage();
-    }
-
 
     public void Damage(int dmg)
     {
@@ -52,10 +46,10 @@ public class HealthSystem : MonoBehaviour ,IDamageAble
         }
     }
     
-    public void GetPercentage()
+    public int GetPercentage()
     {
         _percent = (Health / _maxHealth)*100;
-        Debug.Log(_percent);
+        return _percent;
 
     }
 }
