@@ -27,23 +27,25 @@ public class HealthSystem : MonoBehaviour ,IDamageAble
 
     public void Damage(int dmg)
     {
-        if(Dead) return;
+        if (Dead) return;
+        
         Health -= dmg;
-        if (_unitSo.knockbackList.Count > _count)
-        {
-            if(Health < _maxHealth *_unitSo.knockbackList[_count])
-            { 
-                OnDamged?.Invoke();
-                _count++;
-            }
-        }
-
+       
         if (Dead)
         {
             Debug.Log(gameObject.name +" 사망");
             OnDeath?.Invoke();
-            
+            return;
         }
+        bool canHit = false;
+        while (_unitSo.knockbackList.Count >_count&& Health <= _maxHealth * _unitSo.knockbackList[_count])
+        {
+            _count++; 
+            canHit = true;
+        }
+        if (canHit) OnDamged?.Invoke();
+           
+        
     }
     
     public int GetPercentage()
