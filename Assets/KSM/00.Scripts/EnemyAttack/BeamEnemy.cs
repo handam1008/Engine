@@ -23,14 +23,12 @@ namespace KSM._00.Scripts.EnemyAttack
  
             while (currentTime < time)
             {
-                // 시전자가 죽었으면 끝
                 if (unit == null)
                 {
                     DieObject(unit);
                     yield break;
                 }
- 
-                // 가장 가까운 적으로 타겟 갱신, 없으면 끝
+
                 Collider2D near = unit.NearTarget();
                 if (near == null)
                 {
@@ -54,15 +52,12 @@ namespace KSM._00.Scripts.EnemyAttack
             }
  
             yield return new WaitForSeconds(0.1f);
- 
-            // 기다리는 사이에 시전자나 타겟이 죽었으면 끝
             if (unit == null || unit.target == null)
             {
                 DieObject(unit);
                 yield break;
             }
  
-            // 마지막 공격
             Collider2D[] collider2Ds = Physics2D.OverlapCircleAll(unit.target.position, finishAttackRange, unit.UnitSo.whatIsDetect);
             Debug.Log("마지막공격");
             foreach (var collider2D in collider2Ds)
@@ -70,12 +65,12 @@ namespace KSM._00.Scripts.EnemyAttack
                 if (collider2D.TryGetComponent<IDamageAble>(out IDamageAble target)) target.Damage(finishAttackDmg);
             }
  
-            DieObject(unit);   // AnimEnd는 이 안에서 한 번만
+            DieObject(unit);  
         }
  
         public void DieObject(AbstractUnit unit)
         {
-            if (unit != null) unit.UnitAnimCompo.AnimEnd();   // 시전자가 살아 있을 때만
+            if (unit != null) unit.UnitAnimCompo.AnimEnd();  
             Destroy(gameObject, 0.05f);
         }
     }

@@ -14,13 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::KSM._00.Scripts.EnemySO
   Name: GoggiBanpae
   sprite: {fileID: 1060491199295421075, guid: ce96064113c69264cb5165250627b58d, type: 3}
+  prefab: {fileID: 8015583553335203965, guid: b8ebe4241c573aa4bb2b41458c350481, type: 3}
   animatorController: {fileID: 9100000, guid: 533896cf083b19e47bb50aa010e74d41, type: 2}
   moveSpeed: 6
-  maxHp: 200
+  maxHp: 10
   whatIsDetect:
     serializedVersion: 2
     m_Bits: 64
   unitType: 0
+  knockbackList: []
   attackRange: 3.11
   attackCoolTime: 2
   attackDmg: 2

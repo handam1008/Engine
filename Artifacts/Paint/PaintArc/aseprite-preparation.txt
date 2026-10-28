@@ -1,7 +1,0 @@
-Aseprite 1.3.18.6
-15 PNG frames512x512, native128x128,5frames at40ms, fixedpivot center
-Frame 1 component grid areas: 241
-Frame 2 component grid areas: 718
-Frame 3 component grid areas: 986
-Frame 4 component grid areas: 203,259,224
-Frame 5 component grid areas: 82,101,75
