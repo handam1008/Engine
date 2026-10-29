@@ -4,6 +4,8 @@ using RYU.Script.Charcter;
 using System.Collections;
 using System.Collections.Generic;
 using System.Net;
+using System.Net.NetworkInformation;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -12,6 +14,8 @@ public class Gacha_probability_Manger : MonoBehaviour
 {
     [field:SerializeField]public CharacterDataSoList CharacterData {  get;private set; }
 
+    [SerializeField] private TextMeshProUGUI rankText;
+
     public ParticleSystem showCH;
 
     public Image showCharcter;
@@ -19,6 +23,13 @@ public class Gacha_probability_Manger : MonoBehaviour
     private Dictionary<int, float> weighsDic = new();
 
     private float sumWeigh;
+
+    private Sequence showCharaterAnim;
+
+    private void Awake()
+    {
+        showCharaterAnim = DOTween.Sequence();
+    }
 
     private void Start()
     {
@@ -40,6 +51,8 @@ public class Gacha_probability_Manger : MonoBehaviour
         {
             weighsDic.Add(i,CharacterData.charcterDatas[i].weight);
         }
+
+        rankText.DOFade(0, 1);
     }
 
     public void SelectCharacter()
@@ -71,7 +84,9 @@ public class Gacha_probability_Manger : MonoBehaviour
     IEnumerator ShowCharacter(int value)
     {
         yield return new WaitForSeconds(0.5f);
-        showCharcter.transform.DOScale(1f, 0f);
         showCharcter.sprite = CharacterData.charcterDatas[value].sprite;
+        showCharcter.transform.DOScale(1f, 0f);
+        rankText.DOFade(1, 1);
+        rankText.text = $"{CharacterData.charcterDatas[value].charcterRank}";
     }
 }
