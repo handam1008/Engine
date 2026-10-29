@@ -25,6 +25,6 @@ namespace RYU.Script.Charcter
 
         [field:SerializeField] public float weight { get; private set; }
 
-
+        
     }
 }

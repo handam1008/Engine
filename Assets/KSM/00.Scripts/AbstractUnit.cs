@@ -1,5 +1,6 @@
-using System;
 using KSM._00.Scripts;
+using RYU.Script.Charcter;
+using System;
 using UnityEngine;
 public enum UnitType
 {
@@ -39,6 +40,7 @@ public abstract class AbstractUnit : MonoBehaviour
         InitInfo();
     }
 
+ 
     private void Start()
     {
         HpCompo.OnDeath += () => StateMachine.ChangeState(State.Dead);

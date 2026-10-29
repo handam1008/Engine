@@ -1,43 +1,50 @@
+using NUnit.Framework;
 using RYU.Script.Charcter;
+using System;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 public enum SupportType {HpUp, Speed, AttackUp }
 
+[Serializable]
+public class Effect
+{
+    public CharcterDataSo[] characters;
+    public SupportType stype;
+}
+
+
 [CreateAssetMenu(fileName = "SupportEffect", menuName = " Support/SupportEffect")]
 public class SupportEffect : ScriptableObject
 {
-    public CharcterDataSo[] SupportableUnit;
-    public CharacterDataSoList currentDeck;
-    //public SupportType stype;
+    public List<Effect> effects = new List<Effect>();
 
+    public CharacterDataSoList currentDeck;
+    
     private CharcterDataSo[] Intersetion;
 
-    private void Awake()
-    {
-        TrySupport(SupportType.Speed);
-    }
 
-    public void TrySupport(SupportType type)
+    
+    public void TrySupport()
     {
-        // 대충 이제 서포터블 유닛 내의 유닛과 내 덱의 유닛들 리스트 비교해서 나온 공통 분모에게 지원 효과 부여   
-        Intersetion = SupportableUnit.Intersect(currentDeck.currentCharacter).ToArray();
-        Debug.Log("Try");
-        foreach(var unit in Intersetion)
+        for(int i = 0; i < effects.Count; ++i)
         {
-            Debug.Log($"{type} {Intersetion.Length}명 만큼 지원");
+            Intersetion = effects[i].characters.Intersect(currentDeck.currentCharacter).ToArray();
+            if (Intersetion.Length != effects[i].characters.Length)
+            {
+                Debug.LogWarning("콤보 유닛이 없거나 부족함");
+            }
+            
+                foreach (var charcter in Intersetion)
+                {
+                    GetSupport(effects[i].stype);
+                }
         }
-        if(Intersetion.Length != 0)
-        {
-            GetSupport(type);
-        }
+         
     }
 
     public void GetSupport(SupportType type)
     {
-        Debug.Log("TryGetSupport");
-        if (Intersetion.Length == 0) return; // 지원관계유닛이 없으면 return;
-
-        Debug.Log($"{type}의 효과");
-
+        Debug.Log($"{type}의 효과를 받았다.");
     }
 }
