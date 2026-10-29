@@ -27,6 +27,7 @@ public class GameLoopManager : GameLoop
         BlueScreen?.SetActive(isdefeated);
         if(isdefeated)
         {
+            // 나중에 패배에 만약 Action 쓰면 그에 맞춰 바꿀 예정
             _machine.ChangeState(CurrentGameType.Defeat);
             Thread.Sleep(1000);
         }
