@@ -49,6 +49,13 @@ namespace RYU.Script.Charcter.Notepad
 
         public void Shoot(Transform target, float speed, float height, float launchDelay)
         {
+            
+            if (target == null)
+            {
+                Destroy(gameObject);
+                return;
+            }
+            
            _rigidbody2D.linearVelocity = Vector2.zero;
            
            Vector3 dir = (target.position - transform.position).normalized;
@@ -66,12 +73,23 @@ namespace RYU.Script.Charcter.Notepad
 
         public void Set(Transform target,float speed)
         {
+            if (target == null)
+            {
+                Destroy(gameObject);
+                return;
+            }
+            
             _rigidbody2D.position = transform.position;
             _rigidbody2D.simulated = true;
 
             Vector2 launchDir = ((Vector2)target.position - _rigidbody2D.position).normalized;
             
             _rigidbody2D.linearVelocity = launchDir * speed;
+        }
+        
+        private void OnDestroy()
+        {
+            _backTween.Stop();
         }
 
     }

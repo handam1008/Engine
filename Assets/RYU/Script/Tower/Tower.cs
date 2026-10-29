@@ -13,6 +13,7 @@ namespace RYU.Script.Tower
         private int _count= 0;
         private bool _canCreate = true;
         private HealthSystem _healthSystem;
+        private IEnumerator _enumerator;
 
         protected override void Awake()
         {
@@ -22,38 +23,52 @@ namespace RYU.Script.Tower
 
         public void Start()
         {
-            _healthSystem.OnDamged += HandleDamage;
+            base.Update();
+            foreach (var data in stage.stageDates)
+            {
+                data.isSpawn = false;
+            }
+            _healthSystem.OnDamaged += HandleDamage;
         }
 
         private void HandleDamage()
         {
-            foreach (var gg in stage.stageDates)
+            foreach (var data in stage.stageDates)
             {
-                if (gg.isSpawn) return;
-                if (_healthSystem.GetPercentage() > gg.percent)
-                {
-                }
+                if (data.percent <= 0 || Mathf.Approximately(data.percent, 100f) || data.isSpawn) continue;
+                if (_healthSystem.GetPercentage() > data.percent) continue;
+
+                data.isSpawn = true;
+                Instantiate(data.enemy.prefab, transform.position, Quaternion.identity);
             }
         }
 
 
         protected override void Update()
         {
-            base.Update();
             if (!_canCreate) return;
-            if (_count >= stage.stageDates.Count)
+            for (int i = 0; i < stage.stageDates.Count; i++)
             {
-                _count = 0;
+                if (_count >= stage.stageDates.Count)
+                    _count = 0;
+
+                StageData data = stage.stageDates[_count++];
+
+                if (!Mathf.Approximately(data.percent, 100f)) 
+                    continue;
+
+                StartCoroutine(CreateEnemy(data.enemy.prefab, data.nextWaitTime));
+                break;
             }
-            StartCoroutine(CreateEnemy(stage.stageDates[_count].enemy.prefab, stage.stageDates[_count].nextWaitTime));
             
         }
 
 
-        public IEnumerator CreateEnemy(GameObject gg, float waitTime)
+        private IEnumerator CreateEnemy(GameObject gg, float waitTime)
         {
             _canCreate = false; 
             Instantiate(gg, transform.position, Quaternion.identity);
+            Debug.Log(gg.name + "소환!");
             _count++;
             yield return new WaitForSeconds(waitTime);
             _canCreate = true;

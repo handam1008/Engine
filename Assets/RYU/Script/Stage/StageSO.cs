@@ -6,7 +6,7 @@ using UnityEngine;
 namespace RYU.Script.Stage
 {
     [Serializable]
-    public struct StageData
+    public class StageData
     {
         public EnemySO enemy;
         public float nextWaitTime;

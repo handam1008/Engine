@@ -31,6 +31,8 @@ namespace RYU.Script.Charcter.Notepad
         async UniTaskVoid WaitForParticles(float time, AbstractUnit unit)
         {
             await UniTask.Delay(TimeSpan.FromSeconds(time));
+            if (unit == null || unit.target == null) return;
+
             ParticleSystem ps = Instantiate(notepadEndParticles,unit.target.transform.position, Quaternion.identity);
             ps.Play();
         }

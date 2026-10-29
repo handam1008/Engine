@@ -14,6 +14,7 @@ namespace RYU.Script.Charcter
     {
         [Header("기본")]
         public CharcterRank charcterRank;
+        public int number = 0;
         
         [Header("레벨")]
         public int level = 1; // 맥스는 20
