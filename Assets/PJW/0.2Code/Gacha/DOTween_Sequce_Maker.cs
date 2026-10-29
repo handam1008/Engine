@@ -13,6 +13,7 @@ public class DOTween_Sequce_Maker : MonoBehaviour
     private CanvasGroup selectImage;
     //private Sequence pointEnterAnim;
     //private Sequence pointExitAnim;
+ 
 
 
     private void OnEnable()

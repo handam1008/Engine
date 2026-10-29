@@ -17,7 +17,7 @@ MonoBehaviour:
   prefab: {fileID: 3126542500493541946, guid: cd13dd566de328a42942c5ef050e16c5, type: 3}
   animatorController: {fileID: 9100000, guid: 4568ff7c4e2f3a74aa2966517958cbbc, type: 2}
   moveSpeed: 5
-  maxHp: 20
+  maxHp: 830
   whatIsDetect:
     serializedVersion: 2
     m_Bits: 128
@@ -25,9 +25,9 @@ MonoBehaviour:
   knockbackList: []
   attackRange: 10
   attackCoolTime: 10
-  attackDmg: 15
+  attackDmg: 825
   charcterRank: 0
-  level: 1
+  level: 82
   spawnStorage: 5
   attackStorage: 5
   <weight>k__BackingField: 5

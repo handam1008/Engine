@@ -102,7 +102,7 @@ public class DOTween_FileBT_Manger : MonoBehaviour
 
         float timer = 0f;
         Vector3[] trms = new Vector3[] {brid.position+new Vector3(750,70),brid.position+Vector3.right *1500};
-        bridSeq?.Append(brid.DOPath(trms, 3.5f, PathType.Linear))
+        bridSeq?.Append(brid.DOPath(trms, 2.7f, PathType.Linear))
         ?.Join(DOVirtual.DelayedCall(0.26f, () => { timer++; remainingTime.text = $"남은 시간: {10-timer}초"; }).SetLoops(10)).
         OnComplete(() =>
         {
