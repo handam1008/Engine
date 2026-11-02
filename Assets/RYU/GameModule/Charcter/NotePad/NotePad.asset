@@ -17,11 +17,12 @@ MonoBehaviour:
   prefab: {fileID: 0}
   animatorController: {fileID: 9100000, guid: d50f2cf21c8c4a09aeaea54fd97182db, type: 2}
   moveSpeed: 5
-  maxHp: 20
+  maxHp: 1000000
   whatIsDetect:
     serializedVersion: 2
     m_Bits: 128
   unitType: 1
+  knockbackList: []
   attackRange: 5
   attackCoolTime: 1
   attackDmg: 100

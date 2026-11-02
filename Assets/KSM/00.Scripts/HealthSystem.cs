@@ -12,6 +12,7 @@ public class HealthSystem : MonoBehaviour ,IDamageAble
     private UnitSO _unitSo;
     private int _count;
     private int _percent;
+    public event Action OnReceive;
     
 
     public void Init(int health,UnitSO unit)
@@ -28,6 +29,14 @@ public class HealthSystem : MonoBehaviour ,IDamageAble
     {
         if(Keyboard.current.eKey.wasPressedThisFrame)
             GetPercentage();
+    }
+
+    public void Receive()
+    {
+        Health = _maxHealth / 2;
+        OnReceive?.Invoke();
+        while (_unitSo.knockbackList.Count > _count && Health <= _maxHealth * _unitSo.knockbackList[_count])
+            _count++;
     }
 
 
