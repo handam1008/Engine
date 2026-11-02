@@ -11,10 +11,11 @@ namespace RYU.Script.UI
         [SerializeField] private Image image;
 
 
-        public void SetCharcterSlot(string text, Sprite sprite)
+        public void SetCharcterSlot(string text, Sprite sprite, RuntimeAnimatorController controller)
         {
             this.text.text = text;
             image.sprite = sprite;
+            image.GetComponent<Animator>().runtimeAnimatorController = controller;
         }
     }
 }
