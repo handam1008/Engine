@@ -4,6 +4,7 @@ namespace KSM._00.Scripts
 {
     public class DieState : AbstractUnitState
     {
+        private int receiveCount = 1;
         public DieState(StateMachine stateMachine, AbstractUnit abstractUnit, string hashName) : base(stateMachine, abstractUnit, hashName)
         {
         }
@@ -19,12 +20,18 @@ namespace KSM._00.Scripts
         public override void HandleAnimEnd()
         {
             base.HandleAnimEnd();
-            if (_abstractUnit.UnitSo is EnemySO so)
+
+            if (_abstractUnit.UnitSo is EnemySO enemy)
             {
-                Debug.Log($"백신 게이지 {so.vaccinegauge}오름");
+                if (enemy.type == EnemyType.Worm && receiveCount > 0)
+                {
+                    receiveCount--;
+                    _stateMachine.ChangeState(State.Corpse);
+                    return;
+                }
+                Debug.Log($"백신 게이지 {enemy.vaccinegauge}오름");
             }
             Object.Destroy(_abstractUnit.gameObject);
-            
         }
     }
 }

@@ -7,12 +7,12 @@ public class HealthSystem : MonoBehaviour ,IDamageAble
     [field:SerializeField] public int Health { get; private set; }
     [SerializeField] private int _maxHealth;
     public event Action OnKnockbacked;
-    public event Action OnDamaged;
     public event Action OnDeath;
     public bool Dead => Health <= 0;
     private UnitSO _unitSo;
     private int _count;
-    private float _percent;
+    private int _percent;
+    public event Action OnReceive;
     
 
     public void Init(int health,UnitSO unit)
@@ -25,13 +25,27 @@ public class HealthSystem : MonoBehaviour ,IDamageAble
     }
 
 
+    private void Update()
+    {
+        if(Keyboard.current.eKey.wasPressedThisFrame)
+            GetPercentage();
+    }
+
+    public void Receive()
+    {
+        Health = _maxHealth / 2;
+        OnReceive?.Invoke();
+        while (_unitSo.knockbackList.Count > _count && Health <= _maxHealth * _unitSo.knockbackList[_count])
+            _count++;
+    }
+
 
     public void Damage(int dmg)
     {
         if (Dead) return;
         
         Health -= dmg;
-        OnDamaged?.Invoke();
+       
         if (Dead)
         {
             Debug.Log(gameObject.name +" 사망");
@@ -51,7 +65,7 @@ public class HealthSystem : MonoBehaviour ,IDamageAble
     
     public float GetPercentage()
     {
-        _percent = (float)Health / _maxHealth *100;
+        _percent = (Health / _maxHealth)*100;
         return _percent;
 
     }
