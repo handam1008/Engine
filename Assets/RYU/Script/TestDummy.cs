@@ -11,7 +11,7 @@ namespace RYU.Script
 
            
 
-            health.OnDamged += () => Debug.Log("샌드백 피격");
+            health.OnKnockbacked += () => Debug.Log("샌드백 피격");
             health.OnDeath += () => Debug.Log("샌드백 사망");
         }
     }

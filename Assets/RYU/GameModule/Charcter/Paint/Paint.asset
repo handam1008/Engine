@@ -22,7 +22,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   unitType: 1
-  attackRange: 7
+  knockbackList: []
+  attackRange: 2
   attackCoolTime: 1
   attackDmg: 10
   charcterRank: 0

@@ -6,12 +6,13 @@ using UnityEngine;
 namespace RYU.Script.Stage
 {
     [Serializable]
-    public struct StageData
+    public class StageData
     {
         public EnemySO enemy;
         public float nextWaitTime;
         public int count;
         public float percent;
+        public bool isSpawn;
     }
     
     [CreateAssetMenu(fileName = "StageSO", menuName = "RYU/StageSO", order = 0)]
