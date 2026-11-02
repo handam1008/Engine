@@ -65,7 +65,7 @@ public abstract class AbstractUnit : MonoBehaviour
         {
             StateMachine.ChangeState(State.Dead);
         };
-        HpCompo.OnDamged +=  () =>
+        HpCompo.OnKnockbacked +=  () =>
         {
             StateMachine.ChangeState(State.Hit);
         };

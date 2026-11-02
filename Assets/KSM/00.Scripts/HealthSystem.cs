@@ -6,7 +6,7 @@ public class HealthSystem : MonoBehaviour ,IDamageAble
 {
     [field:SerializeField] public int Health { get; private set; }
     [SerializeField] private int _maxHealth;
-    public event Action OnDamged;
+    public event Action OnKnockbacked;
     public event Action OnDeath;
     public bool Dead => Health <= 0;
     private UnitSO _unitSo;
@@ -58,15 +58,15 @@ public class HealthSystem : MonoBehaviour ,IDamageAble
             _count++; 
             canHit = true;
         }
-        if (canHit) OnDamged?.Invoke();
+        if (canHit) OnKnockbacked?.Invoke();
            
         
     }
     
-    public void GetPercentage()
+    public float GetPercentage()
     {
         _percent = (Health / _maxHealth)*100;
-        Debug.Log(_percent);
+        return _percent;
 
     }
 }

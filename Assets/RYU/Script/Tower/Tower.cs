@@ -28,7 +28,7 @@ namespace RYU.Script.Tower
             {
                 data.isSpawn = false;
             }
-            _healthSystem.OnDamaged += HandleDamage;
+            _healthSystem.OnKnockbacked += HandleDamage;
         }
 
         private void HandleDamage()
