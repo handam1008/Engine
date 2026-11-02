@@ -4,5 +4,11 @@ using UnityEngine;
 public class Testssssssss : MonoBehaviour
 {
     [SerializeField] private SupportEffect effect;
-    [SerializeField] private CharacterDataSoList list;
+
+    private void OnEnable()
+    {
+        effect.TrySupport();
+    }
+
+
 }

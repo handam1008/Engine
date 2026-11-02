@@ -13,18 +13,17 @@ MonoBehaviour:
   m_Name: SupportEffect
   m_EditorClassIdentifier: Assembly-CSharp::SupportEffect
   effects:
-  - characters:
-    - {fileID: 11400000, guid: ee4d4012daef1d9499d0892c66f0cd76, type: 2}
+  - name: "\uB099\uC11C"
+    characters:
     - {fileID: 11400000, guid: 2762e0bbe4a0e884ab3738359838a72a, type: 2}
-    stype: 0
-  - characters:
-    - {fileID: 11400000, guid: 4880228560edeeb479d5f687b0a452b8, type: 2}
     - {fileID: 11400000, guid: ee4d4012daef1d9499d0892c66f0cd76, type: 2}
-    - {fileID: 11400000, guid: 2762e0bbe4a0e884ab3738359838a72a, type: 2}
+    correctionVal: 10
     stype: 1
-  - characters:
-    - {fileID: 11400000, guid: 4880228560edeeb479d5f687b0a452b8, type: 2}
-    stype: 2
-  - characters: []
-    stype: 1
+    ComboNameText: {fileID: 997350147083830447, guid: 537f95461b6d29d49b77e924a4476bce, type: 3}
+    CharacterSpriteUI:
+    - {fileID: 7410666502995886639, guid: 06e98907280a1be4983a88849182096e, type: 3}
+    - {fileID: 4998715949849335485, guid: cd7c58f476800ba449bb4fe719362a08, type: 3}
+    - {fileID: 453179853112509409, guid: ba21d49221274d247bce79452bba1d5e, type: 3}
+    - {fileID: 4019694587101077041, guid: 1a4a6878b8c227f4da00ff5a926cf848, type: 3}
+    - {fileID: 8780325699667930431, guid: e019d9e90c1856f41ab18d2ddcfd83c6, type: 3}
   currentDeck: {fileID: 11400000, guid: c1fe10547a837ae4ea7d2847df7117a1, type: 2}
