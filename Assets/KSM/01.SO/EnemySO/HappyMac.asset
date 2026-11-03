@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::KSM._00.Scripts.EnemySO
   Name: "\uD574\uD53C\uB9E5"
   sprite: {fileID: -2120192478289781820, guid: dcb34f6783197c24f94cb4a5197987a9, type: 3}
-  prefab: {fileID: 0}
-  animatorController: {fileID: 0}
+  prefab: {fileID: 8015583553335203965, guid: ad21bd4950efad34dace375296e7e626, type: 3}
+  animatorController: {fileID: 9100000, guid: 492f0e346ee3ea741bfc91316377c239, type: 2}
   moveSpeed: 4
   maxHp: 100
   whatIsDetect:
