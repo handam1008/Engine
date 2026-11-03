@@ -1,10 +1,28 @@
 # 적 전용 생성 프롬프트
 
-2026-10-25 기준. `.ai/art/ENEMY_ART_RULES.md`가 우선한다.
+2026-11-01 기준. `.ai/art/ENEMY_ART_RULES.md`가 우선한다.
 
 아래 프롬프트는 **적(Enemy) 전용**이다. 아군 캐릭터·XP UI·도구·아이콘에는 사용하지 않는다. 주체를 `character`로 바꿔 재사용하지 않는다.
 
 기존 아군 리소스를 첨부한다면 **픽셀 밀도·외곽선·색면 표현의 참고**라고 지정한다. 이전 적 이미지와 특정 게임의 적 이미지는 형태·얼굴 참고로 첨부하지 않는다.
+
+## 모든 생성·수정 프롬프트에 공통 적용
+
+아래 문구를 각 프롬프트에 함께 사용한다. 이후 템플릿의 외곽선 색·두께 설명은 **Aseprite 후처리를 마친 최종 결과**의 기준이다.
+
+```text
+ART DIRECTION: A pixel-art translation of The Battle Cats' simple cartoon presentation: very low detail, distinctive readable silhouettes, large flat color regions, compact faces and short expressive actions. Create the user's specified enemy concept rather than copying an existing enemy. Avoid a polished mascot illustration or detailed fantasy rendering. The finished art must look deliberately pixel-edited, without inconsistent detail, random fringe pixels or generated-looking anatomy.
+
+PRODUCTION WORKFLOW: Render simple flat color fills and essential facial details. Establish one consistent native pixel grid. Before outlining, refine the silhouette with deliberate integer-pixel stair steps; round sections must flow gradually, without accidental spikes, deep V-shaped neck notches or hook-like remnants. Do not use blur or interpolation to smooth curves. Preserve the approved eyes, facial markings, pose and prop proportions on separate layers before removing existing OUTER contours. Never erase facial or internal features just because they share the outline color. Generate the final outer contour using Aseprite's actual Outline command, default outside/circle at one native pixel in gray #3E464E; inside/one pixel may be used when the existing silhouette must stay fixed. No gradients, interpolated colors, antialiasing, soft edges or semitransparent fringe pixels. Do not place intermediate gray pixels along fur edges, folds or prop borders. Keep intended material colors inside their own flat regions. Enlarge only by integer nearest-neighbor scaling. Deliver an Aseprite-checked .aseprite file with separate fills, generated outer outline, and preserved facial/internal detail layers. Validate visual quality at game size as well as pixel integrity when enlarged; color-count checks alone are insufficient.
+```
+
+## 부분 수정 공통 지시
+
+수정 요청의 대상 영역을 구체적으로 적고, 아래 문구를 함께 적용한다. 실루엣 정리와 얼굴/포즈 재설계를 묶어서 처리하지 않는다.
+
+```text
+LOCAL EDIT ONLY: Use the approved original as the fixed source. Change only [requested region and correction]. Keep [protected regions: original eye shape, facial markings, head position, pose, hands, feet, weapon position and proportions] unchanged unless explicitly included in the request. For contour cleanup, adjust only the boundary's native pixel placement and regenerate its outer outline in Aseprite. Do not redraw the whole enemy, move the head, simplify the eyes or repeatedly rescale the source. Compare the final file against the approved source outside the edited region, and inspect for lost features, stray gray pixels and new transparent holes before delivery.
+```
 
 ## 1. 첫 기본 스프라이트 — 밀림덩이
 
@@ -19,7 +37,7 @@ FACE: Exactly two small solid dark dot eyes and one much smaller short horizonta
 
 ANATOMY AND POSE: No external feet, arms, hands, cat ears, or weapons. The broad underside is its contact surface. A calm neutral idle pose with the upper body already offset. The body must look capable of squashing, sliding, and extending its front mass to strike an opponent on the left. Do not depict an attack or draw a second pose.
 
-RENDERING: Crisp chunky pixel art with one consistent logical pixel grid. Thick dark slate contours matching the game's existing pixel density. Broad connected flat color planes: muted moss-green body with at most one lighter plane and one darker plane. Optional palette: outline/face #252B30, body #7FA650, light #A9C776, shade #536F3A. If allied game art is attached, use it only for pixel scale, outline thickness, and flat color treatment; do not copy the allied object's shape.
+RENDERING: Crisp chunky pixel art with one consistent logical pixel grid. Do not paint the final outer contour; generate it afterward using Aseprite Outline as specified in the production workflow. Broad connected flat color planes: muted moss-green body with at most one lighter plane and one darker plane. Optional palette: outline/face #3E464E, body #7FA650, light #A9C776, shade #536F3A. If allied game art is attached, use it only for pixel scale, outline thickness, and flat color treatment; do not copy the allied object's shape.
 
 SIMPLICITY: Readable as a distinctive silhouette at small battle-screen size. Organic asymmetry and one shifted mass are the identity. No symmetrical white ball body, cat anatomy, standard paired stubby feet, human anatomy, robot construction, UI window body, mechanical armor, padlocks, chains, lettering, 0/1 patterns, gradients, glossy rendering, glow, noise, blur, or anti-aliased edges. Do not imitate an existing game's enemy design.
 
