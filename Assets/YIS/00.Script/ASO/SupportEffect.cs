@@ -21,9 +21,7 @@ public class Effect
     [Header("지원 종류")]
     public SupportType stype;
 
-    [Header("UI용")]
-    public TextMeshProUGUI ComboNameText;
-    public Image[] CharacterSpriteUI;
+    [NonSerialized] public string supportDiscription;
 }
 
 
@@ -33,76 +31,50 @@ public class SupportEffect : ScriptableObject
     public List<Effect> effects = new List<Effect>();
 
     public CharacterDataSoList currentDeck;
-    
-    private CharcterDataSo[] Intersetion;
 
+    Dictionary<SupportType, ISupportAction> SupportDic = new Dictionary<SupportType, ISupportAction>()
+    {
+        {SupportType.HpUp, new HpSupport() },
+        {SupportType.AttackUp, new DamageSupport()},
+        {SupportType.Speed, new SpeedSupport()}
+    };
 
-    
     public void TrySupport()
     {
         for(int i = 0; i < effects.Count; ++i)
         {
-            Intersetion = effects[i].characters.Intersect(currentDeck.currentCharacter).ToArray();
-            if (Intersetion.Length != effects[i].characters.Length || effects[i].characters.Length == 0)
+            CharcterDataSo[] intersetion = effects[i].characters.Intersect(currentDeck.currentCharacter).ToArray();
+            
+            if (intersetion.Length != effects[i].characters.Length || effects[i].characters.Length == 0)
             {
                 Debug.LogWarning("콤보 유닛이 없거나 부족함");
+                continue;
             }
-            
-            DosomethingUI();
-            GetSupport(effects[i].stype, Intersetion);
-                
+            GetSupport(i, intersetion);
         }
          
     }
 
-    private void DosomethingUI()
+    
+    public void GetSupport(int index, CharcterDataSo[] charcterList)
     {
-        for(int i = 0; i < effects.Count; ++i)
+        
+        Effect combo = effects[index];
+
+        if(!SupportDic.TryGetValue(combo.stype, out ISupportAction doSuppoet))
         {
-            effects[i].ComboNameText.SetText(effects[i].name);
-
-                
-            for(int j = 0; j < effects[i].CharacterSpriteUI.Length; ++j)
-            {
-                try
-                {
-                 effects[i].CharacterSpriteUI[j].sprite = Intersetion[j].sprite;
-                    Debug.Log("Changed");
-                }
-                catch(IndexOutOfRangeException)
-                {
-                    effects[i].CharacterSpriteUI[j].sprite = null;
-                    return;
-                }
-            }
+            Debug.LogWarning("타입이 없음 지정해줭");
+            return;
         }
-    }
+        Debug.Log("In");
 
+        foreach(CharcterDataSo charcter in charcterList)
+        {
+            doSuppoet.ApplyCorrection(charcter, combo.correctionVal);
+            combo.supportDiscription = doSuppoet.SupportDiscription(combo.correctionVal);
+        }
+            Debug.Log(combo.supportDiscription);
 
-    public void GetSupport(SupportType type, CharcterDataSo[] charcterList)
-    {
-        //switch (type)
-        //{ 
-        //    case SupportType.HpUp:
-        //        for(int i = 0; i < charcterList.Length; ++i)
-        //        {
-        //            charcterList[i].maxHp += effects[i].correctionVal;
-        //        }
-        //        break;
-        //    case SupportType.Speed:
-        //        for(int i = 0; i < charcterList.Length; ++i)
-        //        {
-        //            charcterList[i].moveSpeed += effects[i].correctionVal;
-        //        }
-        //        break;
-        //    case SupportType.AttackUp:
-        //        for (int i = 0; i < charcterList.Length; ++i)
-        //        {
-        //            charcterList[i].attackDmg += effects[i].correctionVal;
-        //        }
-        //        break;
-                
-        //}
         //todo: ↑  이렇게 하면 So를 직접적으로 건드는거라 추후에 Ondead그거 상태 만들면 ""반드시"" 리셋 메서드를
         //쓰던가 뭔가를 해야함
     }

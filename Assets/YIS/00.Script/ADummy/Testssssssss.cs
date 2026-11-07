@@ -5,7 +5,7 @@ public class Testssssssss : MonoBehaviour
 {
     [SerializeField] private SupportEffect effect;
 
-    private void OnEnable()
+    private void Awake()
     {
         effect.TrySupport();
     }
