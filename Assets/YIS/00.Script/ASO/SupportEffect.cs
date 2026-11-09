@@ -13,7 +13,7 @@ public class Effect
     [Header("콤보 명")]
     public string name; 
     [Header("지원관계")]
-    public CharcterDataSo[] characters;
+    public CharacterDataSO[] characters;
 
     [Header("보정치")]
     [SerializeField, Min(0)] public int correctionVal;
@@ -43,7 +43,7 @@ public class SupportEffect : ScriptableObject
     {
         for(int i = 0; i < effects.Count; ++i)
         {
-            CharcterDataSo[] intersetion = effects[i].characters.Intersect(currentDeck.currentCharacter).ToArray();
+            CharacterDataSO[] intersetion = effects[i].characters.Intersect(currentDeck.currentCharacter).ToArray();
             
             if (intersetion.Length != effects[i].characters.Length || effects[i].characters.Length == 0)
             {
@@ -56,7 +56,7 @@ public class SupportEffect : ScriptableObject
     }
 
     
-    public void GetSupport(int index, CharcterDataSo[] charcterList)
+    public void GetSupport(int index, CharacterDataSO[] charcterList)
     {
         
         Effect combo = effects[index];
@@ -68,7 +68,7 @@ public class SupportEffect : ScriptableObject
         }
         Debug.Log("In");
 
-        foreach(CharcterDataSo charcter in charcterList)
+        foreach(CharacterDataSO charcter in charcterList)
         {
             doSuppoet.ApplyCorrection(charcter, combo.correctionVal);
             combo.supportDiscription = doSuppoet.SupportDiscription(combo.correctionVal);

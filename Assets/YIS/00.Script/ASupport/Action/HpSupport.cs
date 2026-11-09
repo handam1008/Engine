@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class HpSupport : ISupportAction
 {
-    public void ApplyCorrection(CharcterDataSo charcter, int amount)
+    public void ApplyCorrection(CharacterDataSO charcter, int amount)
     {
         //charcter.maxHp += amount;        
     }
