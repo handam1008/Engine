@@ -21,7 +21,6 @@ public abstract class AbstractUnit : MonoBehaviour
     public float lastAttackTime;
     public StateMachine StateMachine { get; private set; }
     public Collider2D ColliderCompo { get; private set; }
-    private int receiveCount = 1;
     
 
     protected virtual void Awake()
@@ -42,20 +41,7 @@ public abstract class AbstractUnit : MonoBehaviour
         StateMachine.Add(State.Corpse, new CorpseState(StateMachine,this,"Corpse"));
         StateMachine.Init(State.Chase);
         InitInfo();
-        if (UnitSo is  EnemySO enemy)
-        {
-            switch (enemy.type)
-            {
-                case EnemyType.None:
-                    break;
-                case EnemyType.Ransomware:
-                    break;
-                case EnemyType.Adware:
-                    break;
-            }
-
-
-        }
+       
        
     }
 

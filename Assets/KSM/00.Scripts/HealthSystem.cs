@@ -67,6 +67,5 @@ public class HealthSystem : MonoBehaviour ,IDamageAble
     {
         _percent = (Health / _maxHealth)*100;
         return _percent;
-
     }
 }
