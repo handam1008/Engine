@@ -37,4 +37,5 @@ public enum State
     Hit,
     Dead,
     WaitAttack,
+    Corpse
 }

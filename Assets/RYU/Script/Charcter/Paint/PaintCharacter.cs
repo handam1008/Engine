@@ -12,11 +12,14 @@ namespace RYU.Script.Charcter.Paint
         {
             _paintAttack = Attack as PaintAttackSO;
             Vector3 center = transform.position + new Vector3(1, 0, 0);
+
+            if (_paintAttack != null)
+            {
+                Vector3 boxsize = new Vector3(_paintAttack.boxSize.x, _paintAttack.boxSize.y, 0);
             
-            Vector3 boxsize = new Vector3(_paintAttack.boxSize.x, _paintAttack.boxSize.y, 0);
-            
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireCube(center, boxsize);
+                Gizmos.color = Color.red;
+                Gizmos.DrawWireCube(center, boxsize);
+            }
         }
         
         public override void PrepareAttack()

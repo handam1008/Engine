@@ -278,4 +278,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 801efa538d604a68aeaf61a687f16526, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthSystem
-  _health: 20
+  <Health>k__BackingField: 0

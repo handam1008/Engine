@@ -1,9 +1,0 @@
-{
-  "nativeReferences": "passed",
-  "scenePrefabLink": "passed",
-  "titleAndCaptionAssets": "passed",
-  "boundsDefaultAndMinimum": "passed",
-  "unityPrefabImport": "passed",
-  "runtimeDragResizeClicks": "not exercised; editor bridge unavailable",
-  "codeFilesCreatedOrEdited": false
-}

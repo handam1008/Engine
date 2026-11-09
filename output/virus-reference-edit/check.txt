@@ -1,0 +1,7 @@
+Canvas: 1448x1086 (not resized)
+Opaque colors: #1F242E, #74BA3A
+Alpha: 0 or 255 only
+Transparent pixels: 1379751
+Ink pixels: 49327
+Green pixels: 143450
+No silhouette reconstruction or downsampling.

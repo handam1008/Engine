@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1134c1333cd94407954cd5600c1f082d, type: 3}
+  m_Name: CharcterDataSo
+  m_EditorClassIdentifier: Assembly-CSharp::RYU.Script.Charcter.CharacterDataSO
+  Name: "\uD540\uBCFC"
+  sprite: {fileID: 0}
+  prefab: {fileID: 0}
+  animatorController: {fileID: 0}
+  moveSpeed: 20
+  maxHp: 1000
+  whatIsDetect:
+    serializedVersion: 2
+    m_Bits: 128
+  unitType: 1
+  knockbackList: []
+  attackRange: 0.1
+  attackCoolTime: 0
+  attackDmg: 30
+  charcterRank: 0
+  number: 0
+  level: 1
+  spawnStorage: 10
+  attackStorage: 10
+  <weight>k__BackingField: 0

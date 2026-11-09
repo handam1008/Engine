@@ -24,6 +24,16 @@ public class StaticEnemy : MonoBehaviour
         return Physics2D.OverlapCircleAll(targetPos, range, whatIsEntity);
     }
 
+    private void Update()
+    {
+        
+    }
+
+    public void TargetPosUpdate(Collider2D[] targets)
+    {
+        
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if ((whatIsEntity.value & (1 << other.gameObject.layer)) == 0) return; 
@@ -49,9 +59,10 @@ public class StaticEnemy : MonoBehaviour
                 }
                 lineRenderer.positionCount++;
                 lineRenderer.SetPosition(count, c.transform.position);
+                
                 count++;
             }
-            Destroy(gameObject,0.5f);
+            Destroy(gameObject,0.2f);
 
         
     }

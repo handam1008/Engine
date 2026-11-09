@@ -1,6 +1,0 @@
-D:\Github\Engine\output\aseprite-wiper-cleanup\cleanup.lua:176: Expected three face features at body x=3, found 4 [11,55:5;19,55:6;15,58:4;14,68:1]
-stack traceback:
-	[C]: in function 'assert'
-	D:\Github\Engine\output\aseprite-wiper-cleanup\cleanup.lua:176: in function <D:\Github\Engine\output\aseprite-wiper-cleanup\cleanup.lua:2>
-	[C]: in function 'xpcall'
-	D:\Github\Engine\output\aseprite-wiper-cleanup\cleanup.lua:2: in main chunk

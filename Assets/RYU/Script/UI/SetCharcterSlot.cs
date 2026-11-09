@@ -16,19 +16,29 @@ namespace RYU.Script.UI
      
 
 
-        public void SetCharacter()
+        public void SetHaveCharacter()
         {
             RemoveAllCharcters();
             foreach (var data in charcters.charcterDatas)
             {
                 GameObject slot = Instantiate(characterSlot, transform);
-                slot.GetComponent<CharacterSlot>().SetCharcterSlot(data.Name, data.sprite);
+                slot.GetComponent<CharacterSlot>().SetCharcterSlot(data.Name, data.sprite, data.animatorController);
+            }
+        }
+        
+        public void SetCurrentCharacter()
+        {
+            RemoveAllCharcters();
+            foreach (var data in charcters.currentCharacter)
+            {
+                GameObject slot = Instantiate(characterSlot, transform);
+                slot.GetComponent<CharacterSlot>().SetCharcterSlot(data.Name, data.sprite, data.animatorController);
             }
         }
 
-        public void AddCharcter(CharcterDataSo charcter)
+        public void AddCharcter(CharacterDataSO character)
         {
-            charcters.charcterDatas.Append(charcter);
+            charcters.charcterDatas.Append(character);
         }
         
         public void RemoveAllCharcters()

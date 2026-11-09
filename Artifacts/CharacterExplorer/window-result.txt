@@ -1,2 +1,0 @@
-PREVIEW_OK
-Artifacts/CharacterExplorer/window-preview.png

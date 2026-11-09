@@ -1,0 +1,7 @@
+PASS
+Canvas: 32x32
+Indexed palette: transparent, #1F242E, #74BA3A
+Frames: 1
+Face: original three single-pixel dots
+Body and feet: original pixels preserved from row 9 down
+Edit: triangular ears replaced with rounded antennae

@@ -1,8 +1,0 @@
-OK
-Six left menu items with labels
-Blue profile header
-White menu body
-All Programs row
-Bottom Log Off and Turn Off Computer buttons
-No right submenu
-UI only; no operating system actions or runtime scripts added.
