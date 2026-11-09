@@ -44,12 +44,12 @@ public class Gacha_probability_Manger : MonoBehaviour
 
         for (int i = 0; i < CharacterData.charcterDatas.Length;i++)
         {
-            sumWeigh += CharacterData.charcterDatas[i].weight;
+            sumWeigh += CharacterData.charcterDatas[i].Weight;
         }
 
         for(int i = 0; i < CharacterData.charcterDatas.Length;i++)
         {
-            weighsDic.Add(i,CharacterData.charcterDatas[i].weight);
+            weighsDic.Add(i,CharacterData.charcterDatas[i].Weight);
         }
 
         rankText.DOFade(0, 1);

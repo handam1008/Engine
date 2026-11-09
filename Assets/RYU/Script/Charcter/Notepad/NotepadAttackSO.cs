@@ -1,5 +1,7 @@
 ﻿using System;
 using Cysharp.Threading.Tasks;
+using DevLib.ServiceLocator;
+using DevLib.SoundSystem.Runtime;
 using UnityEngine;
 
 namespace RYU.Script.Charcter.Notepad
@@ -10,8 +12,10 @@ namespace RYU.Script.Charcter.Notepad
         [SerializeField] private NotepadBullet bulletPrefab;
         [SerializeField] private ParticleSystem notepadEndParticles;
         [SerializeField] private float delay;
+        [SerializeField] private SoundClipSO soundClip;
         public override void Attacking(AbstractUnit unit)
         {
+            ServiceLocator.Get<IAudioService>().PlaySfx(soundClip);
             BulletSet(unit, 1, 0.5f);
             BulletSet(unit, 0.5f, 0.4f);
             BulletSet(unit, 0, 0.3f);
@@ -23,9 +27,15 @@ namespace RYU.Script.Charcter.Notepad
 
         private void BulletSet(AbstractUnit unit, float height, float launchDelay)
         {
-            NotepadBullet bullet = Instantiate(bulletPrefab, unit.transform.position,  Quaternion.identity);
+            var poolable = PoolManager.PoolManager.Instance.Pop(bulletPrefab.name);
+            var pp = poolable.GetGameObject().GetComponent<NotepadBullet>();
+            pp.Init(unit.UnitSo.attackDmg);
+            pp.Shoot(unit.target, pp.TextSpeed, height, launchDelay);
+            poolable.ResetItem();
+            
+            /*NotepadBullet bullet = Instantiate(bulletPrefab, unit.transform.position,  Quaternion.identity);
             bullet.Init(unit.UnitSo.attackDmg);
-            bullet.Shoot(unit.target, bullet.TextSpeed, height, launchDelay);
+            bullet.Shoot(unit.target, bullet.TextSpeed, height, launchDelay);*/
         }
 
         async UniTaskVoid WaitForParticles(float time, AbstractUnit unit)

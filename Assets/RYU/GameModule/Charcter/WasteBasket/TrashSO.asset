@@ -10,25 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1134c1333cd94407954cd5600c1f082d, type: 3}
-  m_Name: CharcterDataSo
+  m_Name: TrashSO
   m_EditorClassIdentifier: Assembly-CSharp::RYU.Script.Charcter.CharacterDataSO
-  Name: "\uD540\uBCFC"
-  sprite: {fileID: 0}
-  prefab: {fileID: 0}
-  animatorController: {fileID: 0}
-  moveSpeed: 20
-  maxHp: 1000
+  Name: "\uD734\uC9C0\uD1B5"
+  sprite: {fileID: 21300000, guid: 5d2d4252eae31dc4ab8f344b2a23c437, type: 3}
+  prefab: {fileID: 5765712201375209696, guid: ea8f04771484c534ab9ae2906a6abede, type: 3}
+  animatorController: {fileID: 9100000, guid: dbac625a0c1e7284b8289507f31daf59, type: 2}
+  moveSpeed: 5
+  maxHp: 200
   whatIsDetect:
     serializedVersion: 2
     m_Bits: 128
   unitType: 1
   knockbackList: []
-  attackRange: 0.1
-  attackCoolTime: 0
-  attackDmg: 30
+  attackRange: 2
+  attackCoolTime: 2
+  attackDmg: 2
   charcterRank: 0
   number: 0
   level: 1
-  spawnStorage: 10
-  attackStorage: 10
-  <weight>k__BackingField: 0
+  spawnStorage: 2
+  attackStorage: 1
+  <Weight>k__BackingField: 0
+  spawnCoolTime: 5

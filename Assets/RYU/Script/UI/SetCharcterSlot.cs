@@ -22,7 +22,7 @@ namespace RYU.Script.UI
             foreach (var data in charcters.charcterDatas)
             {
                 GameObject slot = Instantiate(characterSlot, transform);
-                slot.GetComponent<CharacterSlot>().SetCharcterSlot(data.Name, data.sprite, data.animatorController);
+                slot.GetComponent<CharacterSlot>().SetCharcterSlot(data);
             }
         }
         
@@ -32,7 +32,7 @@ namespace RYU.Script.UI
             foreach (var data in charcters.currentCharacter)
             {
                 GameObject slot = Instantiate(characterSlot, transform);
-                slot.GetComponent<CharacterSlot>().SetCharcterSlot(data.Name, data.sprite, data.animatorController);
+                slot.GetComponent<CharacterSlot>().SetCharcterSlot(data);
             }
         }
 

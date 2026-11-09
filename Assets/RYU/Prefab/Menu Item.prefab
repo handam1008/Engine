@@ -340,7 +340,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5d2d4252eae31dc4ab8f344b2a23c437, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1ad0ff8ad9a08454b82e879652926b43, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -529,5 +529,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4cc6a3c24c6425b902baee48e917e5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RYU.Script.UI.CharacterSlot
-  text: {fileID: 5741177720067764625}
+  nameText: {fileID: 5741177720067764625}
+  storageText: {fileID: 5721634126133342771}
   image: {fileID: 284434522572811601}

@@ -118,4 +118,11 @@ public abstract class AbstractUnit : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, UnitSo.attackRange);
     }
+
+    public void DestroyObject()
+    {
+        Destroy(gameObject);
+    }
+
+   
 }

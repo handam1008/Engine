@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1768598090956158579}
   - component: {fileID: 6006016513327909890}
   - component: {fileID: 6545888044676046073}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,7 +142,7 @@ GameObject:
   - component: {fileID: 1141038934052389982}
   - component: {fileID: 9040147124328887320}
   - component: {fileID: 1141330701433983017}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Notepad
   m_TagString: Character
   m_Icon: {fileID: 0}
@@ -207,7 +207,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 6
+  m_Constraints: 4
 --- !u!114 &1141038934052389982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,7 +220,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 801efa538d604a68aeaf61a687f16526, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthSystem
-  _health: 0
+  <Health>k__BackingField: 0
+  _maxHealth: 0
 --- !u!61 &9040147124328887320
 BoxCollider2D:
   m_ObjectHideFlags: 0

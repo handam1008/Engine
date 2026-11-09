@@ -1,5 +1,6 @@
 ﻿using DevLib.ServiceLocator;
 using RYU.Script.Serivce;
+using RYU.Script.Service;
 using UnityEngine;
 using UnityEngine.UI;
 

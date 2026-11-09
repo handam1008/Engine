@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using PrimeTween;
+using RYU.Script.PoolManager;
 using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 namespace RYU.Script.Charcter.Notepad
 {
-    public class NotepadBullet : MonoBehaviour
+    public class NotepadBullet : MonoBehaviour, IPoolable
     {
         private Rigidbody2D _rigidbody2D;
         private int _attackDamage;
@@ -42,7 +43,7 @@ namespace RYU.Script.Charcter.Notepad
             if (other.TryGetComponent(out HealthSystem healthSystem))
             {
                 healthSystem.Damage(_attackDamage);
-                Destroy(gameObject);
+                PoolManager.PoolManager.Instance.Push(this);
                 Instantiate(hitParticles, other.transform.position, transform.rotation);
             }
         }
@@ -92,5 +93,14 @@ namespace RYU.Script.Charcter.Notepad
             _backTween.Stop();
         }
 
+        public string ItemName => "NotepadBullet";
+        public GameObject GetGameObject()
+        {
+            return gameObject;
+        }
+
+        public void ResetItem()
+        {
+        }
     }
 }
