@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a04a298b0dda448c84284a06bd2318cc, type: 3}
+  m_Name: Gimp
+  m_EditorClassIdentifier: Assembly-CSharp::KSM._00.Scripts.EnemySO
+  Name: Gimp
+  sprite: {fileID: 0}
+  prefab: {fileID: 0}
+  animatorController: {fileID: 9100000, guid: 5c2fcfdcc7e12fa488f2c2c614dbb0b5, type: 2}
+  moveSpeed: 3
+  maxHp: 100
+  whatIsDetect:
+    serializedVersion: 2
+    m_Bits: 64
+  unitType: 0
+  knockbackList:
+  - 0.8
+  attackRange: 1.3
+  attackCoolTime: 3
+  attackDmg: 15
+  vaccinegauge: 10
+  type: 0
