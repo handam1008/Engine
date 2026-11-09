@@ -27,6 +27,6 @@ namespace RYU.Script.Charcter
         [field:SerializeField] public float Weight { get; private set; }
         public float spawnCoolTime;
 
-
+        
     }
 }
