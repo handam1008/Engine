@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace RYU.Script.Serivce
+namespace RYU.Script.Service
 {
     public interface IPanelService
     {
