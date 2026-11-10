@@ -31,12 +31,6 @@ namespace RYU.Script.Charcter.Notepad
             _attackDamage = damage;
         }
 
-        private void Start()
-        {
-            int random = Random.Range(0, texts.Count);
-            _text.text = texts[random];
-        }
-
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.CompareTag("Character")) return;
@@ -44,7 +38,9 @@ namespace RYU.Script.Charcter.Notepad
             {
                 healthSystem.Damage(_attackDamage);
                 PoolManager.PoolManager.Instance.Push(this);
-                Instantiate(hitParticles, other.transform.position, transform.rotation);
+                var ps = PoolManager.PoolManager.Instance.Pop(hitParticles.name);
+                ps.GetGameObject().transform.position = other.transform.position;
+                hitParticles.Play();
             }
         }
 
@@ -59,8 +55,8 @@ namespace RYU.Script.Charcter.Notepad
             
            _rigidbody2D.linearVelocity = Vector2.zero;
            
-           Vector3 dir = (target.position - transform.position).normalized;
-           Vector3 backPosition = transform.position - dir * backDistance + Vector3.up * height;
+           float dirX = Mathf.Sign(target.position.x - transform.position.x);
+           Vector3 backPosition = transform.position + Vector3.left * (dirX * backDistance) + Vector3.up * height;
 
            _backTween = Tween.Position(
                transform,
@@ -101,6 +97,9 @@ namespace RYU.Script.Charcter.Notepad
 
         public void ResetItem()
         {
+            _backTween.Stop();  
+            int random = Random.Range(0, texts.Count);
+            _text.text = texts[random];
         }
     }
 }
