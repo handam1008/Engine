@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RYU.Script.Charcter.CharacterDataSO
   Name: "\uD540\uBCFC"
   sprite: {fileID: 6476155668664820668, guid: 6ec56b706e0cdc74eb838a46e0c3dd86, type: 3}
-  prefab: {fileID: 0}
+  prefab: {fileID: 2858165242075683444, guid: 540e041bd9c126541a495cd6eda7c31b, type: 3}
   animatorController: {fileID: 9100000, guid: b01b685e25b153c41a380be2fba8571f, type: 2}
   moveSpeed: 10
   maxHp: 1000
