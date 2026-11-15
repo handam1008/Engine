@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Diagnostics;
 using KSM._00.Scripts;
 using UnityEngine;
@@ -21,6 +22,12 @@ public abstract class AbstractUnit : MonoBehaviour
     public float lastAttackTime;
     public StateMachine StateMachine { get; private set; }
     public Collider2D ColliderCompo { get; private set; }
+    
+    [Header("슬로우관련")]
+    
+    public float SpeedRate { get; private set; } = 1f;
+    private Coroutine _slowRoutine;
+    private GameObject _note;
     
 
     protected virtual void Awake()
@@ -60,6 +67,28 @@ public abstract class AbstractUnit : MonoBehaviour
     protected virtual void Update()
     {
         StateMachine.CurrentState.UpdateState();
+    }
+    
+    public void ApplySlow(float rate, float time, GameObject notePrefab)
+    {
+        if (_slowRoutine != null) StopCoroutine(_slowRoutine);  
+        _slowRoutine = StartCoroutine(SlowRoutine(rate, time, notePrefab));
+    }
+
+    private IEnumerator SlowRoutine(float rate, float time, GameObject notePrefab)
+    {
+        SpeedRate = rate;
+        MoveCompo.SpeedMultiplier = rate;
+        AnimCompo.speed = rate;      
+        if (_note == null && notePrefab != null)
+            _note = Instantiate(notePrefab, transform.position + new Vector3(0,0.4f,0), Quaternion.identity, transform);
+
+        yield return new WaitForSeconds(time);
+
+        SpeedRate = 1f;
+        MoveCompo.SpeedMultiplier = 1f;
+        AnimCompo.speed = 1f;
+        if (_note != null) Destroy(_note);
     }
 
     protected virtual void InitInfo()
