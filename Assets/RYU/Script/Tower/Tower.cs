@@ -12,13 +12,17 @@ namespace RYU.Script.Tower
         [SerializeField] private StageSO stage;
         private int _count= 0;
         private bool _canCreate = true;
-        private HealthSystem _healthSystem;
         private IEnumerator _enumerator;
 
         protected override void Awake()
         {
             base.Awake();
-            _healthSystem = GetComponent<HealthSystem>();
+            HpCompo.OnDeath += TowerDead;
+        }
+
+        private void TowerDead()
+        {
+            throw new NotImplementedException();
         }
 
         public void Start()
@@ -28,7 +32,7 @@ namespace RYU.Script.Tower
             {
                 data.isSpawn = false;
             }
-            _healthSystem.OnKnockbacked += HandleDamage;
+            HpCompo.OnKnockbacked += HandleDamage;
         }
 
         private void HandleDamage()
@@ -36,7 +40,7 @@ namespace RYU.Script.Tower
             foreach (var data in stage.stageDates)
             {
                 if (data.percent <= 0 || Mathf.Approximately(data.percent, 100f) || data.isSpawn) continue;
-                if (_healthSystem.GetPercentage() > data.percent) continue;
+                if (HpCompo.GetPercentage() > data.percent) continue;
 
                 data.isSpawn = true;
                 Instantiate(data.enemy.prefab, transform.position, Quaternion.identity);

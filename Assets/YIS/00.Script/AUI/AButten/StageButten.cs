@@ -2,12 +2,16 @@ using UnityEngine;
 
 public class StageButten : MonoBehaviour
 {
-    [SerializeField] private GameObject stage1;
+    [SerializeField] private GameObject stage; // 맵마다 열 스테이지
 
     public void StageOneButten()
     {
-        bool isIn = false;
-        transform.parent.gameObject.SetActive(isIn);
-        stage1.gameObject.SetActive(!isIn);
+        if (stage == null) return;
+
+        transform.parent.gameObject.SetActive(false);
+        stage.SetActive(true);
     }
+
+
 }
+    
