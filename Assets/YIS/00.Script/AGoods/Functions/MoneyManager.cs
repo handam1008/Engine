@@ -16,6 +16,7 @@ public class MoneyManager : MonoBehaviour
     public void PlusMoney(float amount)
     {
         Money += amount;
+        Debug.Log($"{amount}°ñµå È¹µæ!!!");
     }
 
     public void MinusMoney(float amount)

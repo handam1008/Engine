@@ -1,7 +1,9 @@
+using DG.Tweening;
 using System.Collections;
 using TMPro;
 using UnityEngine;
-using UnityEngine.InputSystem;
+using UnityEngine.UI;
+
 
 public class TestGameEndTrigger : MonoBehaviour
 {
@@ -14,33 +16,42 @@ public class TestGameEndTrigger : MonoBehaviour
     [SerializeField] private Canvas _stageCanvas;
     [SerializeField] private TextMeshProUGUI vicotryText;
     private int stageCount = 1;
+    [SerializeField] private Image fadePanel;
+    [SerializeField] private MoneyManager mm;
+
 
     private void Awake()
     {
         vicotryText.SetText("Wow you've won!! 1972Gold GIVEN!!!!!!");
     }
 
-    private void Update()
+    public void End()
     {
-        if(Keyboard.current.pKey.wasPressedThisFrame)
-        {
-            StartCoroutine(Wait());
-        }
+      StartCoroutine(Wait());
+      fadePanel.DOFade(1, 1);
+      mm.PlusMoney(1972);
     }
 
     private void StageUnlock()
     {
-        foreach(Transform child in stageParent.transform) child.gameObject.SetActive(false);
+
+
         _sm.StageOpen(stageCount);
         ++stageCount;
+        fadePanel.DOFade(0, 1);
         _stageBtnParent.SetActive(true);
-        
+
+
     }
+
+    
 
     IEnumerator Wait()
     {
         _stageCanvas.gameObject.SetActive(true);
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
+        foreach(Transform child in stageParent.transform) child.gameObject.SetActive(false);
+        yield return new WaitForSeconds(1f);
         StageUnlock();
 
     }

@@ -10,6 +10,7 @@ namespace RYU.Script.Tower
     public class Tower : AbstractUnit
     {
         [SerializeField] private StageSO stage;
+        [SerializeField] private TestGameEndTrigger trigger;
         private int _count= 0;
         private bool _canCreate = true;
         private IEnumerator _enumerator;
@@ -22,7 +23,7 @@ namespace RYU.Script.Tower
 
         private void TowerDead()
         {
-            throw new NotImplementedException();
+            trigger.End();
         }
 
         public void Start()
@@ -77,6 +78,11 @@ namespace RYU.Script.Tower
             yield return new WaitForSeconds(waitTime);
             _canCreate = true;
         }
-        
+
+        private void OnDisable()
+        {
+            HpCompo.Init(UnitSo.maxHp, UnitSo);
+        }
+
     }
 }
