@@ -16,24 +16,24 @@ public class DOTween_FileBT_Manger : MonoBehaviour
 
     [SerializeField] private RectTransform panel;
 
-    [SerializeField] private GameObject bar;
+    //[SerializeField] private GameObject bar;
 
-    [SerializeField] private RectTransform brid;
+    //[SerializeField] private RectTransform brid;
 
-    [SerializeField] private TextMeshProUGUI remainingTime;
+    //[SerializeField] private TextMeshProUGUI remainingTime;
 
     private Sequence selectAnim;
 
-    private Sequence bridSeq;
+    //private Sequence bridSeq;
 
     private bool wasPlayed = false;
 
-    [SerializeField]private Gacha_probability_Manger probabilityManger;
+    //[SerializeField]private Gacha_probability_Manger probabilityManger;
 
     private void Awake()
     {
         panel.DOScale(0f, 0f);
-        brid.DOScale(0f, 0f);
+        //brid.DOScale(0f, 0f);
     }
 
     public void CompareNumberAnim(int i)
@@ -73,47 +73,47 @@ public class DOTween_FileBT_Manger : MonoBehaviour
             {
                 wasPlayed = true;
                 bts[c].DOScale(0f, 0f);
-                ShowFile();
+                //ShowFile();
             });
     }
 
 
-    public void ShowFile()
-    {
-        panel.DOScale(2.5f, 0f).OnComplete(() => { StartCoroutine(Loding()); brid.DOScale(0.4f, 0); Brid(); });
-    }
+    //public void ShowFile()
+    //{
+    //    panel.DOScale(2.5f, 0f).OnComplete(() => { StartCoroutine(Loding()); brid.DOScale(0.4f, 0); Brid(); });
+    //}
 
-    public  IEnumerator Loding()
-    {
-        for (int i = 0; i < 42; i++)
-        {
-            Instantiate(bar, bar.transform.parent);
-            yield return new WaitForSeconds(0.055f);
-        }
-    }
+    //public  IEnumerator Loding()
+    //{
+    //    for (int i = 0; i < 42; i++)
+    //    {
+    //        Instantiate(bar, bar.transform.parent);
+    //        yield return new WaitForSeconds(0.055f);
+    //    }
+    //}
 
 
-    public void Brid()
-    {
-        if(bridSeq == null || !bridSeq.IsActive())
-        {
-            bridSeq = DOTween.Sequence();
-        }
+    //public void Brid()
+    //{
+    //    if(bridSeq == null || !bridSeq.IsActive())
+    //    {
+    //        bridSeq = DOTween.Sequence();
+    //    }
 
-        float timer = 0f;
-        Vector3[] trms = new Vector3[] {brid.position+new Vector3(750,70),brid.position+Vector3.right *1500};
-        bridSeq?.Append(brid.DOPath(trms, 2.7f, PathType.Linear))
-        ?.Join(DOVirtual.DelayedCall(0.26f, () => { timer++; remainingTime.text = $"남은 시간: {10-timer}초"; }).SetLoops(10)).
-        OnComplete(() =>
-        {
-            ShowCharacter();
-        })?.Play();
-    }
+    //    float timer = 0f;
+    //    Vector3[] trms = new Vector3[] {brid.position+new Vector3(750,70),brid.position+Vector3.right *1500};
+    //    bridSeq?.Append(brid.DOPath(trms, 2.7f, PathType.Linear))
+    //    ?.Join(DOVirtual.DelayedCall(0.26f, () => { timer++; remainingTime.text = $"남은 시간: {10-timer}초"; }).SetLoops(10)).
+    //    OnComplete(() =>
+    //    {
+    //        ShowCharacter();
+    //    })?.Play();
+    //}
 
-    public void ShowCharacter()
-    {
-        panel.transform.DOScale(0f, 0f);
-        brid.transform.DOScale(0f, 0f);
-        probabilityManger.SelectCharacter();
-    }
+    //public void ShowCharacter()
+    //{
+    //    panel.transform.DOScale(0f, 0f);
+    //    brid.transform.DOScale(0f, 0f);
+    //    probabilityManger.SelectCharacter();
+    //}
 }
