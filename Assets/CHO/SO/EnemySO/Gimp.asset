@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Gimp
   m_EditorClassIdentifier: Assembly-CSharp::KSM._00.Scripts.EnemySO
   Name: Gimp
-  sprite: {fileID: 0}
-  prefab: {fileID: 0}
+  sprite: {fileID: 4669195412993955854, guid: 664b475c98a0d974aa6fc6cd9569cb9e, type: 3}
+  prefab: {fileID: 7259218679722850842, guid: 3e023c8f8e3e4b242be9e006d886ba33, type: 3}
   animatorController: {fileID: 9100000, guid: 5c2fcfdcc7e12fa488f2c2c614dbb0b5, type: 2}
   moveSpeed: 3
   maxHp: 100
@@ -26,6 +26,6 @@ MonoBehaviour:
   - 0.8
   attackRange: 1.3
   attackCoolTime: 3
-  attackDmg: 15
+  attackDmg: 30
   vaccinegauge: 10
   type: 0
