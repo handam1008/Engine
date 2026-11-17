@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Calculate
   m_EditorClassIdentifier: Assembly-CSharp::RYU.Script.Charcter.CharcterDataSO
   Name: "\uACC4\uC0B0\uAE30"
-  sprite: {fileID: 21300000, guid: ddbfa371b05334c45910c7291377f4e5, type: 3}
+  sprite: {fileID: 21300000, guid: 0e98746cad384cfba9df26fc3abb15d9, type: 3}
   prefab: {fileID: 3126542500493541946, guid: cd13dd566de328a42942c5ef050e16c5, type: 3}
   animatorController: {fileID: 9100000, guid: 4568ff7c4e2f3a74aa2966517958cbbc, type: 2}
   moveSpeed: 5
