@@ -18,7 +18,8 @@ namespace RYU.Script.Stage
     [CreateAssetMenu(fileName = "StageSO", menuName = "RYU/StageSO", order = 0)]
     public class StageSO : ScriptableObject
     {
-       public List<StageData> stageDates;
+        public List<StageData> stageDates;
+        public int getGold;
 
      
     }

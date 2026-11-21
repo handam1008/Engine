@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using PrimeTween;
-using RYU.Script.PoolManager;
 using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
+using RYU.Script.Pool;
 
 namespace RYU.Script.Charcter.Notepad
 {
@@ -37,8 +36,8 @@ namespace RYU.Script.Charcter.Notepad
             if (other.TryGetComponent(out HealthSystem healthSystem))
             {
                 healthSystem.Damage(_attackDamage);
-                PoolManager.PoolManager.Instance.Push(this);
-                var ps = PoolManager.PoolManager.Instance.Pop(hitParticles.name);
+                PoolManager.Instance.Push(this);
+                var ps = PoolManager.Instance.Pop(hitParticles.name);
                 ps.GetGameObject().transform.position = other.transform.position;
                 hitParticles.Play();
             }

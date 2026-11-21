@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Threading;
 using Cysharp.Threading.Tasks;
 using PrimeTween;
-using RYU.Script.PoolManager;
 using UnityEngine;
+using RYU.Script.Pool;
 
 namespace RYU.Script.Charcter.Internet
 {
@@ -61,7 +61,7 @@ namespace RYU.Script.Charcter.Internet
             
             if (cancelled || token.IsCancellationRequested) return;
 
-            PoolManager.PoolManager.Instance.Push(this);
+            PoolManager.Instance.Push(this);
         }
 
         public GameObject GetGameObject() => gameObject;

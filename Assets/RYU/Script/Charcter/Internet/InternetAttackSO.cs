@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using RYU.Script.Pool;
 
 namespace RYU.Script.Charcter.Internet
 {
@@ -10,7 +11,7 @@ namespace RYU.Script.Charcter.Internet
         {
             if (bullet == null || unit.target == null) return;
 
-            var poolable = PoolManager.PoolManager.Instance.Pop(bullet.ItemName);
+            var poolable = PoolManager.Instance.Pop(bullet.ItemName);
 
             var instance = (InternetBullet)poolable;
             instance.Init(unit.UnitSo.attackDmg, unit.UnitSo.whatIsDetect);
