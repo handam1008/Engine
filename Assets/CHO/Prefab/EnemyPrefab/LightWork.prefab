@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BugEnemy
   <UnitSo>k__BackingField: {fileID: 11400000, guid: 750278e402421114cb9638f5e6806f93, type: 2}
-  <Attack>k__BackingField: {fileID: 11400000, guid: e7f895316e2aa654898d61805d342be0, type: 2}
+  <Attack>k__BackingField: {fileID: 11400000, guid: 1dc69fad80b89bb40991c3f1d6d5a275, type: 2}
   target: {fileID: 0}
   lastAttackTime: 0
 --- !u!114 &496008312739744049
