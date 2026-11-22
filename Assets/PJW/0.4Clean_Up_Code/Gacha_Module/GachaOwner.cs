@@ -16,11 +16,14 @@ public class GachaOwner : MonoBehaviour
 
     private IGachaModule _currentModule;
 
-    private MMF_Player _currentMmf_player;
-
     private TaskCompletionSource<bool> firstClickSource;
 
+    private TaskCompletionSource<bool> finshThevfx0010;
+
+    private TaskCompletionSource<bool> finshThevfx0020;
+
     private TaskCompletionSource<bool> lastClickSource;
+
 
     private CharacterDataSO currentCharacterData;
 
@@ -52,6 +55,8 @@ public class GachaOwner : MonoBehaviour
 
         firstClickSource = new TaskCompletionSource<bool>();
         lastClickSource = new TaskCompletionSource<bool>();
+        finshThevfx0010 = new TaskCompletionSource<bool>();
+        finshThevfx0020 = new TaskCompletionSource<bool>();
     }
 
     public void InitModule<T>()
@@ -69,6 +74,14 @@ public class GachaOwner : MonoBehaviour
             throw new OperationCanceledException("지금 접근한 모듈은 실행점이 존재하지 않는 모듈입니다.");
 
         playmodule.Play();
+    }
+
+    public void MarkModule<T>()
+    {
+        if (_currentModule is not IGachaMarkModule markmodule)
+            throw new InvalidOperationException("지금 접근한 모듈은 표시점이 존재하지 않는 모듈입니다.");
+
+        markmodule.Mark(currentCharacterData);
     }
 
     public void ChangeModule<T> ()
@@ -125,11 +138,21 @@ public class GachaOwner : MonoBehaviour
     {
         //압축파일 init(),Enter()는 ChangeModule<GachaFileSelectionMoudule>();에서 실행할때 실행된다.
         //=> GachaFileSelectionMoudule.init(),GachaFileSelectionMoudule.Enter() 실행
+        //떨이지는 vfx0100
+        await finshThevfx0010.Task;
 
+        //앞축해제 애니매이션 실행
+        PlayModule<GachaFileSelectionMoudule>();
 
         //압축파일 연출 완료후
-        await firstClickSource.Task;
+
+        //파일 압축해제 진행
+        await Task.Delay(10000);
+
         //압축파일 연출 종료
+        //현제 모듈을 변경
+        //현제 모듈은 완전히 종료되었을때
+       ChangeModule<GachaResultDisplayMoudule>();
     }
 
     async Task InteractioFielAsync()
@@ -137,13 +160,20 @@ public class GachaOwner : MonoBehaviour
         //클릭을 입력을때까지 대기
         await lastClickSource.Task;
         //현제 모듈을 결과표시 모듈로 교체
+        ChangeModule<GachaRealResultDisplayMoudule>();
+    }
+
+    async Task ShowResultAsync()
+    {
+        MarkModule<GachaResultDisplayMoudule>();
     }
 
     async void ShowGachaAsync()
     {
         await ShowArchiveAsync();
         await ShowFielAsync();
-        //await InteractioFielAsync();
+        await InteractioFielAsync();
+        await ShowResultAsync();
     }
 
     public void OnFristClickAsync()
@@ -151,6 +181,11 @@ public class GachaOwner : MonoBehaviour
         if (isFristClick) return;
         firstClickSource?.SetResult(true);
         isFristClick = true;
+    }
+
+    public void OnEndVfxAsync()
+    {
+        finshThevfx0010?.SetResult(true);
     }
 
     public void OnLastClickAsync()

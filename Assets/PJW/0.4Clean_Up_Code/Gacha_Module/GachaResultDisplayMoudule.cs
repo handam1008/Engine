@@ -1,29 +1,26 @@
 using Assets.PJW._0._4Clean_Up_Code;
 using MoreMountains.Feedbacks;
+using RYU.Script.Charcter;
 using UnityEngine;
 
-public class GachaResultDisplayMoudule : MonoBehaviour, IGachaEnterModule, IGachaPlayModule, IGachaExitModule,IGachaMarkModule
+public class GachaResultDisplayMoudule : MonoBehaviour, IGachaEnterModule, IGachaExitModule
 {
+    [SerializeField] private GameObject fileui;
+    [SerializeField] private MMF_Player vfx0030;
+    
     public void Init()
     {
-        Debug.Log($"{this.name}가 초기화됨");
+        vfx0030.Initialization();
     }
 
     public void Enter()
     {
-    }
-
-    public void Play()
-    {
-    }
-
-    public void Mark(int index)
-    {
-
+        fileui.SetActive(true);
+        vfx0030.PlayFeedbacks();
     }
 
     public void Exit()
     {
+        fileui.SetActive(false);
     }
-
 }
