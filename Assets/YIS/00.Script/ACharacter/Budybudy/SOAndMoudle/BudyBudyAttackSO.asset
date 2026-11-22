@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f30908a017ead640ac47ae204e83bc1, type: 3}
+  m_Name: BudyBudyAttackSO
+  m_EditorClassIdentifier: Assembly-CSharp::BudyBudyAttackSO
+  Letter: {fileID: -2506437080553609991, guid: 4c7592857dae7f04c8df43a89f1cd559, type: 3}
+  _bChar: {fileID: 8165963173346076637, guid: 2a1796dbe06a51744853d62bb6ca7b7a, type: 3}
