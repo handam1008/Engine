@@ -119,6 +119,51 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &6910535
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6910537}
+  - component: {fileID: 6910536}
+  m_Layer: 0
+  m_Name: PoolManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &6910536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6910535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 597d84becc9342198120e50bac57795b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RYU.Script.PoolManager.PoolManager
+  poolList: {fileID: 11400000, guid: 994f9bf8e280654458de1f3f7b4ad923, type: 2}
+--- !u!4 &6910537
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6910535}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &230860013
 GameObject:
   m_ObjectHideFlags: 0
@@ -222,6 +267,10 @@ PrefabInstance:
     - target: {fileID: 899064369439599929, guid: e458a635377ec7d41a27df31d80da2a1, type: 3}
       propertyPath: m_Name
       value: rm -rf
+      objectReference: {fileID: 0}
+    - target: {fileID: 2362143296787608661, guid: e458a635377ec7d41a27df31d80da2a1, type: 3}
+      propertyPath: target
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7650719254699615522, guid: e458a635377ec7d41a27df31d80da2a1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -472,3 +521,4 @@ SceneRoots:
   - {fileID: 1429916324}
   - {fileID: 1342214425}
   - {fileID: 408268289}
+  - {fileID: 6910537}
