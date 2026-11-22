@@ -1,3 +1,6 @@
+using System;
+using System.Collections;
+using System.Diagnostics;
 using KSM._00.Scripts;
 using UnityEngine;
 public enum UnitType
@@ -19,6 +22,12 @@ public abstract class AbstractUnit : MonoBehaviour
     public float lastAttackTime;
     public StateMachine StateMachine { get; private set; }
     public Collider2D ColliderCompo { get; private set; }
+    
+    [Header("슬로우관련")]
+    
+    public float SpeedRate { get; private set; } = 1f;
+    private Coroutine _slowRoutine;
+    private AbstractUnit _note;
     
 
     protected virtual void Awake()
@@ -59,6 +68,33 @@ public abstract class AbstractUnit : MonoBehaviour
     {
         StateMachine.CurrentState.UpdateState();
     }
+    
+    public void ApplySlow(float rate, float time, AbstractUnit notePrefab)
+    {
+        if (_slowRoutine != null) StopCoroutine(_slowRoutine);  
+        _slowRoutine = StartCoroutine(SlowRoutine(rate, time, notePrefab));
+    }
+
+    private IEnumerator SlowRoutine(float rate, float time, AbstractUnit notePrefab)
+    {
+        SpeedRate = rate;
+        MoveCompo.SpeedMultiplier = rate;
+        AnimCompo.speed = rate;
+        if (_note == null && notePrefab != null)
+        {
+            _note = notePrefab;
+            _note.transform.position = transform.position;
+            _note.transform.localScale = new Vector2(notePrefab.transform.localScale.x/2, notePrefab.transform.localScale.y/2);
+        }
+            
+
+        yield return new WaitForSeconds(time);
+
+        SpeedRate = 1f;
+        MoveCompo.SpeedMultiplier = 1f;
+        AnimCompo.speed = 1f;
+        if (_note != null) Destroy(_note.gameObject);
+    }
 
     protected virtual void InitInfo()
     {
@@ -85,7 +121,6 @@ public abstract class AbstractUnit : MonoBehaviour
         float near = 500f;
         foreach (Collider2D c in targets)
         {
-            if (c.TryGetComponent(out HealthSystem hp) && hp.Dead) continue;
             float t = Mathf.Abs(c.transform.position.x - transform.position.x);
             if (t < near)
             {
@@ -103,11 +138,4 @@ public abstract class AbstractUnit : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, UnitSo.attackRange);
     }
-
-    public void DestroyObject()
-    {
-        Destroy(gameObject);
-    }
-
-   
 }

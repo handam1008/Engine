@@ -15,6 +15,8 @@ namespace KSM._00.Scripts
             base.Enter();
             currentTime = 0;
             _abstractUnit.ColliderCompo.enabled = false;
+            _abstractUnit.MoveCompo.RbCompo.constraints = RigidbodyConstraints2D.FreezePositionY;
+            
         }
 
         public override void Exit()

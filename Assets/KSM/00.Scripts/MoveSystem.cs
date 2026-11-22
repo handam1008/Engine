@@ -7,6 +7,7 @@ using UnityEngine;
         public float Dir { get; private set; }
         private float _speed;
         public Rigidbody2D RbCompo{get; private set;}
+        public float SpeedMultiplier = 1f;
 
         private void Awake()
         {
@@ -21,6 +22,6 @@ using UnityEngine;
 
         private void FixedUpdate()
         {
-            RbCompo.linearVelocityX = Dir * _speed;
+            RbCompo.linearVelocityX = Dir * _speed * SpeedMultiplier;
         }
     }
