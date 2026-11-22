@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace RYU.Script.PoolManager
+namespace RYU.Script.Pool
 {
     public class PoolableParticle : MonoBehaviour, IPoolable
     {

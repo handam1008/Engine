@@ -1,6 +1,3 @@
-using System;
-using DevLib.ServiceLocator;
-using RYU.Script.Serivce;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;

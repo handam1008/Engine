@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace RYU.Script.PoolManager
+namespace RYU.Script.Pool
 {
     public class Pool
     {

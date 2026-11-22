@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace RYU.Script.PoolManager
+namespace RYU.Script.Pool
 {
     public interface IPoolable
     {

@@ -1,6 +1,6 @@
-﻿    using UnityEngine;
+﻿ using UnityEngine;
 
-namespace RYU.Script.PoolManager
+namespace RYU.Script.Pool
 {
     [CreateAssetMenu(fileName = "PoolItemSO", menuName = "SO/RYU/PoolItemSO", order = 0)]
     public class PoolItemSO : ScriptableObject

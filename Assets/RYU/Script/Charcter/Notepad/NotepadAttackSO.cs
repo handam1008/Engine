@@ -2,8 +2,8 @@
 using Cysharp.Threading.Tasks;
 using DevLib.ServiceLocator;
 using DevLib.SoundSystem.Runtime;
-using RYU.Script.PoolManager;
 using UnityEngine;
+using RYU.Script.Pool;
 
 namespace RYU.Script.Charcter.Notepad
 {
@@ -28,7 +28,7 @@ namespace RYU.Script.Charcter.Notepad
 
         private void BulletSet(AbstractUnit unit, float height, float launchDelay)
         {
-            var poolable = PoolManager.PoolManager.Instance.Pop(bulletPrefab.name);
+            var poolable = PoolManager.Instance.Pop(bulletPrefab.name);
             var pp = poolable.GetGameObject().GetComponent<NotepadBullet>();
             pp.transform.position = unit.transform.position;
             pp.transform.localRotation = Quaternion.identity;
@@ -45,11 +45,11 @@ namespace RYU.Script.Charcter.Notepad
             await UniTask.Delay(TimeSpan.FromSeconds(time));
             if (unit == null || unit.target == null) return;
 
-           var ps = PoolManager.PoolManager.Instance.Pop(notepadEndParticles.name);
+           var ps = PoolManager.Instance.Pop(notepadEndParticles.name);
            ps.GetGameObject().transform.position = unit.transform.position;
            notepadEndParticles.Play();
            await UniTask.Delay(1000);
-           PoolManager.PoolManager.Instance.Push(ps);
+           PoolManager.Instance.Push(ps);
         }
     }
 }

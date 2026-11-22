@@ -1,9 +1,6 @@
-using System;
 using System.Linq;
 using RYU.Script.Charcter;
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace RYU.Script.UI
 {
@@ -22,7 +19,7 @@ namespace RYU.Script.UI
             foreach (var data in charcters.charcterDatas)
             {
                 GameObject slot = Instantiate(characterSlot, transform);
-                slot.GetComponent<CharacterSlot>().SetCharcterSlot(data);
+                slot.GetComponent<CharacterSlot>().SetCharcterSlot(data, canSpawn: false);
             }
         }
         
@@ -32,7 +29,7 @@ namespace RYU.Script.UI
             foreach (var data in charcters.currentCharacter)
             {
                 GameObject slot = Instantiate(characterSlot, transform);
-                slot.GetComponent<CharacterSlot>().SetCharcterSlot(data);
+                slot.GetComponent<CharacterSlot>().SetCharcterSlot(data, canSpawn: true);
             }
         }
 
