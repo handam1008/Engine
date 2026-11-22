@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using PrimeTween;
-using RYU.Script.PoolManager;
 using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
+using RYU.Script.Pool;
 
 namespace RYU.Script.Charcter.Notepad
 {
@@ -18,7 +17,9 @@ namespace RYU.Script.Charcter.Notepad
         [SerializeField] private float backDistance = 0.4f;
         [SerializeField] private float backDuration = 0.15f;
         [SerializeField] private ParticleSystem hitParticles;
+        [SerializeField] private float lifeTime = 5f;
         private Tween _backTween;
+        private float _life;
 
         private void Awake()
         {
@@ -31,16 +32,25 @@ namespace RYU.Script.Charcter.Notepad
             _attackDamage = damage;
         }
 
+        private void Update()
+        {
+            _life += Time.deltaTime;
+            if (_life >= lifeTime)
+                PoolManager.Instance.Push(this);
+        }
+
         private void OnTriggerEnter2D(Collider2D other)
         {
+            if (!gameObject.activeSelf) return;
             if (other.CompareTag("Character")) return;
-            if (other.TryGetComponent(out HealthSystem healthSystem))
+            if (other.TryGetComponent(out HealthSystem healthSystem) && !healthSystem.Dead)
             {
                 healthSystem.Damage(_attackDamage);
-                PoolManager.PoolManager.Instance.Push(this);
-                var ps = PoolManager.PoolManager.Instance.Pop(hitParticles.name);
+                PoolManager.Instance.Push(this);
+                var ps = PoolManager.Instance.Pop(hitParticles.name);
+                if (ps == null) return;
                 ps.GetGameObject().transform.position = other.transform.position;
-                hitParticles.Play();
+                ps.GetGameObject().GetComponent<ParticleSystem>().Play();
             }
         }
 
@@ -49,7 +59,7 @@ namespace RYU.Script.Charcter.Notepad
             
             if (target == null)
             {
-                Destroy(gameObject);
+                PoolManager.Instance.Push(this);
                 return;
             }
             
@@ -72,7 +82,7 @@ namespace RYU.Script.Charcter.Notepad
         {
             if (target == null)
             {
-                Destroy(gameObject);
+                PoolManager.Instance.Push(this);
                 return;
             }
             
@@ -98,6 +108,7 @@ namespace RYU.Script.Charcter.Notepad
         public void ResetItem()
         {
             _backTween.Stop();  
+            _life = 0;
             int random = Random.Range(0, texts.Count);
             _text.text = texts[random];
         }

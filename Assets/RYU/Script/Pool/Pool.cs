@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace RYU.Script.PoolManager
+namespace RYU.Script.Pool
 {
     public class Pool
     {
@@ -47,6 +47,7 @@ namespace RYU.Script.PoolManager
 
         public void Push(IPoolable item)
         {
+            if (!item.GetGameObject().activeSelf) return;
             item.GetGameObject().SetActive(false);
             _pool.Push(item);
         }

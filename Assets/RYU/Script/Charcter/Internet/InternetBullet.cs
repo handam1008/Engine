@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Threading;
 using Cysharp.Threading.Tasks;
 using PrimeTween;
-using RYU.Script.PoolManager;
 using UnityEngine;
+using RYU.Script.Pool;
 
 namespace RYU.Script.Charcter.Internet
 {
@@ -47,8 +47,7 @@ namespace RYU.Script.Charcter.Internet
             var cols = Physics2D.OverlapCircleAll(impactPosition, 0.3f, _targetMask);
             foreach (var col in cols)
             {
-                col.TryGetComponent(out HealthSystem health);
-                if (!health) return;
+                if (!col.TryGetComponent(out HealthSystem health)) continue;
                 health.Damage(_attackDamage);
             }
             
@@ -61,7 +60,7 @@ namespace RYU.Script.Charcter.Internet
             
             if (cancelled || token.IsCancellationRequested) return;
 
-            PoolManager.PoolManager.Instance.Push(this);
+            PoolManager.Instance.Push(this);
         }
 
         public GameObject GetGameObject() => gameObject;

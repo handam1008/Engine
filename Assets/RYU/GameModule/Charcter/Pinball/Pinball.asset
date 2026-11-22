@@ -32,4 +32,4 @@ MonoBehaviour:
   spawnStorage: 10
   attackStorage: 10
   <Weight>k__BackingField: 0
-  spawnCoolTime: 0
+  spawnCoolTime: 5

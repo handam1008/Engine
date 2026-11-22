@@ -10,7 +10,7 @@ public class PowerUpManger : MonoBehaviour
     public void LevelPowerUp()
     {
         CharacterDataSO charater = CharacterDataSoList.charcterDatas[CharacterNumber];
-        PowerUPCalc.PowerUp(ref charater.level,ref charater.maxHp,ref charater.attackDmg);
+        PowerUPCalc.PowerUp(ref charater.level,  ref charater.maxHp,ref charater.attackDmg);
     }
 
     public void ChageNumberCharacter(int number)

@@ -28,3 +28,5 @@ MonoBehaviour:
   level: 1
   spawnStorage: 0
   attackStorage: 0
+  <weight>k__BackingField: 0
+  supportEffect: {fileID: 11400000, guid: 3532f5df61fb69540a726f939e6aabaf, type: 2}

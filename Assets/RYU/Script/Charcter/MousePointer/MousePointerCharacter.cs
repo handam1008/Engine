@@ -26,7 +26,8 @@ namespace RYU.Script.Charcter.MousePointer
             foreach (var collider in Physics2D.OverlapBoxAll(bounds.center, bounds.size, 0f, UnitSo.whatIsDetect))
             {
                 var body = collider.attachedRigidbody;
-                if (body is null || !body.TryGetComponent(out AbstractUnit enemy) || enemy.UnitSo is not EnemySO)
+                if (body is null || !body.TryGetComponent(out AbstractUnit enemy) || enemy.UnitSo is not EnemySO
+                    || enemy is Tower.Tower)
                     continue;
 
                 _selected.Add((enemy, body, enemy.RenderCompo.sharedMaterial));
