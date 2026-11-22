@@ -22,46 +22,42 @@ AnimationClip:
     curve:
     - time: 0
       value: {fileID: 21300000, guid: f878fb5563e83fae5fa8d44b8617719c, type: 3}
-    - time: 0.06666667
+    - time: 0.03125
       value: {fileID: 21300000, guid: 3166495d2d09b064cf74dcbd7daf7722, type: 3}
-    - time: 0.13333334
+    - time: 0.078125
       value: {fileID: 21300000, guid: 1fe77445f69bebb1ab352dfddf80a6c0, type: 3}
-    - time: 0.2
+    - time: 0.125
       value: {fileID: 21300000, guid: 075b908926e9049a109d0847a3d34d91, type: 3}
-    - time: 0.26666668
+    - time: 0.1875
       value: {fileID: 21300000, guid: 2b5c94860f9c3aed5978fb944d7774ed, type: 3}
-    - time: 0.33333334
+    - time: 0.25
       value: {fileID: 21300000, guid: fe02459cb2504d487b9fcb70a3c247ff, type: 3}
-    - time: 0.4
-      value: {fileID: 21300000, guid: f878fb5563e83fae5fa8d44b8617719c, type: 3}
-    - time: 0.46666667
-      value: {fileID: 21300000, guid: 3166495d2d09b064cf74dcbd7daf7722, type: 3}
-    - time: 0.53333336
-      value: {fileID: 21300000, guid: 1fe77445f69bebb1ab352dfddf80a6c0, type: 3}
-    - time: 0.6
-      value: {fileID: 21300000, guid: 075b908926e9049a109d0847a3d34d91, type: 3}
-    - time: 0.6666667
-      value: {fileID: 21300000, guid: 2b5c94860f9c3aed5978fb944d7774ed, type: 3}
-    - time: 0.73333335
-      value: {fileID: 21300000, guid: fe02459cb2504d487b9fcb70a3c247ff, type: 3}
-    - time: 0.76666665
-      value: {fileID: 21300000, guid: f878fb5563e83fae5fa8d44b8617719c, type: 3}
-    - time: 0.8333333
-      value: {fileID: 21300000, guid: 3166495d2d09b064cf74dcbd7daf7722, type: 3}
-    - time: 0.9
-      value: {fileID: 21300000, guid: 1fe77445f69bebb1ab352dfddf80a6c0, type: 3}
-    - time: 0.96666664
-      value: {fileID: 21300000, guid: 075b908926e9049a109d0847a3d34d91, type: 3}
-    - time: 1.0333333
-      value: {fileID: 21300000, guid: 2b5c94860f9c3aed5978fb944d7774ed, type: 3}
-    - time: 1.1
-      value: {fileID: 21300000, guid: fe02459cb2504d487b9fcb70a3c247ff, type: 3}
+    - time: 0.3125
+      value: {fileID: 21300000, guid: 2dfa981144ad51e1ea7769062932ecdd, type: 3}
+    - time: 0.390625
+      value: {fileID: 21300000, guid: c94b1506bf28069adace326168add2a8, type: 3}
+    - time: 0.640625
+      value: {fileID: 21300000, guid: bc40ab031abc5b17896243933299dfab, type: 3}
+    - time: 0.703125
+      value: {fileID: 21300000, guid: 2dfa981144ad51e1ea7769062932ecdd, type: 3}
+    - time: 0.75
+      value: {fileID: 21300000, guid: f22b943c8edf84328500b0e950da34be, type: 3}
+    - time: 0.953125
+      value: {fileID: 21300000, guid: e8250997a8f1f6deac5d0cfafc269569, type: 3}
+    - time: 1.015625
+      value: {fileID: 21300000, guid: 5e00794374db55ab8b2e646fe36582bf, type: 3}
+    - time: 1.078125
+      value: {fileID: 21300000, guid: 5422c406335f5f734e26ab28019cde05, type: 3}
+    - time: 1.171875
+      value: {fileID: 21300000, guid: e0b5c607f7381f2aa1dac66bb6b095d9, type: 3}
+    - time: 1.28125
+      value: {fileID: 21300000, guid: 8e3ff48f369838ecfa07dedc7a123eca, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
     flags: 2
-  m_SampleRate: 120
+  m_SampleRate: 64
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -85,24 +81,22 @@ AnimationClip:
     - {fileID: 21300000, guid: 075b908926e9049a109d0847a3d34d91, type: 3}
     - {fileID: 21300000, guid: 2b5c94860f9c3aed5978fb944d7774ed, type: 3}
     - {fileID: 21300000, guid: fe02459cb2504d487b9fcb70a3c247ff, type: 3}
-    - {fileID: 21300000, guid: f878fb5563e83fae5fa8d44b8617719c, type: 3}
-    - {fileID: 21300000, guid: 3166495d2d09b064cf74dcbd7daf7722, type: 3}
-    - {fileID: 21300000, guid: 1fe77445f69bebb1ab352dfddf80a6c0, type: 3}
-    - {fileID: 21300000, guid: 075b908926e9049a109d0847a3d34d91, type: 3}
-    - {fileID: 21300000, guid: 2b5c94860f9c3aed5978fb944d7774ed, type: 3}
-    - {fileID: 21300000, guid: fe02459cb2504d487b9fcb70a3c247ff, type: 3}
-    - {fileID: 21300000, guid: f878fb5563e83fae5fa8d44b8617719c, type: 3}
-    - {fileID: 21300000, guid: 3166495d2d09b064cf74dcbd7daf7722, type: 3}
-    - {fileID: 21300000, guid: 1fe77445f69bebb1ab352dfddf80a6c0, type: 3}
-    - {fileID: 21300000, guid: 075b908926e9049a109d0847a3d34d91, type: 3}
-    - {fileID: 21300000, guid: 2b5c94860f9c3aed5978fb944d7774ed, type: 3}
-    - {fileID: 21300000, guid: fe02459cb2504d487b9fcb70a3c247ff, type: 3}
+    - {fileID: 21300000, guid: 2dfa981144ad51e1ea7769062932ecdd, type: 3}
+    - {fileID: 21300000, guid: c94b1506bf28069adace326168add2a8, type: 3}
+    - {fileID: 21300000, guid: bc40ab031abc5b17896243933299dfab, type: 3}
+    - {fileID: 21300000, guid: 2dfa981144ad51e1ea7769062932ecdd, type: 3}
+    - {fileID: 21300000, guid: f22b943c8edf84328500b0e950da34be, type: 3}
+    - {fileID: 21300000, guid: e8250997a8f1f6deac5d0cfafc269569, type: 3}
+    - {fileID: 21300000, guid: 5e00794374db55ab8b2e646fe36582bf, type: 3}
+    - {fileID: 21300000, guid: 5422c406335f5f734e26ab28019cde05, type: 3}
+    - {fileID: 21300000, guid: e0b5c607f7381f2aa1dac66bb6b095d9, type: 3}
+    - {fileID: 21300000, guid: 8e3ff48f369838ecfa07dedc7a123eca, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.1083333
+    m_StopTime: 1.296875
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -122,28 +116,28 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.25
+  - time: 0.234375
     functionName: Attack
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.60833335
+  - time: 0.703125
     functionName: Attack
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.96666664
+  - time: 1.0625
     functionName: Attack
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 1.1083333
+  - time: 1.28125
     functionName: AnimEnd
     data: 
     objectReferenceParameter: {fileID: 0}

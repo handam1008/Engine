@@ -27,7 +27,7 @@ public abstract class AbstractUnit : MonoBehaviour
     
     public float SpeedRate { get; private set; } = 1f;
     private Coroutine _slowRoutine;
-    private GameObject _note;
+    private AbstractUnit _note;
     
 
     protected virtual void Awake()
@@ -69,26 +69,31 @@ public abstract class AbstractUnit : MonoBehaviour
         StateMachine.CurrentState.UpdateState();
     }
     
-    public void ApplySlow(float rate, float time, GameObject notePrefab)
+    public void ApplySlow(float rate, float time, AbstractUnit notePrefab)
     {
         if (_slowRoutine != null) StopCoroutine(_slowRoutine);  
         _slowRoutine = StartCoroutine(SlowRoutine(rate, time, notePrefab));
     }
 
-    private IEnumerator SlowRoutine(float rate, float time, GameObject notePrefab)
+    private IEnumerator SlowRoutine(float rate, float time, AbstractUnit notePrefab)
     {
         SpeedRate = rate;
         MoveCompo.SpeedMultiplier = rate;
-        AnimCompo.speed = rate;      
+        AnimCompo.speed = rate;
         if (_note == null && notePrefab != null)
-            _note = Instantiate(notePrefab, transform.position + new Vector3(0,0.4f,0), Quaternion.identity, transform);
+        {
+            _note = notePrefab;
+            _note.transform.position = transform.position;
+            _note.transform.localScale = new Vector2(notePrefab.transform.localScale.x/2, notePrefab.transform.localScale.y/2);
+        }
+            
 
         yield return new WaitForSeconds(time);
 
         SpeedRate = 1f;
         MoveCompo.SpeedMultiplier = 1f;
         AnimCompo.speed = 1f;
-        if (_note != null) Destroy(_note);
+        if (_note != null) Destroy(_note.gameObject);
     }
 
     protected virtual void InitInfo()

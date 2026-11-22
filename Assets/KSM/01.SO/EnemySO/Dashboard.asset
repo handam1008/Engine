@@ -26,8 +26,8 @@ MonoBehaviour:
   - 0.8
   - 0.5
   - 0.2
-  attackRange: 2
-  attackCoolTime: 4
+  attackRange: 2.36
+  attackCoolTime: 1
   attackDmg: 8
   vaccinegauge: 60
   type: 0

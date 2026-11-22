@@ -30,4 +30,4 @@ MonoBehaviour:
   attackCoolTime: 4
   attackDmg: 8
   vaccinegauge: 60
-  type: 0
+  type: 4

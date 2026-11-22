@@ -16,7 +16,7 @@ namespace KSM._00.Scripts.EnemyAttackSO
             if (near == null) return;
 
             if (near.TryGetComponent(out HealthSystem hp)) hp.Damage(unit.UnitSo.attackDmg);
-            if (near.TryGetComponent(out AbstractUnit target)) target.ApplySlow(slowRate, slowTime, notePrefab);
+            if (near.TryGetComponent(out AbstractUnit target)) target.ApplySlow(slowRate, slowTime, unit);
         }
     }
 }

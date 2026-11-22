@@ -137,11 +137,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2914850742384502858}
-  - component: {fileID: 4433092802409864179}
   - component: {fileID: 4231029130915550071}
   - component: {fileID: 5695448373054272143}
   - component: {fileID: 2296123503213925902}
   - component: {fileID: 3785844500768781335}
+  - component: {fileID: 3456491319311252704}
   m_Layer: 7
   m_Name: FaceTime(NotStrongFirstAttack)
   m_TagString: Untagged
@@ -159,28 +159,12 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3751653245137766118}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4433092802409864179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6043266772044319355}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c80f2689d8ab4c3790005f84a1e6ea9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BugEnemy
-  <UnitSo>k__BackingField: {fileID: 11400000, guid: 3982a5317e2bcb641b8af443a22cc6a6, type: 2}
-  <Attack>k__BackingField: {fileID: 11400000, guid: d9116ad5ec8efcd45b1e87dc5a592437, type: 2}
-  target: {fileID: 0}
-  lastAttackTime: 0
 --- !u!114 &4231029130915550071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,3 +265,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HealthSystem
   <Health>k__BackingField: 0
   _maxHealth: 0
+--- !u!114 &3456491319311252704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6043266772044319355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf6e4bde6624471695850969d9507aac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KSM._00.Scripts.Enemy.FaceTimeEnemy
+  <UnitSo>k__BackingField: {fileID: 11400000, guid: 3982a5317e2bcb641b8af443a22cc6a6, type: 2}
+  <Attack>k__BackingField: {fileID: 11400000, guid: d32d655b00158aa46939b914ea5231e3, type: 2}
+  target: {fileID: 0}
+  lastAttackTime: 0
+  count: 0
+  photo: {fileID: 785919733826706339, guid: 2013274b0416bf848b04a46df56c09a0, type: 3}
