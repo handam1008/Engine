@@ -1,6 +1,6 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 
 [CreateAssetMenu(fileName = "Shouting", menuName = "SO/AttackShouting")]
 public class Shouting : AbstractAttackSO

@@ -85,6 +85,7 @@ public abstract class AbstractUnit : MonoBehaviour
         float near = 500f;
         foreach (Collider2D c in targets)
         {
+            if (c.TryGetComponent(out HealthSystem hp) && hp.Dead) continue;
             float t = Mathf.Abs(c.transform.position.x - transform.position.x);
             if (t < near)
             {

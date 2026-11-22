@@ -6,8 +6,10 @@ namespace RYU.Script.Service.StorageService
 {
     public class StorageService : MonoBehaviour, IStorageService
     {
+        [SerializeField] private int maxStorage = 1440;
+
         public int CurrentStorage { get; private set; }
-        public int MaxStorage { get; private set; }
+        public int MaxStorage => maxStorage;
         public event Action OnChanged;
 
         private void Awake()

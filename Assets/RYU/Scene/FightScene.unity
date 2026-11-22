@@ -226,37 +226,6 @@ Transform:
   - {fileID: 2062362154}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &637247848
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 637247849}
-  m_Layer: 6
-  m_Name: BrushTip
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &637247849
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 637247848}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.704, y: -0.692, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1164105105450310823}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1161765083 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5102896322977402350, guid: c0259b714b0526e4b87a4c38607ef0a4, type: 3}
@@ -1412,42 +1381,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 1648300274638821467, guid: bb55b842489f8504ab76f67952a1ea11, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 637247849}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 9087043564416806608, guid: bb55b842489f8504ab76f67952a1ea11, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1164105105450310825}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb55b842489f8504ab76f67952a1ea11, type: 3}
---- !u!4 &1164105105450310823 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1648300274638821467, guid: bb55b842489f8504ab76f67952a1ea11, type: 3}
-  m_PrefabInstance: {fileID: 1164105105450310822}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1164105105450310824 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9087043564416806608, guid: bb55b842489f8504ab76f67952a1ea11, type: 3}
-  m_PrefabInstance: {fileID: 1164105105450310822}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1164105105450310825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1164105105450310824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bf40e28869c4d169e00e1b320808f55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RYU.Script.Charcter.Paint.PaintAnimationEffect
-  brushTip: {fileID: 637247849}
-  dripPrefabs:
-  - {fileID: 8338983950624858193, guid: efdc198718f916b4a9b7f8c6c0fd8675, type: 3}
-  - {fileID: 4237663434473006700, guid: a60c553300a40ce4ea9c18a14829bdcd, type: 3}
-  - {fileID: 9075590378310429403, guid: b8e5ca5978bc57f469b03bb9d55ab6f3, type: 3}
 --- !u!1001 &3395084509013358147
 PrefabInstance:
   m_ObjectHideFlags: 0

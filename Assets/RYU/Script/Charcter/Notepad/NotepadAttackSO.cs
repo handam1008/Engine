@@ -16,7 +16,7 @@ namespace RYU.Script.Charcter.Notepad
         [SerializeField] private SoundClipSO soundClip;
         public override void Attacking(AbstractUnit unit)
         {
-            ServiceLocator.Get<IAudioService>().PlaySfx(soundClip);
+            if (soundClip != null) ServiceLocator.Get<IAudioService>().PlaySfx(soundClip);
             BulletSet(unit, 1, 0.5f);
             BulletSet(unit, 0.5f, 0.4f);
             BulletSet(unit, 0, 0.3f);
@@ -46,8 +46,9 @@ namespace RYU.Script.Charcter.Notepad
             if (unit == null || unit.target == null) return;
 
            var ps = PoolManager.Instance.Pop(notepadEndParticles.name);
+           if (ps == null) return;
            ps.GetGameObject().transform.position = unit.transform.position;
-           notepadEndParticles.Play();
+           ps.GetGameObject().GetComponent<ParticleSystem>().Play();
            await UniTask.Delay(1000);
            PoolManager.Instance.Push(ps);
         }
