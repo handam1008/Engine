@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace CHO.SO.AttackEnemySO.AttackSOScript
 {
-    public class ThrowBallAttackSO : AbstractAttackSO ,IPoolable
+    public class ThrowBallAttackSO : AbstractAttackSO 
     {
         [SerializeField] private GameObject bigBall;
         public override void Attacking(AbstractUnit unit)
@@ -15,18 +15,6 @@ namespace CHO.SO.AttackEnemySO.AttackSOScript
             
         }
 
-        [field: SerializeField] public string ItemName { get; private set; } = "BigBall";
-
     
-
-        public void New()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void Free()
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }
