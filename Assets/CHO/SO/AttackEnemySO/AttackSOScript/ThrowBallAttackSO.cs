@@ -1,28 +1,32 @@
 using UnityEngine;
-using IPoolable = RYU.Script.PoolManager.IPoolable;
 
-public class ThrowBallAttackSO : AbstractAttackSO ,IPoolable
+namespace CHO.SO.AttackEnemySO.AttackSOScript
 {
-    [SerializeField] private GameObject bigBall;
-    public override void Attacking(AbstractUnit unit)
+    public class ThrowBallAttackSO : AbstractAttackSO ,IPoolable
     {
-        CreateThrowBall();
-    }
+        [SerializeField] private GameObject bigBall;
+        public override void Attacking(AbstractUnit unit)
+        {
+            CreateThrowBall();
+        }
 
-    private void CreateThrowBall()
-    {
-        
-    }
+        private void CreateThrowBall()
+        {
+            
+        }
 
-    [field: SerializeField] public string ItemName { get; private set; } = "BigBall";
+        [field: SerializeField] public string ItemName { get; private set; } = "BigBall";
 
-    public GameObject GetGameObject()
-    {
-        return null;
-    }
+    
 
-    public void ResetItem()
-    {
-        
+        public void New()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Free()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
