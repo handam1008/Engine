@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using PrimeTween;
 using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
+using RYU.Script.Pool;
 
 namespace RYU.Script.Charcter.Notepad
 {
-    public class NotepadBullet : MonoBehaviour
+    public class NotepadBullet : MonoBehaviour, IPoolable
     {
         private Rigidbody2D _rigidbody2D;
         private int _attackDamage;
@@ -17,7 +17,9 @@ namespace RYU.Script.Charcter.Notepad
         [SerializeField] private float backDistance = 0.4f;
         [SerializeField] private float backDuration = 0.15f;
         [SerializeField] private ParticleSystem hitParticles;
+        [SerializeField] private float lifeTime = 5f;
         private Tween _backTween;
+        private float _life;
 
         private void Awake()
         {
@@ -30,20 +32,25 @@ namespace RYU.Script.Charcter.Notepad
             _attackDamage = damage;
         }
 
-        private void Start()
+        private void Update()
         {
-            int random = Random.Range(0, texts.Count);
-            _text.text = texts[random];
+            _life += Time.deltaTime;
+            if (_life >= lifeTime)
+                PoolManager.Instance.Push(this);
         }
 
         private void OnTriggerEnter2D(Collider2D other)
         {
+            if (!gameObject.activeSelf) return;
             if (other.CompareTag("Character")) return;
-            if (other.TryGetComponent(out HealthSystem healthSystem))
+            if (other.TryGetComponent(out HealthSystem healthSystem) && !healthSystem.Dead)
             {
                 healthSystem.Damage(_attackDamage);
-                Destroy(gameObject);
-                Instantiate(hitParticles, other.transform.position, transform.rotation);
+                PoolManager.Instance.Push(this);
+                var ps = PoolManager.Instance.Pop(hitParticles.name);
+                if (ps == null) return;
+                ps.GetGameObject().transform.position = other.transform.position;
+                ps.GetGameObject().GetComponent<ParticleSystem>().Play();
             }
         }
 
@@ -52,14 +59,14 @@ namespace RYU.Script.Charcter.Notepad
             
             if (target == null)
             {
-                Destroy(gameObject);
+                PoolManager.Instance.Push(this);
                 return;
             }
             
            _rigidbody2D.linearVelocity = Vector2.zero;
            
-           Vector3 dir = (target.position - transform.position).normalized;
-           Vector3 backPosition = transform.position - dir * backDistance + Vector3.up * height;
+           float dirX = Mathf.Sign(target.position.x - transform.position.x);
+           Vector3 backPosition = transform.position + Vector3.left * (dirX * backDistance) + Vector3.up * height;
 
            _backTween = Tween.Position(
                transform,
@@ -75,7 +82,7 @@ namespace RYU.Script.Charcter.Notepad
         {
             if (target == null)
             {
-                Destroy(gameObject);
+                PoolManager.Instance.Push(this);
                 return;
             }
             
@@ -92,5 +99,18 @@ namespace RYU.Script.Charcter.Notepad
             _backTween.Stop();
         }
 
+        public string ItemName => "NotepadBullet";
+        public GameObject GetGameObject()
+        {
+            return gameObject;
+        }
+
+        public void ResetItem()
+        {
+            _backTween.Stop();  
+            _life = 0;
+            int random = Random.Range(0, texts.Count);
+            _text.text = texts[random];
+        }
     }
 }

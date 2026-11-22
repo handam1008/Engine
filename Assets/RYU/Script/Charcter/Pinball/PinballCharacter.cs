@@ -5,9 +5,14 @@ namespace RYU.Script.Charcter.Pinball
 {
     public class PinballCharacter : AbstractUnit
     {
-        private void OnCollisionEnter2D(Collision2D other)
+        protected override void Awake()
         {
-            
+            base.Awake();
+        }
+
+        protected override void Update()
+        {
+            base.Update();
         }
     }
 }

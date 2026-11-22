@@ -31,6 +31,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 153936135788452398}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6636005743182979954
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8723725635653425654}
+  m_Layer: 6
+  m_Name: BrushTip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8723725635653425654
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6636005743182979954}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.704, y: -0.692, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1648300274638821467}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7303598423847346031
 GameObject:
   m_ObjectHideFlags: 0
@@ -60,7 +91,8 @@ Transform:
   m_LocalPosition: {x: 0.746, y: 0.19, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 8723725635653425654}
   m_Father: {fileID: 153936135788452398}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 19.629}
 --- !u!212 &6387255880855459453
@@ -219,7 +251,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 801efa538d604a68aeaf61a687f16526, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthSystem
-  _health: 0
+  <Health>k__BackingField: 0
+  _maxHealth: 0
 --- !u!61 &8632572423688345095
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -290,6 +323,7 @@ GameObject:
   - component: {fileID: 3509260501007154109}
   - component: {fileID: 2828282359036786750}
   - component: {fileID: 4418711809445573694}
+  - component: {fileID: 2658414000747465083}
   m_Layer: 6
   m_Name: Visual
   m_TagString: Untagged
@@ -408,3 +442,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2658414000747465083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9087043564416806608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bf40e28869c4d169e00e1b320808f55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RYU.Script.Charcter.Paint.PaintAnimationEffect
+  brushTip: {fileID: 8723725635653425654}
+  dripPrefabs:
+  - {fileID: 8338983950624858193, guid: efdc198718f916b4a9b7f8c6c0fd8675, type: 3}
+  - {fileID: 4237663434473006700, guid: a60c553300a40ce4ea9c18a14829bdcd, type: 3}
+  - {fileID: 9075590378310429403, guid: b8e5ca5978bc57f469b03bb9d55ab6f3, type: 3}
