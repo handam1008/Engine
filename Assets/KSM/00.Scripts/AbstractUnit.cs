@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using System.Diagnostics;
 using KSM._00.Scripts;
 using UnityEngine;
 public enum UnitType
