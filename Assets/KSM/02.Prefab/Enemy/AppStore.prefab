@@ -177,8 +177,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c80f2689d8ab4c3790005f84a1e6ea9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BugEnemy
-  <UnitSo>k__BackingField: {fileID: 11400000, guid: 0f5411dfd3919f548b460307c7758692, type: 2}
-  <Attack>k__BackingField: {fileID: 11400000, guid: d9116ad5ec8efcd45b1e87dc5a592437, type: 2}
+  <UnitSo>k__BackingField: {fileID: 11400000, guid: 35de008e49c686e4eb8db2fdbba0c473, type: 2}
+  <Attack>k__BackingField: {fileID: 11400000, guid: bb189b0c65913864f864683e87c9267f, type: 2}
   target: {fileID: 0}
   lastAttackTime: 0
 --- !u!114 &4231029130915550071

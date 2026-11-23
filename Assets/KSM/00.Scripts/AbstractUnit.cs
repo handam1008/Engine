@@ -129,6 +129,23 @@ public abstract class AbstractUnit : MonoBehaviour
         }
         return nearTarget;
     }
+    public Collider2D FarTarget()
+    {
+        Collider2D[] targets = DetecPlayer();
+        Collider2D farTarget = null;
+        float far = 0f;
+        foreach (Collider2D c in targets)
+        {
+            float t = Mathf.Abs(c.transform.position.x - transform.position.x);
+            if (t > far)
+            {
+                far = t;    
+                farTarget = c;
+            }
+            
+        }
+        return farTarget;
+    }
 
     private void OnDrawGizmosSelected()
     {
