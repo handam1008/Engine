@@ -4,19 +4,26 @@ using UnityEngine;
 public class BudyBudyAttackSO : AbstractAttackSO
 {
     [SerializeField] private BudyBullet Letter;
-    [SerializeField] private BudybudyCharacter _bChar;
+
 
     public override void Attacking(AbstractUnit unit)
     {
-        //_bChar._supportUnit.TryGetComponent<AbstractUnit>(out AbstractUnit support);
+        BudybudyCharacter budy = unit as BudybudyCharacter;
+
+        if (budy._supportUnit == null) return;
+        AbstractUnit supportUnit = budy._supportUnit.GetComponentInParent<AbstractUnit>();
+
+        budy.UnitSo.attackCoolTime = supportUnit.UnitSo.attackCoolTime;
 
         // 유닛의 타겟을 나의 타겟으로 삼아서 공격 ㄱㄱ
-        BudyBullet bule = Instantiate(Letter, unit.transform.position, Quaternion.identity);
-        bule.transform.position = new Vector3(unit.transform.position.x + 0.8f, unit.transform.position.y, unit.transform.position.z);
-        bule.Init(unit.UnitSo.attackDmg);
-        bule.GetReadyToFire += _ => bule.Shoot(unit.target.transform);
+        if(supportUnit.target != null)
+        {
+            BudyBullet bule = Instantiate(Letter, unit.transform.position, Quaternion.identity);
+            bule.transform.position = new Vector3(unit.transform.position.x + 0.8f, unit.transform.position.y, unit.transform.position.z);
+            bule.Init(unit.UnitSo.attackDmg);
+            bule.GetReadyToFire += _ => bule.Shoot(supportUnit.target.transform);
+        }
 
-        Debug.Log("아롤라까딸롤라 우라ㅏㅏㅏㅏㅏㅏ어택");
 
     }
 }

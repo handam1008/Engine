@@ -3,10 +3,17 @@ using UnityEngine;
 public class BudybudyCharacter : AbstractUnit
 {
     public Transform _supportUnit;
+    private LineRenderer _lr;
     [SerializeField] private LayerMask _whatIsUnit;
 
-    private void OnEnable()
+    
+    private void Start()
     {
+        UnitSo.attackCoolTime = 0.5f;
+
+        _lr = GetComponent<LineRenderer>();
+        _lr.useWorldSpace = true;
+
         if (FindNearTarget() == null) return;
 
         if (_supportUnit == null)
@@ -19,13 +26,23 @@ public class BudybudyCharacter : AbstractUnit
 
     private void FixedUpdate()
     {
-        if (FindNearTarget() == null) return;
+        if (FindNearTarget() == null)
+        {
+            _lr.positionCount = 0;
+            return;
+        }
 
         if (_supportUnit == null)
         {
             _supportUnit = FindNearTarget().transform;
+  
             Debug.Log($"{_supportUnit.name}ÀÌ(°¡) Áö¿øµÊ");
+
         }
+            _lr.positionCount = 2;
+            _lr.SetPosition(0, transform.position);
+            _lr.SetPosition(1, _supportUnit.transform.position);
+
 
     }
 

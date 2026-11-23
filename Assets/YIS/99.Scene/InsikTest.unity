@@ -1728,6 +1728,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2860065741448790139, guid: 2a1796dbe06a51744853d62bb6ca7b7a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cee69e7188134530bd41e0f8e0996b96, type: 3}
     - target: {fileID: 3672153941080809494, guid: 2a1796dbe06a51744853d62bb6ca7b7a, type: 3}
       propertyPath: m_Name
       value: BudyBudy
@@ -1772,6 +1776,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7961276513780123319, guid: 2a1796dbe06a51744853d62bb6ca7b7a, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b5c71bcd36cf17f4da7c1a2568e16b13, type: 2}
     - target: {fileID: 8165963173346076637, guid: 2a1796dbe06a51744853d62bb6ca7b7a, type: 3}
       propertyPath: m_Enabled
       value: 1
