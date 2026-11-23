@@ -10,7 +10,7 @@ public class EnemyBeam : AbstractAttackSO
     public override void Attacking(AbstractUnit unit)
     {
         BeamEnemy skill = Instantiate(skillPrefab,
-            new Vector3(unit.transform.position.x, unit.transform.position.y + 2f, unit.transform.position.z),
+            new Vector3(unit.transform.position.x, unit.transform.position.y, unit.transform.position.z),
             Quaternion.identity);
         skill.StartCoroutine(skill.Beam(unit));
     }

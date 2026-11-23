@@ -1,29 +1,31 @@
+using DevLib.ServiceLocator;
+using RYU.Script.Service.GoldService;
 using TMPro;
 using UnityEngine;
 
 public class MoneyManager : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI _moenyText;
-    [field:SerializeField] public float Money { get; private set;}
+    private IGoldService _gold;
 
-    private void Update()
+    private void Start()
+    {
+        _gold = ServiceLocator.Get<IGoldService>();
+        if (_gold == null) return;
+
+        _gold.OnChanged += Refresh;
+        Refresh();
+    }
+
+    private void OnDestroy()
+    {
+        if (_gold != null) _gold.OnChanged -= Refresh;
+    }
+
+    private void Refresh()
     {
         if (_moenyText == null) return;
 
-        _moenyText.SetText($"Money: {(int)Money}");
-    }
-
-    public void PlusMoney(float amount)
-    {
-        Money += amount;
-        Debug.Log($"{amount}°ñµå È¹µæ!!!");
-    }
-
-    public void MinusMoney(float amount)
-    {
-        Money -= amount;
-
-        if (amount > Money) Money = 0;
-
+        _moenyText.SetText($"Money: {_gold.Gold}");
     }
 }

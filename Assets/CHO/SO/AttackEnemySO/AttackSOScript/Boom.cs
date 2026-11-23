@@ -14,7 +14,7 @@ public class Boom : AbstractAttackSO
         {
             if (c.TryGetComponent(out AbstractUnit targetUnit))
             {
-                targetUnit.HpCompo.Damage(unit.UnitSo.attackDmg);   
+                targetUnit.HpCompo.Damage(unit.UnitSo.attackDmg);
             }
         }
         

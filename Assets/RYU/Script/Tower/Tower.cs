@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections;
-using Cysharp.Threading.Tasks;
-using RYU.Script.Stage;
-using Unity.VisualScripting;
+﻿using RYU.Script.Stage;
 using UnityEngine;
+using System.Collections;
 
 namespace RYU.Script.Tower
 {
@@ -23,7 +20,7 @@ namespace RYU.Script.Tower
 
         private void TowerDead()
         {
-            trigger.End();
+            trigger.End(stage.getGold);
         }
 
         public void Start()
@@ -33,7 +30,7 @@ namespace RYU.Script.Tower
             {
                 data.isSpawn = false;
             }
-            HpCompo.OnKnockbacked += HandleDamage;
+            HpCompo.OnDamaged += HandleDamage;
         }
 
         private void HandleDamage()

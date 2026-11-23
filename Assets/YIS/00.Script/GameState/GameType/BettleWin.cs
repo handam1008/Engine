@@ -3,8 +3,6 @@ using UnityEngine;
 
 public class BettleWin : GameState
 {
-    MoneyManager moneyManager;
-
     public BettleWin(GameStateMachine machine, GameLoop loop) : base(machine, loop)
     {
     }
@@ -20,7 +18,7 @@ public class BettleWin : GameState
         base.StateUpdate();
         // 전투 승리 해쓸때 넣어줘야 할것 ex: 돈
 
-        moneyManager.PlusMoney(1000); // <= 이건 언제든지 변동 ㄱㄴ
+        // 보상 지급은 TestGameEndTrigger.End(int gold)에서 처리
 
         _machine.ChangeState(CurrentGameType.Prepare);
     }

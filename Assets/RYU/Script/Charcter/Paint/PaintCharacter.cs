@@ -1,21 +1,22 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace RYU.Script.Charcter.Paint
 {
     public class PaintCharacter : AbstractUnit
     {
-        private PaintAttackSO _paintAttack;
         [SerializeField] private AnimatorOverrideController[] attackControllers;
-      
+
+        public int AttackCount { get; private set; }
+
+        public void NextCombo() => AttackCount = (AttackCount + 1) % 3;
+
         private void OnDrawGizmos()
         {
-            _paintAttack = Attack as PaintAttackSO;
             Vector3 center = transform.position + new Vector3(1, 0, 0);
 
-            if (_paintAttack != null)
+            if (Attack is PaintAttackSO paintAttack)
             {
-                Vector3 boxsize = new Vector3(_paintAttack.boxSize.x, _paintAttack.boxSize.y, 0);
+                Vector3 boxsize = new Vector3(paintAttack.boxSize.x, paintAttack.boxSize.y, 0);
             
                 Gizmos.color = Color.red;
                 Gizmos.DrawWireCube(center, boxsize);
@@ -25,7 +26,7 @@ namespace RYU.Script.Charcter.Paint
         public override void PrepareAttack()
         {
             AnimCompo.runtimeAnimatorController =
-                attackControllers[_paintAttack.AttackCount];
+                attackControllers[AttackCount];
         }
       
 

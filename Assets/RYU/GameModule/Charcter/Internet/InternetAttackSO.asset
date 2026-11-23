@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8505c05fb4ea46049b0b4b7d9c5e0ba9, type: 3}
   m_Name: InternetAttackSO
   m_EditorClassIdentifier: Assembly-CSharp::RYU.Script.Charcter.Internet.InternetAttackSO
+  bullet: {fileID: -7313845504211398755, guid: 7d1d797eeaff09f45b7068a4f7f8150b, type: 3}

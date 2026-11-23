@@ -24,8 +24,12 @@ MonoBehaviour:
   unitType: 0
   knockbackList:
   - 0.8
-  attackRange: 0.5
+<<<<<<< Updated upstream
+  attackRange: 13.45
+=======
+  attackRange: 3.41
+>>>>>>> Stashed changes
   attackCoolTime: 1
-  attackDmg: 0
+  attackDmg: 1000000
   vaccinegauge: 20
   type: 0

@@ -11,6 +11,7 @@ namespace RYU.Script.Charcter.Calculate
         [SerializeField] private int count = 4;
         [SerializeField] private float scaleUpTimer = 1.5f;
         [SerializeField] private float speed = 20;
+        [SerializeField] private float lifeTime = 5f;
         public event Action<CalculateBullet> onReadyEnd;
         
         
@@ -24,6 +25,8 @@ namespace RYU.Script.Charcter.Calculate
         
         private float _timer;
         private int _count;
+        private bool _shot;
+        private bool _hit;
 
         private void Awake()
         {
@@ -41,6 +44,7 @@ namespace RYU.Script.Charcter.Calculate
 
         private void Update()
         {
+            if (_shot) return;
             _timer += Time.deltaTime;
                 
             if (_timer > scaleUpTimer)
@@ -50,25 +54,33 @@ namespace RYU.Script.Charcter.Calculate
                 _timer = 0;
             }
             
-            if(_count >= count)
+            if (_count >= count)
+            {
+                _shot = true;
                 onReadyEnd?.Invoke(this);
+            }
         }
 
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.CompareTag("Character")) return;
-            if (other.TryGetComponent(out HealthSystem healthSystem))
+            if (_hit) return;
+            if (other.TryGetComponent(out HealthSystem healthSystem) && !healthSystem.Dead)
             {
+                _hit = true;
                 healthSystem.Damage(_random);
                 Destroy(gameObject);
             }
         }
 
-        public void Shoot(Transform target)
+        public void Shoot(Transform target, float fallbackDir)
         {
-            Vector2 launchDir = (target.position - transform.position).normalized;
-            
+            Vector2 launchDir = target != null
+                ? ((Vector2)(target.position - transform.position)).normalized
+                : Vector2.right * fallbackDir;
+
             _rigidbody2D.linearVelocity = launchDir * speed;
+            Destroy(gameObject, lifeTime);
         }
         
         

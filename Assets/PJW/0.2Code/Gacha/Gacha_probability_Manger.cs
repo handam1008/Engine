@@ -12,35 +12,23 @@ using UnityEngine.UI;
 
 public class Gacha_probability_Manger : MonoBehaviour
 {
-    [field:SerializeField]public CharacterDataSoList CharacterData {  get;private set; }
-
-    [SerializeField] private TextMeshProUGUI rankText;
-
-    public ParticleSystem showCH;
-
-    public Image showCharcter;
+    [SerializeField] private CharacterDataSoList CharacterData;
 
     private Dictionary<int, float> weighsDic = new();
 
     private float sumWeigh;
-
-    private Sequence showCharaterAnim;
+    
+    public static Gacha_probability_Manger instance;
 
     private void Awake()
     {
-        showCharaterAnim = DOTween.Sequence();
-    }
-
-    private void Start()
-    {
-        Init();
+        instance = this;
     }
 
     public void Init()
     {
         weighsDic.Clear();
         sumWeigh = 0;
-        showCharcter.transform.DOScale(0f, 0f);
 
         for (int i = 0; i < CharacterData.charcterDatas.Length;i++)
         {
@@ -51,13 +39,11 @@ public class Gacha_probability_Manger : MonoBehaviour
         {
             weighsDic.Add(i,CharacterData.charcterDatas[i].Weight);
         }
-
-        rankText.DOFade(0, 1);
     }
 
-    public void SelectCharacter()
+    public CharacterDataSO SelectCharacter()
     {
-        if (sumWeigh <= 0) return;
+        if (sumWeigh <= 0) return null;
 
         float n = Random.Range(0, sumWeigh);
 
@@ -65,28 +51,11 @@ public class Gacha_probability_Manger : MonoBehaviour
         {
             if(n<pair.Value)
             {
-                StartCoroutine(StartParticle());
-                StartCoroutine(ShowCharacter(pair.Key));
-                return;
+                return CharacterData.charcterDatas[pair.Key];   
             }
             n -= pair.Value;
         }
-    }
 
-
-    IEnumerator StartParticle()
-    {
-        showCH.Play();
-        yield return new WaitForSeconds(0.49f);
-        showCH.Pause();
-    }
-
-    IEnumerator ShowCharacter(int value)
-    {
-        yield return new WaitForSeconds(0.5f);
-        showCharcter.sprite = CharacterData.charcterDatas[value].sprite;
-        showCharcter.transform.DOScale(1f, 0f);
-        rankText.DOFade(1, 1);
-        rankText.text = $"{CharacterData.charcterDatas[value].charcterRank}";
+        return null;
     }
 }
