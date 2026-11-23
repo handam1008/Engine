@@ -31,6 +31,8 @@ public class GachaOwner : MonoBehaviour
 
     private bool isLastClick = false;
 
+    private int clickcount = 0;
+
     private void Awake()
     {
         Init();
@@ -147,7 +149,7 @@ public class GachaOwner : MonoBehaviour
         //압축파일 연출 완료후
 
         //파일 압축해제 진행
-        await Task.Delay(10000);
+        await Task.Delay(1500);
 
         //압축파일 연출 종료
         //현제 모듈을 변경
@@ -191,7 +193,14 @@ public class GachaOwner : MonoBehaviour
     public void OnLastClickAsync()
     {
         if (isLastClick) return;
-        lastClickSource?.SetResult(true);
-        isLastClick = true;
+        clickcount++;
+        Debug.Log(clickcount);
+        if(clickcount == 3)
+        {
+            clickcount = 0;
+            lastClickSource?.SetResult(true);
+            isLastClick = true;
+        }
+
     }
 }

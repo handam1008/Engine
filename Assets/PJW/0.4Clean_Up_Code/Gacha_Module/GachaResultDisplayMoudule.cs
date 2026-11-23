@@ -10,13 +10,14 @@ public class GachaResultDisplayMoudule : MonoBehaviour, IGachaEnterModule, IGach
     
     public void Init()
     {
-        vfx0030.Initialization();
+        vfx0030?.Initialization();
     }
 
     public void Enter()
     {
+        if(this == null || vfx0030 == null) return;
         fileui.SetActive(true);
-        vfx0030.PlayFeedbacks();
+        vfx0030?.PlayFeedbacks();
     }
 
     public void Exit()
