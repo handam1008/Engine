@@ -29,7 +29,7 @@ namespace KSM._00.Scripts.EnemyAttack
                     yield break;
                 }
 
-                Collider2D near = unit.NearTarget();
+                Collider2D near = unit.FarTarget();
                 if (near == null)
                 {
                     DieObject(unit);
