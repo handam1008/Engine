@@ -46,11 +46,6 @@ public class GachaOwner : MonoBehaviour
         Init();
     }
 
-    private void Start()
-    {
-        ShowGachaAsync();
-    }
-
     private void Init()
     {
         _moduleDict = GetComponentsInChildren<IGachaModule>().ToDictionary(igachamodule_value=>igachamodule_value.GetType(), igachamodule_value=> igachamodule_value);
@@ -179,7 +174,7 @@ public class GachaOwner : MonoBehaviour
         MarkModule<GachaResultDisplayMoudule>();
     }
 
-    async void ShowGachaAsync()
+    public async void ShowGachaAsync()
     {
         await ShowArchiveAsync();
         await ShowFielAsync();

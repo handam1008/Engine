@@ -31,7 +31,7 @@ public class GachaFileSelectionMoudule : MonoBehaviour, IGachaEnterModule, IGach
 
     public async void Enter()
     {
-        await Task.Delay(1500);
+        await Task.Delay(500);
         _vfx0010.PlayFeedbacks();
         _vfx0020.PlayFeedbacks();
     }

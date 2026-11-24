@@ -133,7 +133,7 @@ public class GachaArchiveRevealModule : MonoBehaviour, IGachaEnterModule, IGacha
                 .DOLocalMoveX(-600,0.5f))
                 .Play();
         }
-        await Task.Delay(900);
+        await Task.Delay(500);
     }
 
     public void Point_Enter(CanvasGroup canvasGroup)
