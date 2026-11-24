@@ -20,6 +20,8 @@ public class Gacha_probability_Manger : MonoBehaviour
     
     public static Gacha_probability_Manger instance;
 
+    public CharacterDataSO CharacterDataSO { get; private set; }
+
     private void Awake()
     {
         instance = this;
@@ -51,7 +53,8 @@ public class Gacha_probability_Manger : MonoBehaviour
         {
             if(n<pair.Value)
             {
-                return CharacterData.charcterDatas[pair.Key];   
+                CharacterDataSO = CharacterData.charcterDatas[pair.Key];
+                return CharacterData.charcterDatas[pair.Key];
             }
             n -= pair.Value;
         }
