@@ -1,41 +1,36 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class HealthSystem : MonoBehaviour ,IDamageAble
 {
     [field:SerializeField] public int Health { get; private set; }
     [SerializeField] private int _maxHealth;
     public event Action OnKnockbacked;
+    public event Action OnDamaged;
     public event Action OnDeath;
     public bool Dead => Health <= 0;
-    private UnitSO _unitSo;
+    private readonly List<float> _knockbacks = new();
     private int _count;
-    private int _percent;
     public event Action OnReceive;
-    
+
 
     public void Init(int health,UnitSO unit)
     {
         _maxHealth = health;
         Health = _maxHealth;
-        _unitSo = unit;
-        unit.knockbackList.Sort();
-        unit.knockbackList.Reverse();
-    }
-
-
-    private void Update()
-    {
-        if(Keyboard.current.eKey.wasPressedThisFrame)
-            GetPercentage();
+        _count = 0;
+        _knockbacks.Clear();
+        _knockbacks.AddRange(unit.knockbackList);
+        _knockbacks.Sort();
+        _knockbacks.Reverse();
     }
 
     public void Receive()
     {
         Health = _maxHealth / 2;
         OnReceive?.Invoke();
-        while (_unitSo.knockbackList.Count > _count && Health <= _maxHealth * _unitSo.knockbackList[_count])
+        while (_knockbacks.Count > _count && Health <= _maxHealth * _knockbacks[_count])
             _count++;
     }
 
@@ -43,29 +38,29 @@ public class HealthSystem : MonoBehaviour ,IDamageAble
     public void Damage(int dmg)
     {
         if (Dead) return;
-        
+
         Health -= dmg;
-       
+
         if (Dead)
         {
             Debug.Log(gameObject.name +" 사망");
             OnDeath?.Invoke();
             return;
         }
+        OnDamaged?.Invoke();
         bool canHit = false;
-        while (_unitSo.knockbackList.Count >_count&& Health <= _maxHealth * _unitSo.knockbackList[_count])
+        while (_knockbacks.Count >_count&& Health <= _maxHealth * _knockbacks[_count])
         {
-            _count++; 
+            _count++;
             canHit = true;
         }
         if (canHit) OnKnockbacked?.Invoke();
-           
-        
+
+
     }
-    
+
     public float GetPercentage()
     {
-        _percent = (Health / _maxHealth)*100;
-        return _percent;
+        return (float)Health / _maxHealth * 100f;
     }
 }

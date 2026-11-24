@@ -23,3 +23,4 @@ MonoBehaviour:
     count: 1
     percent: 80
     isSpawn: 0
+  getGold: 1972

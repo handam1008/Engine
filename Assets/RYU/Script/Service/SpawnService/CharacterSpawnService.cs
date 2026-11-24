@@ -23,6 +23,7 @@ namespace RYU.Script.Service.SpawnService
 
             IStorageService storage = ServiceLocator.Get<IStorageService>();    
             GameObject character = Instantiate(data.prefab, baseSpawnPoint.position, Quaternion.identity);
+            storage.AddStorage(data.spawnStorage);
             character.GetComponent<HealthSystem>().OnDeath += () => storage.MinusStorage(data.spawnStorage);
             _nextSpawnTime[data] = Time.time + data.spawnCoolTime;
             return true;

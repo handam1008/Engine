@@ -47,6 +47,7 @@ namespace RYU.Script.Pool
 
         public void Push(IPoolable item)
         {
+            if (!item.GetGameObject().activeSelf) return;
             item.GetGameObject().SetActive(false);
             _pool.Push(item);
         }

@@ -1,6 +1,4 @@
-using System;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
@@ -18,7 +16,7 @@ namespace RYU.Script.Charcter.MediaPlayer
             base.Update();
         }
 
-        public async Task SelectEnemyAsync()
+        public async UniTaskVoid SelectEnemyAsync()
         {
             foreach (var collider in Physics2D.OverlapBoxAll(transform.position, new UnityEngine.Vector2(100, 100), 0f, UnitSo.whatIsDetect))
             {
@@ -31,8 +29,9 @@ namespace RYU.Script.Charcter.MediaPlayer
                     
                 }
             }
-                pauseImage.gameObject.SetActive(true);
-        
+                if (pauseImage != null)
+                    pauseImage.gameObject.SetActive(true);
+
                 await UniTask.Delay(3000);
                 AgainMove();
            
@@ -43,20 +42,13 @@ namespace RYU.Script.Charcter.MediaPlayer
         {
             foreach (var enemy in _selected)
             {
-                try
-                {
-                    enemy.MoveCompo.enabled = true;
-                    enemy.AnimCompo.speed = 1;
-                }
-                catch(NullReferenceException e)
-                {
-                    Debug.Log("적 죽어서 넘어감");
-                    Debug.Log(e.Message);
-                }
-                
-                }
+                if (enemy == null) continue;
+                enemy.MoveCompo.enabled = true;
+                enemy.AnimCompo.speed = 1;
+            }
             _selected.Clear();
-            pauseImage.gameObject.SetActive(false);
+            if (pauseImage != null)
+                pauseImage.gameObject.SetActive(false);
         }
 
     }

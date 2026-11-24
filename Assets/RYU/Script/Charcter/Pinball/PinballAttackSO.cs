@@ -16,7 +16,8 @@ namespace RYU.Script.Charcter.PinBoll
         {
             unit.MoveCompo.InitMove(0, unit.Dir);
             await UniTask.Delay(delay);
-            unit.StateMachine.ChangeState(State.Dead);
+            if (unit == null || unit.HpCompo.Dead) return;
+            unit.HpCompo.Damage(unit.HpCompo.Health);
         }
     }
 }
