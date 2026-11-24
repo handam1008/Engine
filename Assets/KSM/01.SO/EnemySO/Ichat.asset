@@ -16,8 +16,8 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 08ffa14d77a9348335724db29859b813, type: 3}
   prefab: {fileID: 6043266772044319355, guid: a38c8487d4e7089439b9248c8ca49068, type: 3}
   animatorController: {fileID: 9100000, guid: 6ab92bb9152f509afe370e648c6088e1, type: 2}
-  moveSpeed: 4
-  maxHp: 10000
+  moveSpeed: 2.5
+  maxHp: 100
   whatIsDetect:
     serializedVersion: 2
     m_Bits: 64
@@ -27,7 +27,7 @@ MonoBehaviour:
   - 0.5
   - 0.2
   attackRange: 1
-  attackCoolTime: 4
-  attackDmg: 8
-  vaccinegauge: 60
+  attackCoolTime: 2
+  attackDmg: 20
+  vaccinegauge: 10
   type: 0

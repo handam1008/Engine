@@ -16,20 +16,20 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 581f5fa271124064a6a80f614655d6cf, type: 3}
   prefab: {fileID: 8041922734601300301, guid: 2370199dd3fe741489d6a74a48bd1194, type: 3}
   animatorController: {fileID: 9100000, guid: 95fff8809aa81c64cb5b76860138da99, type: 2}
-  moveSpeed: 16
-  maxHp: 35
+  moveSpeed: 4
+  maxHp: 40
   whatIsDetect:
     serializedVersion: 2
     m_Bits: 128
   unitType: 1
   knockbackList: []
   attackRange: 0.85
-  attackCoolTime: 0.8
-  attackDmg: 12
+  attackCoolTime: 1
+  attackDmg: 40
   charcterRank: 0
   number: 1
   level: 1
-  spawnStorage: 3
-  attackStorage: 1
+  spawnStorage: 50
+  attackStorage: 0
   <Weight>k__BackingField: 0
-  spawnCoolTime: 3
+  spawnCoolTime: 8
