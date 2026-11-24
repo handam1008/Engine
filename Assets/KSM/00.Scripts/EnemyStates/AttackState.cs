@@ -31,6 +31,7 @@ using UnityEngine;
         {
             base.HandleAttacked();
             Debug.Log(_abstractUnit.name + " attacked");
+            _abstractUnit.NotifyAttack();
             _abstractUnit.Attack.Attacking(_abstractUnit);
         }
     }

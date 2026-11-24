@@ -5,7 +5,7 @@ public abstract class AbstractUnitState
 {
     protected int _hashName;
     protected AbstractUnit _abstractUnit;   
-    protected StateMachine _stateMachine;
+    public StateMachine _stateMachine;
     public AbstractUnitState(StateMachine stateMachine, AbstractUnit abstractUnit, string hashName)
     {
         _stateMachine = stateMachine;

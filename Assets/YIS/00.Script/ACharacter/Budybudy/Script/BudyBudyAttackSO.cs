@@ -13,16 +13,14 @@ public class BudyBudyAttackSO : AbstractAttackSO
         if (budy._supportUnit == null) return;
         AbstractUnit supportUnit = budy._supportUnit.GetComponentInParent<AbstractUnit>();
 
-        budy.UnitSo.attackCoolTime = supportUnit.UnitSo.attackCoolTime;
 
         // À¯´ÖÀÇ Å¸°ÙÀ» ³ªÀÇ Å¸°ÙÀ¸·Î »ï¾Æ¼­ °ø°Ý ¤¡¤¡
-        if(supportUnit.target != null)
-        {
+        
             BudyBullet bule = Instantiate(Letter, unit.transform.position, Quaternion.identity);
             bule.transform.position = new Vector3(unit.transform.position.x + 0.8f, unit.transform.position.y, unit.transform.position.z);
             bule.Init(unit.UnitSo.attackDmg);
             bule.GetReadyToFire += _ => bule.Shoot(supportUnit.target.transform);
-        }
+        
 
 
     }

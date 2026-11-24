@@ -32,10 +32,14 @@ namespace KSM._00.Scripts
             if ((target != null && _abstractUnit.lastAttackTime + _abstractUnit.UnitSo.attackCoolTime < Time.time) 
                 || _firstAttack)
             {
+                if (_abstractUnit is BudybudyCharacter) return;
+
                 _stateMachine.ChangeState(State.Attack);
                 _firstAttack = false;
                 return;
             }
+
+
             
         }
 

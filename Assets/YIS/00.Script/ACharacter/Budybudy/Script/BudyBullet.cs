@@ -30,7 +30,6 @@ public class BudyBullet : MonoBehaviour
     private void Update()
     {
        GetReadyToFire?.Invoke(this);
-        Debug.Log("asufihiewu");
     }
 
 

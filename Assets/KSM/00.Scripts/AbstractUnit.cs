@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using KSM._00.Scripts;
 using UnityEngine;
@@ -20,12 +21,23 @@ public abstract class AbstractUnit : MonoBehaviour
     public float lastAttackTime;
     public StateMachine StateMachine { get; private set; }
     public Collider2D ColliderCompo { get; private set; }
-    
+
+    public event Action<Transform> OnAttackStarted;
+
     [Header("슬로우관련")]
     
     public float SpeedRate { get; private set; } = 1f;
     private Coroutine _slowRoutine;
     private AbstractUnit _note;
+    
+    public void NotifyAttack()
+    {
+        if (target == null) return;
+
+        OnAttackStarted?.Invoke(target);
+         
+    }
+
     
 
     protected virtual void Awake()

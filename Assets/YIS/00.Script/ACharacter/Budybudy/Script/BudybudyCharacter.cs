@@ -9,7 +9,6 @@ public class BudybudyCharacter : AbstractUnit
     
     private void Start()
     {
-        UnitSo.attackCoolTime = 0.5f;
 
         _lr = GetComponent<LineRenderer>();
         _lr.useWorldSpace = true;
@@ -19,7 +18,15 @@ public class BudybudyCharacter : AbstractUnit
         if (_supportUnit == null)
         {
             _supportUnit = FindNearTarget().transform;
-            Debug.Log($"{_supportUnit.name}ÀÌ(°¡) Áö¿øµÊ");
+            AbstractUnit support = _supportUnit.GetComponentInParent<AbstractUnit>();
+
+            support.OnAttackStarted += attackTarget =>
+            {
+                target = attackTarget;
+
+                StateMachine.ChangeState(State.Attack);
+            };
+            
         }
 
     }
@@ -35,15 +42,19 @@ public class BudybudyCharacter : AbstractUnit
         if (_supportUnit == null)
         {
             _supportUnit = FindNearTarget().transform;
-  
-            Debug.Log($"{_supportUnit.name}ÀÌ(°¡) Áö¿øµÊ");
+            AbstractUnit support = _supportUnit.GetComponentInParent<AbstractUnit>();
+
+            support.OnAttackStarted += attackTarget =>
+            {
+                target = attackTarget;
+
+                StateMachine.ChangeState(State.Attack);
+            };
 
         }
-            _lr.positionCount = 2;
+        _lr.positionCount = 2;
             _lr.SetPosition(0, transform.position);
             _lr.SetPosition(1, _supportUnit.transform.position);
-
-
     }
 
     public Collider2D FindNearTarget()
