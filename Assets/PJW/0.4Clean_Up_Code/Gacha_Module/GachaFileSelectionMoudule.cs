@@ -31,7 +31,7 @@ public class GachaFileSelectionMoudule : MonoBehaviour, IGachaEnterModule, IGach
 
     public async void Enter()
     {
-        await Task.Delay(1500);
+        await Task.Delay(500);
         _vfx0010.PlayFeedbacks();
         _vfx0020.PlayFeedbacks();
     }
@@ -42,9 +42,9 @@ public class GachaFileSelectionMoudule : MonoBehaviour, IGachaEnterModule, IGach
 
         foreach (var item in _unzipPercentPrefabs)
         {
-            await Task.Delay(230);
+            await Task.Delay(34);
             item.SetActive(true);
-            timer += 0.230f;
+            timer += 0.233f;
             _timeText.text = $"남은 시간: {10-(int)timer}초";
         }
     }
