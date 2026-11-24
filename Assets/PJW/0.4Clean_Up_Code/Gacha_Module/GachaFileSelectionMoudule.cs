@@ -17,8 +17,15 @@ public class GachaFileSelectionMoudule : MonoBehaviour, IGachaEnterModule, IGach
 
     [SerializeField] private TextMeshProUGUI _timeText;
 
+    [SerializeField] private TextMeshProUGUI _fileNameText;
+
+    [SerializeField] private string[] _passingFileNames;
+
+    [SerializeField] private string _finalFileName = "???.exe";
+
     public async void Init()
     {
+        _fileNameText.text = _passingFileNames[0];
         _unzipWindow.SetActive(true);
         foreach (var item in _unzipPercentPrefabs)
         {
@@ -40,10 +47,14 @@ public class GachaFileSelectionMoudule : MonoBehaviour, IGachaEnterModule, IGach
     {
         float timer = 0;
 
-        foreach (var item in _unzipPercentPrefabs)
+        for (int i = 0; i < _unzipPercentPrefabs.Length; i++)
         {
+            var item = _unzipPercentPrefabs[i];
             await Task.Delay(34);
             item.SetActive(true);
+            _fileNameText.text = i == _unzipPercentPrefabs.Length - 1
+                ? _finalFileName
+                : _passingFileNames[i * _passingFileNames.Length / _unzipPercentPrefabs.Length];
             timer += 0.233f;
             _timeText.text = $"남은 시간: {10-(int)timer}초";
         }
