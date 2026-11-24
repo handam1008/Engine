@@ -24,8 +24,6 @@ public class MoneyManager : MonoBehaviour
 
     private void Refresh()
     {
-        if (_moenyText == null) return;
-
         _moenyText.SetText($"Money: {_gold.Gold}");
     }
 }

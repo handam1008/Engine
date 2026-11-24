@@ -1,5 +1,4 @@
-using Unity.VisualScripting;
-using UnityEngine;
+ï»¿using UnityEngine;
 
 public class BettleWin : GameState
 {
@@ -10,16 +9,15 @@ public class BettleWin : GameState
     public override void Enter()
     {
         base.Enter();
-        Debug.Log("ÀüÅõ ½Â¸®!!");
+        GameLoopManager.Instance.KillingField.SetActive(true);
+        Debug.Log("ì „íˆ¬ ìŠ¹ë¦¬!!");
     }
 
     public override void StateUpdate()
     {
         base.StateUpdate();
-        // ÀüÅõ ½Â¸® ÇØ¾µ¶§ ³Ö¾îÁà¾ß ÇÒ°Í ex: µ·
+        // ì „íˆ¬ ìŠ¹ë¦¬ í•´ì“¸ë•Œ ë„£ì–´ì¤˜ì•¼ í• ê²ƒ ex: ëˆ
 
-        // º¸»ó Áö±ŞÀº TestGameEndTrigger.End(int gold)¿¡¼­ Ã³¸®
-
-        _machine.ChangeState(CurrentGameType.Prepare);
+        // ë³´ìƒ ì§€ê¸‰ì€ TestGameEndTrigger.End(int gold)ì—ì„œ ì²˜ë¦¬
     }
 }

@@ -1,14 +1,6 @@
-using DG.Tweening;
-using JetBrains.Annotations;
 using RYU.Script.Charcter;
-using System.Collections;
 using System.Collections.Generic;
-using System.Net;
-using System.Net.NetworkInformation;
-using TMPro;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.UI;
 
 public class Gacha_probability_Manger : MonoBehaviour
 {

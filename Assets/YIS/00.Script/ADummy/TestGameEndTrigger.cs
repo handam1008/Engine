@@ -28,12 +28,20 @@ public class TestGameEndTrigger : MonoBehaviour
       ServiceLocator.Get<IGoldService>().AddGold(gold);
     }
 
+    public void Lose()
+    {
+        foreach (Transform child in stageParent.transform) child.gameObject.SetActive(false);
+        foreach (var unit in FindObjectsByType<AbstractUnit>(FindObjectsSortMode.None)) Destroy(unit.gameObject);
+        _network.OnStageFailed();
+    }
+
     private void StageUnlock()
     {
 
 
         fadePanel.DOFade(0, 1);
         _network.OnStageCleared();
+        GameLoopManager.Instance.ChangeState(CurrentGameType.Prepare);
 
 
     }

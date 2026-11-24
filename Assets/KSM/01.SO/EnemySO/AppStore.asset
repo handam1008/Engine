@@ -17,7 +17,7 @@ MonoBehaviour:
   prefab: {fileID: 6043266772044319355, guid: 8e64b64b6a445514d93cd4676976326f, type: 3}
   animatorController: {fileID: 9100000, guid: b94f716c3b83076f3f05d51dbf41e1da, type: 2}
   moveSpeed: 4
-  maxHp: 10000
+  maxHp: 10
   whatIsDetect:
     serializedVersion: 2
     m_Bits: 64
@@ -28,6 +28,6 @@ MonoBehaviour:
   - 0.2
   attackRange: 1
   attackCoolTime: 4
-  attackDmg: 8
+  attackDmg: 10000
   vaccinegauge: 60
   type: 0
