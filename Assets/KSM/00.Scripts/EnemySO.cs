@@ -7,12 +7,12 @@ namespace KSM._00.Scripts
     public class EnemySO : UnitSO
     {
         public int vaccinegauge; //백신게이지임 적 죽였을 때 차는거
-        public EnemyType type;
+        public CharaterType type;
 
     }
 
     [Flags]
-    public enum EnemyType
+    public enum CharaterType
     {
         None       = 0,
         Virus      = 1 << 0,   // 1

@@ -23,7 +23,7 @@ namespace KSM._00.Scripts
 
             if (_abstractUnit.UnitSo is EnemySO enemy)
             {
-                if (enemy.type == EnemyType.Worm && receiveCount > 0)
+                if (enemy.type == CharaterType.Worm && receiveCount > 0)
                 {
                     receiveCount--;
                     _stateMachine.ChangeState(State.Corpse);
