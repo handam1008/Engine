@@ -1,5 +1,6 @@
 using RYU.Script.Charcter;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Gacha_probability_Manger : MonoBehaviour
@@ -46,6 +47,7 @@ public class Gacha_probability_Manger : MonoBehaviour
             if(n<pair.Value)
             {
                 CharacterDataSO = CharacterData.charcterDatas[pair.Key];
+                CharacterData.charcterDatas.Append(CharacterDataSO);
                 return CharacterData.charcterDatas[pair.Key];
             }
             n -= pair.Value;
