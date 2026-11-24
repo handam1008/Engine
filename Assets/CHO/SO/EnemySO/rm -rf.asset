@@ -25,6 +25,7 @@ MonoBehaviour:
   knockbackList:
   - 0.8
 <<<<<<< Updated upstream
+<<<<<<< HEAD
   attackRange: 0.5
   attackCoolTime: 1
   attackDmg: 0
@@ -33,5 +34,13 @@ MonoBehaviour:
   attackCoolTime: 1
   attackDmg: 250
 >>>>>>> Stashed changes
+=======
+  attackRange: 13.45
+=======
+  attackRange: 3.41
+>>>>>>> Stashed changes
+  attackCoolTime: 1
+  attackDmg: 1000000
+>>>>>>> main
   vaccinegauge: 20
   type: 0
