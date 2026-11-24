@@ -18,6 +18,6 @@ public class DOTween_File_Bird : MonoBehaviour
         Vector3 midpos = (startpos+endpos)*0.5f+Vector3.up*250;
         Vector3[] trms = new Vector3[] {midpos,endpos };
 
-        brid.DOPath(trms, 10f, PathType.CatmullRom).SetEase(Ease.OutQuint);
+        brid.DOPath(trms, 1.5f, PathType.CatmullRom).SetEase(Ease.OutQuint);
     }
 }

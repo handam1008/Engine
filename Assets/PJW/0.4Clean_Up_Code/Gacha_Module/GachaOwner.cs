@@ -22,6 +22,8 @@ public class GachaOwner : MonoBehaviour
 
     private TaskCompletionSource<bool> lastClickSource;
 
+    private TaskCompletionSource<bool> finshThevfx0030;
+
 
     private CharacterDataSO currentCharacterData;
 
@@ -29,14 +31,17 @@ public class GachaOwner : MonoBehaviour
 
     private bool isLastClick = false;
 
+    private int clickcount = 0;
+
+    [SerializeField] private Material material;
+
+    [SerializeField] private MMF_Player vfx0040;
+
+    [SerializeField] private GameObject cutfilevfxvisual;
+
     private void Awake()
     {
         Init();
-    }
-
-    private void Start()
-    {
-        ShowGachaAsync();
     }
 
     private void Init()
@@ -55,6 +60,7 @@ public class GachaOwner : MonoBehaviour
         lastClickSource = new TaskCompletionSource<bool>();
         finshThevfx0010 = new TaskCompletionSource<bool>();
         finshThevfx0020 = new TaskCompletionSource<bool>();
+        finshThevfx0030 = new TaskCompletionSource<bool>();
     }
 
     public void InitModule<T>()
@@ -145,7 +151,7 @@ public class GachaOwner : MonoBehaviour
         //압축파일 연출 완료후
 
         //파일 압축해제 진행
-        await Task.Delay(10000);
+        await Task.Delay(1500);
 
         //압축파일 연출 종료
         //현제 모듈을 변경
@@ -156,7 +162,7 @@ public class GachaOwner : MonoBehaviour
     async Task InteractioFielAsync()
     {
         //클릭을 입력을때까지 대기
-        await lastClickSource.Task;
+        await finshThevfx0030.Task;
         //현제 모듈을 결과표시 모듈로 교체
         ChangeModule<GachaRealResultDisplayMoudule>();
     }
@@ -166,7 +172,7 @@ public class GachaOwner : MonoBehaviour
         MarkModule<GachaResultDisplayMoudule>();
     }
 
-    async void ShowGachaAsync()
+    public async void ShowGachaAsync()
     {
         await ShowArchiveAsync();
         await ShowFielAsync();
@@ -186,10 +192,26 @@ public class GachaOwner : MonoBehaviour
         finshThevfx0010?.SetResult(true);
     }
 
+    public void OnFinshedAsync()
+    {
+        finshThevfx0030?.SetResult(true);
+    }
+
+
+
     public void OnLastClickAsync()
     {
         if (isLastClick) return;
-        lastClickSource?.SetResult(true);
-        isLastClick = true;
+        clickcount++;
+        material.SetFloat("_VibrateOffset",clickcount*5);
+        if(clickcount == 4)
+        {
+            clickcount = 0;
+            cutfilevfxvisual.SetActive(true);
+            vfx0040.PlayFeedbacks();
+            isLastClick = true;
+            material.SetFloat("_VibrateOffset", 0);
+        }
+
     }
 }
