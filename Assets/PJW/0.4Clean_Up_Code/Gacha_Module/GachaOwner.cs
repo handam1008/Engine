@@ -25,6 +25,7 @@ public class GachaOwner : MonoBehaviour
 
     private TaskCompletionSource<bool> finshThevfx0030;
 
+    private TaskCompletionSource<bool> wizardConfirmSource;
 
     private CharacterDataSO currentCharacterData;
 
@@ -44,6 +45,10 @@ public class GachaOwner : MonoBehaviour
     {
         Init();
     }
+    private void Start()
+    {
+        ShowGachaAsync();
+    }
 
     private void Init()
     {
@@ -62,6 +67,7 @@ public class GachaOwner : MonoBehaviour
         finshThevfx0010 = new TaskCompletionSource<bool>();
         finshThevfx0020 = new TaskCompletionSource<bool>();
         finshThevfx0030 = new TaskCompletionSource<bool>();
+        wizardConfirmSource = new TaskCompletionSource<bool>();
     }
 
     public void InitModule<T>()
@@ -133,6 +139,9 @@ public class GachaOwner : MonoBehaviour
 
         ////파일사용자 클릭 대기
         await firstClickSource.Task;
+        //압축 풀기 마법사에서 확인 대기
+        ChangeModule<GachaUnzipWizardModule>();
+        await wizardConfirmSource.Task;
 
         //Debug.Log("앞축파일 숨기기");
         ////현제 모듈을 압축파일로 교체
@@ -188,6 +197,10 @@ public class GachaOwner : MonoBehaviour
         isFristClick = true;
     }
 
+    public void OnWizardConfirm()
+    {
+        wizardConfirmSource?.TrySetResult(true);
+    }
     public void OnEndVfxAsync()
     {
         finshThevfx0010?.SetResult(true);

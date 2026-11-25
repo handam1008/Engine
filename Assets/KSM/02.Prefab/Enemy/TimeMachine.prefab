@@ -143,7 +143,7 @@ GameObject:
   - component: {fileID: 2296123503213925902}
   - component: {fileID: 3785844500768781335}
   m_Layer: 7
-  m_Name: TimeMachine(N_Recive)
+  m_Name: TimeMachine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -29,7 +29,7 @@ namespace KSM._00.Scripts.EnemyAttack
         {
             foreach (var c in Physics2D.OverlapBoxAll(transform.position, transform.localScale, 0, mask))
             {
-                if (c.TryGetComponent(out AbstractUnit u)) u.HpCompo.Damage(dmg);
+                if (c.TryGetComponent(out AbstractUnit u)) u.HpCompo.Damage(dmg, u);
             }
         }
     }

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69e864b5f7284916a0836d75814801de, type: 3}
   m_Name: UnitAttackStickies
   m_EditorClassIdentifier: Assembly-CSharp::KSM._00.Scripts.EnemyAttackSO.StickiesAttackSO
-  slowRate: 0.89
-  slowTime: 2
+  slowRate: 0.7
+  slowTime: 3
   notePrefab: {fileID: 5433712173067348016, guid: 768e45103e6a4de49a0ec4e82f6917e9, type: 3}

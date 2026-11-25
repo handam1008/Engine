@@ -20,7 +20,7 @@ public class TypeChangeAttack : AbstractAttackSO
         if (target != null && target.TryGetComponent(out HealthSystem hp))
         {
             float damage = unit.UnitSo.attackDmg * damageRate[type];   // ← UnitSO 공격력 변수 이름으로
-            hp.Damage(Mathf.RoundToInt(damage));                      // ← HealthSystem 데미지 함수 이름으로
+            hp.Damage(Mathf.RoundToInt(damage),unit);                      // ← HealthSystem 데미지 함수 이름으로
         }
         
         float cooldown = unit.UnitSo.attackCoolTime;                // ← UnitSO 공격 쿨 변수 이름으로

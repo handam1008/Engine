@@ -572,24 +572,11 @@ Shader "Sprite Shaders Ultimate/2D Lit URP SSU"
 			#include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
 			#include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Lighting.hlsl"
 			#include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/ShaderGraphFunctions.hlsl"
-			#include "Packages/com.unity.render-pipelines.universal/Shaders/2D/Include/LightingUtility.hlsl"
 
-			#if USE_SHAPE_LIGHT_TYPE_0
-			SHAPE_LIGHT(0)
-			#endif
-
-			#if USE_SHAPE_LIGHT_TYPE_1
-			SHAPE_LIGHT(1)
-			#endif
-
-			#if USE_SHAPE_LIGHT_TYPE_2
-			SHAPE_LIGHT(2)
-			#endif
-
-			#if USE_SHAPE_LIGHT_TYPE_3
-			SHAPE_LIGHT(3)
-			#endif
-
+			// Unity 6.5 URP: CombinedShapeLightShared.hlsl이 LightingUtility.hlsl include와 SHAPE_LIGHT 선언을 직접 한다.
+			// 여기서 또 하면 FragmentOutput·라이트 텍스처가 중복 정의되므로 지웠다.
+			// SurfaceData2D·InputData2D·SETUP_DEBUG_DATA_2D는 Debugging2D.hlsl이 가져온다(Sprite Forward 패스와 같은 방식).
+			#include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Debug/Debugging2D.hlsl"
 			#include "Packages/com.unity.render-pipelines.universal/Shaders/2D/Include/CombinedShapeLightShared.hlsl"
 
 			#define ASE_NEEDS_VERT_POSITION
@@ -3716,7 +3703,7 @@ Shader "Sprite Shaders Ultimate/2D Lit URP SSU"
 				InitializeSurfaceData(Color.rgb, Color.a, Mask, surfaceData);
 				InputData2D inputData;
 				InitializeInputData(IN.texCoord0.xy, half2(IN.screenPosition.xy / IN.screenPosition.w), inputData);
-				SETUP_DEBUG_DATA_2D(inputData, positionWS);
+				SETUP_DEBUG_DATA_2D(inputData, positionWS, IN.clipPos);
 				return CombinedShapeLightShared(surfaceData, inputData);
 			}
 
@@ -10023,7 +10010,7 @@ Shader "Sprite Shaders Ultimate/2D Lit URP SSU"
 					InitializeInputData(positionWS.xy, half2(IN.texCoord0.xy), inputData);
 					half4 debugColor = 0;
 
-					SETUP_DEBUG_DATA_2D(inputData, positionWS);
+					SETUP_DEBUG_DATA_2D(inputData, positionWS, IN.clipPos);
 
 					if (CanDebugOverrideOutputColor(surfaceData, inputData, debugColor))
 					{

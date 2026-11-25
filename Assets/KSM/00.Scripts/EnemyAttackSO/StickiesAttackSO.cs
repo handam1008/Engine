@@ -15,7 +15,7 @@ namespace KSM._00.Scripts.EnemyAttackSO
             Collider2D near = unit.NearTarget();
             if (near == null) return;
 
-            if (near.TryGetComponent(out HealthSystem hp)) hp.Damage(unit.UnitSo.attackDmg);
+            if (near.TryGetComponent(out HealthSystem hp)) hp.Damage(unit.UnitSo.attackDmg,unit);
             if (near.TryGetComponent(out AbstractUnit target)) target.ApplySlow(slowRate, slowTime, unit);
         }
     }
