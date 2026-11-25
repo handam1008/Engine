@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using Cysharp.Threading.Tasks.Triggers;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace KSM._00.Scripts.Enemy
 {

@@ -10,13 +10,26 @@ namespace RYU.Script.Tower
         [SerializeField] private TestGameEndTrigger trigger;
         private int _count= 0;
         private bool _canCreate = true;
-        private IEnumerator _enumerator;
 
         protected override void Awake()
         {
             base.Awake();
             HpCompo.OnDeath += TowerDead;
         }
+
+        private void OnEnable()
+        {
+            HpCompo.Init(UnitSo.maxHp, UnitSo);
+            _canCreate = true;
+            _count = 0;
+            foreach (var data in stage.stageDates)
+            {
+                data.isSpawn = false;
+            }
+
+        }
+                
+        
 
         private void TowerDead()
         {

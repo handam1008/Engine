@@ -4,7 +4,6 @@ namespace RYU.Script.Service.PanelService
 {
     public interface IPanelService
     {
-        public GameObject YoutubePanel { get; set; }
         public GameObject VolumePanel { get; set; }
         public GameObject CharcterPanel { get; set; }
         public GameObject WindowPanel { get; set; }
@@ -13,7 +12,6 @@ namespace RYU.Script.Service.PanelService
         void SetVolumePanelActive();
         void SetCharacterPanelActive(bool active);
         void SetWindowPanelActive();
-        void SetYoutubePanelActive(bool active);
         void SetMyComputerPanelActive(bool active);
     }
 }

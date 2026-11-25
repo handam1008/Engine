@@ -28,6 +28,9 @@ MonoBehaviour:
   attackDmg: 180
   charcterRank: 0
   number: 0
+  <WhatIsStrong>k__BackingField:
+  - charaterType: 3
+    scale: 22
   level: 1
   spawnStorage: 240
   attackStorage: 4

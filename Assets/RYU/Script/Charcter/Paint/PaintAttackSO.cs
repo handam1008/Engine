@@ -27,9 +27,9 @@ namespace RYU.Script.Charcter.Paint
            {
                foreach (Collider2D coll in col)
                {
-                   if (coll.TryGetComponent(out AbstractUnit healthSystem))
+                   if (coll.TryGetComponent(out HealthSystem healthSystem))
                    {
-                      healthSystem.HpCompo.Damage(unit.UnitSo.attackDmg * _attackMultiple[combo],healthSystem);
+                      healthSystem.Damage(unit.UnitSo.attackDmg * _attackMultiple[combo],unit);
                       Debug.Log(unit.UnitSo.attackDmg * _attackMultiple[combo]);
                    }
                }

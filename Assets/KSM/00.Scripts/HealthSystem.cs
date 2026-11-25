@@ -5,7 +5,7 @@ using UnityEngine;
 public class HealthSystem : MonoBehaviour ,IDamageAble
 {
     [field:SerializeField] public int Health { get; private set; }
-    [SerializeField] private int _maxHealth;
+    public int _maxHealth { get; private set; }
     public event Action OnKnockbacked;
     public event Action OnDamaged;
     public event Action OnDeath;
@@ -69,4 +69,5 @@ public class HealthSystem : MonoBehaviour ,IDamageAble
     {
         return (float)Health / _maxHealth * 100f;
     }
+   
 }
