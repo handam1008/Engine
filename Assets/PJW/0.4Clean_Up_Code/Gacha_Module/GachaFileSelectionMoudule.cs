@@ -50,7 +50,7 @@ public class GachaFileSelectionMoudule : MonoBehaviour, IGachaEnterModule, IGach
         for (int i = 0; i < _unzipPercentPrefabs.Length; i++)
         {
             var item = _unzipPercentPrefabs[i];
-            await Task.Delay(34);
+            await Task.Delay(30);
             item.SetActive(true);
             _fileNameText.text = i == _unzipPercentPrefabs.Length - 1
                 ? _finalFileName
