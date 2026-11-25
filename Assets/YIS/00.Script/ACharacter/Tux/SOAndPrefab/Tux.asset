@@ -9,18 +9,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22171a250dec443884766b746fefe8cf, type: 3}
-  m_Name: NukuSO
-  m_EditorClassIdentifier: Assembly-CSharp::UnitSO
-  Name: Nuku
+  m_Script: {fileID: 11500000, guid: a04a298b0dda448c84284a06bd2318cc, type: 3}
+  m_Name: Tux
+  m_EditorClassIdentifier: Assembly-CSharp::KSM._00.Scripts.EnemySO
+  Name: Tux
   sprite: {fileID: 0}
+  prefab: {fileID: 0}
   animatorController: {fileID: 0}
-  moveSpeed: 100
-  maxHp: 750
+  moveSpeed: 3
+  maxHp: 105
   whatIsDetect:
     serializedVersion: 2
     m_Bits: 64
   unitType: 0
-  attackRange: 1
-  attackCoolTime: 0.03
-  attackDmg: 10
+  knockbackList:
+  - 0.8
+  attackRange: 2
+  attackCoolTime: 1
+  attackDmg: 15
+  vaccinegauge: 12
+  type: 0

@@ -12,7 +12,7 @@ public class BudyBullet : MonoBehaviour
     private int _random;
     private Rigidbody2D _rigidbody2D;
 
-    private float _timer;
+    private readonly float _timer;
 
     private void Awake()
     {
@@ -24,7 +24,7 @@ public class BudyBullet : MonoBehaviour
     public void Init(int attackdamage)
     {
         _attackDamage = attackdamage;
-        _random = UnityEngine.Random.Range(attackdamage - 10, attackdamage);
+        _random = UnityEngine.Random.Range(attackdamage - 3, attackdamage);
     }
 
     private void Update()
