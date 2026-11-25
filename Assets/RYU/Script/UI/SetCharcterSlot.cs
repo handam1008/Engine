@@ -1,9 +1,6 @@
-using System;
 using System.Linq;
 using RYU.Script.Charcter;
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace RYU.Script.UI
 {
@@ -12,9 +9,10 @@ namespace RYU.Script.UI
         [SerializeField] private CharacterDataSoList charcters;
         [SerializeField] private GameObject characterSlot;
 
-
-     
-
+        private void OnEnable()
+        {
+            SetCurrentCharacter();
+        }
 
         public void SetHaveCharacter()
         {
@@ -22,7 +20,7 @@ namespace RYU.Script.UI
             foreach (var data in charcters.charcterDatas)
             {
                 GameObject slot = Instantiate(characterSlot, transform);
-                slot.GetComponent<CharacterSlot>().SetCharcterSlot(data.Name, data.sprite, data.animatorController);
+                slot.GetComponent<CharacterSlot>().SetCharcterSlot(data, canSpawn: false);
             }
         }
         
@@ -32,7 +30,7 @@ namespace RYU.Script.UI
             foreach (var data in charcters.currentCharacter)
             {
                 GameObject slot = Instantiate(characterSlot, transform);
-                slot.GetComponent<CharacterSlot>().SetCharcterSlot(data.Name, data.sprite, data.animatorController);
+                slot.GetComponent<CharacterSlot>().SetCharcterSlot(data, canSpawn: true);
             }
         }
 

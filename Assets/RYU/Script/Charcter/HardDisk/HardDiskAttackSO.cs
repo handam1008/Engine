@@ -7,7 +7,6 @@ namespace RYU.Script.Charcter.HardDisk
     {
         public override void Attacking(AbstractUnit unit)
         {
-            unit.HpCompo.OnDeath += (() => Debug.Log("하드디스크 뒤짐!"));
         }
         
         

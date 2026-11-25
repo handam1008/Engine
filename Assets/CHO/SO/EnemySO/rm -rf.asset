@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a04a298b0dda448c84284a06bd2318cc, type: 3}
   m_Name: rm -rf
   m_EditorClassIdentifier: Assembly-CSharp::KSM._00.Scripts.EnemySO
-  Name: VLC
+  Name: rm -rf
   sprite: {fileID: 0}
   prefab: {fileID: 0}
   animatorController: {fileID: 0}
-  moveSpeed: 3
-  maxHp: 50
+  moveSpeed: 5
+  maxHp: 60
   whatIsDetect:
     serializedVersion: 2
     m_Bits: 64
@@ -25,22 +25,11 @@ MonoBehaviour:
   knockbackList:
   - 0.8
 <<<<<<< Updated upstream
-<<<<<<< HEAD
-  attackRange: 0.5
-  attackCoolTime: 1
-  attackDmg: 0
-=======
-  attackRange: 2
-  attackCoolTime: 1
-  attackDmg: 250
->>>>>>> Stashed changes
-=======
   attackRange: 13.45
 =======
   attackRange: 3.41
 >>>>>>> Stashed changes
   attackCoolTime: 1
   attackDmg: 1000000
->>>>>>> main
   vaccinegauge: 20
   type: 0

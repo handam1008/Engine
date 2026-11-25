@@ -1,24 +1,27 @@
-﻿using System;
-using System.Collections;
-using Cysharp.Threading.Tasks;
-using RYU.Script.Stage;
-using Unity.VisualScripting;
+﻿using RYU.Script.Stage;
 using UnityEngine;
+using System.Collections;
 
 namespace RYU.Script.Tower
 {
     public class Tower : AbstractUnit
     {
         [SerializeField] private StageSO stage;
+        [SerializeField] private TestGameEndTrigger trigger;
         private int _count= 0;
         private bool _canCreate = true;
-        private HealthSystem _healthSystem;
         private IEnumerator _enumerator;
 
         protected override void Awake()
         {
             base.Awake();
-            _healthSystem = GetComponent<HealthSystem>();
+            HpCompo.OnDeath += TowerDead;
+        }
+
+        private void TowerDead()
+        {
+            GameLoopManager.Instance.ChangeState(CurrentGameType.Victory);
+            trigger.End(stage.getGold);
         }
 
         public void Start()
@@ -28,7 +31,7 @@ namespace RYU.Script.Tower
             {
                 data.isSpawn = false;
             }
-            _healthSystem.OnKnockbacked += HandleDamage;
+            HpCompo.OnDamaged += HandleDamage;
         }
 
         private void HandleDamage()
@@ -36,7 +39,7 @@ namespace RYU.Script.Tower
             foreach (var data in stage.stageDates)
             {
                 if (data.percent <= 0 || Mathf.Approximately(data.percent, 100f) || data.isSpawn) continue;
-                if (_healthSystem.GetPercentage() > data.percent) continue;
+                if (HpCompo.GetPercentage() > data.percent) continue;
 
                 data.isSpawn = true;
                 Instantiate(data.enemy.prefab, transform.position, Quaternion.identity);
@@ -73,6 +76,11 @@ namespace RYU.Script.Tower
             yield return new WaitForSeconds(waitTime);
             _canCreate = true;
         }
-        
+
+        private void OnDisable()
+        {
+            HpCompo.Init(UnitSo.maxHp, UnitSo);
+        }
+
     }
 }

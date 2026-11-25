@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: f517637834fc22b47a8668d78d7a3fa5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6603594457717303045
+    second: InternetExplorer_WindowBreakSmooth_0
+  - first:
+      213: -8651668252788170860
+    second: InternetExplorer_WindowBreakSmooth_1
+  - first:
+      213: 2895781764162007600
+    second: InternetExplorer_WindowBreakSmooth_2
+  - first:
+      213: 2703835953993027766
+    second: InternetExplorer_WindowBreakSmooth_3
+  - first:
+      213: -5316492862702236778
+    second: InternetExplorer_WindowBreakSmooth_4
+  - first:
+      213: -5108579031841518624
+    second: InternetExplorer_WindowBreakSmooth_5
+  - first:
+      213: 1458341360773456859
+    second: InternetExplorer_WindowBreakSmooth_6
+  - first:
+      213: 2568126302251901125
+    second: InternetExplorer_WindowBreakSmooth_7
+  - first:
+      213: -2045706395869261168
+    second: InternetExplorer_WindowBreakSmooth_8
+  - first:
+      213: -3509782487969230822
+    second: InternetExplorer_WindowBreakSmooth_9
+  - first:
+      213: -8073399848677909955
+    second: InternetExplorer_WindowBreakSmooth_10
+  - first:
+      213: -4059292293337285859
+    second: InternetExplorer_WindowBreakSmooth_11
+  - first:
+      213: -2965676909625224232
+    second: InternetExplorer_WindowBreakSmooth_12
+  - first:
+      213: 415025039642829363
+    second: InternetExplorer_WindowBreakSmooth_13
+  - first:
+      213: -3355409922485589318
+    second: InternetExplorer_WindowBreakSmooth_14
+  - first:
+      213: 7181170846225904253
+    second: InternetExplorer_WindowBreakSmooth_15
+  - first:
+      213: 4020017633765575554
+    second: InternetExplorer_WindowBreakSmooth_16
+  - first:
+      213: -9048548907133691032
+    second: InternetExplorer_WindowBreakSmooth_17
+  - first:
+      213: 2741913060181114447
+    second: InternetExplorer_WindowBreakSmooth_18
+  - first:
+      213: -3481256944313654232
+    second: InternetExplorer_WindowBreakSmooth_19
+  - first:
+      213: 3662434090406920946
+    second: InternetExplorer_WindowBreakSmooth_20
+  - first:
+      213: 7050795331800424194
+    second: InternetExplorer_WindowBreakSmooth_21
+  - first:
+      213: 4642931980439729299
+    second: InternetExplorer_WindowBreakSmooth_22
+  - first:
+      213: -5030993324208399974
+    second: InternetExplorer_WindowBreakSmooth_23
+  - first:
+      213: 6755090004838698837
+    second: InternetExplorer_WindowBreakSmooth_24
+  - first:
+      213: 4712406294691444332
+    second: InternetExplorer_WindowBreakSmooth_25
+  - first:
+      213: -2891784816249551538
+    second: InternetExplorer_WindowBreakSmooth_26
+  - first:
+      213: 4415314682026324531
+    second: InternetExplorer_WindowBreakSmooth_27
+  - first:
+      213: 7530734828462452438
+    second: InternetExplorer_WindowBreakSmooth_28
+  - first:
+      213: 5700801940945847129
+    second: InternetExplorer_WindowBreakSmooth_29
+  - first:
+      213: 850020615795901702
+    second: InternetExplorer_WindowBreakSmooth_30
+  - first:
+      213: 2239510489108800975
+    second: InternetExplorer_WindowBreakSmooth_31
+  - first:
+      213: -7362547489155532612
+    second: InternetExplorer_WindowBreakSmooth_32
+  - first:
+      213: 8227575234862713184
+    second: InternetExplorer_WindowBreakSmooth_33
+  - first:
+      213: 3816228031660706493
+    second: InternetExplorer_WindowBreakSmooth_34
+  - first:
+      213: 6835304998824153896
+    second: InternetExplorer_WindowBreakSmooth_35
+  - first:
+      213: -1548067312323556638
+    second: InternetExplorer_WindowBreakSmooth_36
+  - first:
+      213: -8426131432274197057
+    second: InternetExplorer_WindowBreakSmooth_37
+  - first:
+      213: 9105883156918817643
+    second: InternetExplorer_WindowBreakSmooth_38
+  - first:
+      213: 4948165735126311873
+    second: InternetExplorer_WindowBreakSmooth_39
+  - first:
+      213: 3321925865067545979
+    second: InternetExplorer_WindowBreakSmooth_40
+  - first:
+      213: 8397273042454345484
+    second: InternetExplorer_WindowBreakSmooth_41
+  - first:
+      213: 397891004259522375
+    second: InternetExplorer_WindowBreakSmooth_42
+  - first:
+      213: -2643814682293509273
+    second: InternetExplorer_WindowBreakSmooth_43
+  - first:
+      213: 5144085392797184894
+    second: InternetExplorer_WindowBreakSmooth_44
+  - first:
+      213: -102328226659010082
+    second: InternetExplorer_WindowBreakSmooth_45
+  - first:
+      213: 9156385376442264460
+    second: InternetExplorer_WindowBreakSmooth_46
+  - first:
+      213: -2542104550692037480
+    second: InternetExplorer_WindowBreakSmooth_47
+  - first:
+      213: -5163438225238913971
+    second: InternetExplorer_WindowBreakSmooth_48
+  - first:
+      213: -4600838922456098848
+    second: InternetExplorer_WindowBreakSmooth_49
+  - first:
+      213: 1509065780398865260
+    second: InternetExplorer_WindowBreakSmooth_50
+  - first:
+      213: -5819054131069422136
+    second: InternetExplorer_WindowBreakSmooth_51
+  - first:
+      213: -3250484817469510304
+    second: InternetExplorer_WindowBreakSmooth_52
+  - first:
+      213: -3885717480362027960
+    second: InternetExplorer_WindowBreakSmooth_53
+  - first:
+      213: -1225234330995013536
+    second: InternetExplorer_WindowBreakSmooth_54
+  - first:
+      213: -8484630815256220044
+    second: InternetExplorer_WindowBreakSmooth_55
+  - first:
+      213: -4294491293820438349
+    second: InternetExplorer_WindowBreakSmooth_56
+  - first:
+      213: -1109747070843177188
+    second: InternetExplorer_WindowBreakSmooth_57
+  - first:
+      213: -7312060567103925641
+    second: InternetExplorer_WindowBreakSmooth_58
+  - first:
+      213: -7899012376344387305
+    second: InternetExplorer_WindowBreakSmooth_59
+  - first:
+      213: 6890697813773861809
+    second: InternetExplorer_WindowBreakSmooth_60
+  - first:
+      213: 7133001697631154231
+    second: InternetExplorer_WindowBreakSmooth_61
+  - first:
+      213: -7312782887454164045
+    second: InternetExplorer_WindowBreakSmooth_62
+  - first:
+      213: 1431722293503571254
+    second: InternetExplorer_WindowBreakSmooth_63
+  - first:
+      213: -727957041195874153
+    second: InternetExplorer_WindowBreakSmooth_64
+  - first:
+      213: 6093919414809462906
+    second: InternetExplorer_WindowBreakSmooth_65
+  - first:
+      213: -1499993099733615229
+    second: InternetExplorer_WindowBreakSmooth_66
+  - first:
+      213: 8340018017745124273
+    second: InternetExplorer_WindowBreakSmooth_67
+  - first:
+      213: 1199856674224995850
+    second: InternetExplorer_WindowBreakSmooth_68
+  - first:
+      213: -2946983206915656924
+    second: InternetExplorer_WindowBreakSmooth_69
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WindowBreakSmooth_01
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 160
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd6971ff13410504c81fb076d8d068a3
+      internalID: -349500173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowBreakSmooth_02
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 160
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68a98e7d84be404498bc9af2ab4822a
+      internalID: 1387589687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowBreakSmooth_03
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 160
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c3948210cdb1e44b615881a5fbb853
+      internalID: 1733707468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowBreakSmooth_04
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 256
+        width: 160
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4da7555e1e0c9444a9a146da171891e
+      internalID: -838880007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowBreakSmooth_05
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 256
+        width: 160
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23216f03713cf4146b9be7c269ecdec2
+      internalID: -393111147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowBreakSmooth_06
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 256
+        width: 160
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eab8493ba34d7d24e9f5fc2c869f1e5d
+      internalID: -1550344046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowBreakSmooth_07
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 160
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b6b11e8df4ea7949a31c3353fa3303c
+      internalID: -138851282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowBreakSmooth_08
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 160
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e95a0c7486d8e741a91914f7d472e7d
+      internalID: -1641899113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowBreakSmooth_09
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 160
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83eb12b2662074c4ba4257e9a0d84e58
+      internalID: -116092637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowBreakSmooth_10
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 128
+        width: 160
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ba70c5ba1f9e5428d0456552f15169
+      internalID: -451644312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowBreakSmooth_11
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 128
+        width: 160
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b4ab8f5173430642b7a880288253030
+      internalID: 709297718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowBreakSmooth_12
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 128
+        width: 160
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38ff625a676841f40bc95d814c26f02c
+      internalID: 1167071245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowBreakSmooth_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 160
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1ce7a0215aff4a4aa4da4515f70a28c
+      internalID: 29017029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowBreakSmooth_14
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 160
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd17c3af28cf1c743a4636f90e09bc08
+      internalID: -719570996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowBreakSmooth_15
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 160
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e957f4f075ea8c544bfaaa6c6bac474d
+      internalID: 895486755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowBreakSmooth_16
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 160
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bbd4cf9544fe60488f74428b6adb686
+      internalID: 1322068375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowBreakSmooth_17
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 160
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f96427b1393b0b64c8b8432db142916c
+      internalID: 1623702791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindowBreakSmooth_18
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 160
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bac67103e7913647957ffd38bc09ffe
+      internalID: 611521185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a9ca73af4ec8ba3438c1774a20eb5937
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      WindowBreakSmooth_01: -349500173
+      WindowBreakSmooth_02: 1387589687
+      WindowBreakSmooth_03: 1733707468
+      WindowBreakSmooth_04: -838880007
+      WindowBreakSmooth_05: -393111147
+      WindowBreakSmooth_06: -1550344046
+      WindowBreakSmooth_07: -138851282
+      WindowBreakSmooth_08: -1641899113
+      WindowBreakSmooth_09: -116092637
+      WindowBreakSmooth_10: -451644312
+      WindowBreakSmooth_11: 709297718
+      WindowBreakSmooth_12: 1167071245
+      WindowBreakSmooth_13: 29017029
+      WindowBreakSmooth_14: -719570996
+      WindowBreakSmooth_15: 895486755
+      WindowBreakSmooth_16: 1322068375
+      WindowBreakSmooth_17: 1623702791
+      WindowBreakSmooth_18: 611521185
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

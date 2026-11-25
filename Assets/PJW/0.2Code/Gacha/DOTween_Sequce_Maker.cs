@@ -7,99 +7,96 @@ using System.Collections.Generic;
 
 public class DOTween_Sequce_Maker : MonoBehaviour
 {
+    //private Sequence _showUnzipFieldSeq;
 
-    private Sequence showItemAnim;
-    private Sequence scaleAnim;
-    private CanvasGroup selectImage;
-    //private Sequence pointEnterAnim;
-    //private Sequence pointExitAnim;
- 
+    //private Sequence _unzipFieldscaleSeq;
+
+    //private Sequence _selectFieldSeq;
+
+    //private void OnEnable()
+    //{
+    //    _showUnzipFieldSeq = DOTween.Sequence();
+    //    scaleAnim = DOTween.Sequence();
+    //}
 
 
-    private void OnEnable()
-    {
-        showItemAnim = DOTween.Sequence();
-        scaleAnim = DOTween.Sequence();
-        //pointEnterAnim = DOTween.Sequence();
-        //pointExitAnim = DOTween.Sequence();
-        ShowSequenceMake();
-        PointEnterAnimMake();
-        pointExitAnimMake();
-    }
+    //private void Start()
+    //{
+    //    selectImage = transform.parent.Find("SeletImage").GetComponent<CanvasGroup>();
+    //    selectImage.alpha = 0f;
+    //    PlaySequence();
+    //    ScaleAnimMake();
+    //}
 
-    private void Awake()
-    {
-    }
+    //private void Update()
+    //{
 
-    private void Start()
-    {
-        selectImage = transform.parent.Find("SeletImage").GetComponent<CanvasGroup>();
-        selectImage.alpha = 0f;
-        PlaySequence();
-        ScaleAnimMake();
-    }
+    //}
 
-    private void Update()
-    {
+    //public void PlaySequence()
+    //{
+    //    showItemAnim.Restart();
+    //}
 
-    }
 
-    public void PlaySequence()
-    {
-        showItemAnim.Restart();
-    }
+    ////-------------------------------------------------------------
+    //public void Point_Enter()
+    //{
 
-    public void Point_Enter()
-    {
+    //    if (!showItemAnim.IsActive() || !showItemAnim.IsPlaying())
+    //        //pointEnterAnim.Restart();
+    //        selectImage.DOFade(1f, 0.01f);
 
-       if (!showItemAnim.IsActive() || !showItemAnim.IsPlaying())
-            //pointEnterAnim.Restart();
-            selectImage.DOFade(1f, 0.01f);
-        
-    }
+    //}
 
-    public void Point_Exit()
-    {
-        //pointExitAnim.Restart();
-        selectImage.DOFade(0f, 0.01f);
-    }
+    ////-------------------------------------------------------------
+    //public void Point_Exit()
+    //{
+    //    //pointExitAnim.Restart();
+    //    selectImage.DOFade(0f, 0.01f);
+    //}
 
-    public void ScaleAnimPlay()
-    {
-        scaleAnim.Play();
-    }
 
-    public void ShowSequenceMake()
-    {
-        showItemAnim.Append(transform.parent.DOMoveY(transform.parent.position.y - 800, 0.5f).SetEase(Ease.InOutBack))
-            .Insert(0.3f, transform.DOScale(new Vector2(1.2f, 0.8f), 0.15f).SetEase(Ease.InOutBack))
-            .Append(transform.DOScale(Vector2.one, 0.15f).SetEase(Ease.InOutBack)).OnComplete(ScaleAnimPlay);
-    }
 
-    public void PointEnterAnimMake()
-    {
-        //pointEnterAnim.Append(transform.DORotate(Vector3.forward*60,0.5f)).Pause();
-    }
 
-    public void pointExitAnimMake()
-    {
-        //pointExitAnim.Append(transform.DORotate(Vector3.zero, 0.5f)).Pause();
-    }
 
-    public void ScaleAnimMake()
-    {
-        scaleAnim.Append(transform.parent.DOScale(1.03f, 0.18f).SetEase(Ease.OutQuint)).Append(transform.parent.DOScale(1f, 0.5f).SetEase(Ease.OutQuint)).SetLoops(-1, LoopType.Restart).Pause();
-    }
 
-    public void ScaleAnimStop()
-    {
-        scaleAnim.Pause();
-    }
 
-    private void OnDisable()
-    {
-        showItemAnim.Kill();
-        //pointEnterAnim.Kill();
-        //pointExitAnim.Kill();
-    }
+    ////-------------------------------------------------------------
+    //public void ScaleAnimPlay()
+    //{
+    //    scaleAnim.Play();
+    //}
+
+
+    ////-------------------------------------------------------------
+    //public void ShowSequenceMake()
+    //{
+    //    Debug.Log("이거 실행");
+    //    showItemAnim.Append(transform.parent.DOMoveY(0f, 0.5f).SetEase(Ease.InOutBack))
+    //        .Insert(0.3f, transform.DOScale(new Vector2(1.2f, 0.8f), 0.15f).SetEase(Ease.InOutBack))
+    //        .Append(transform.DOScale(Vector2.one, 0.15f).SetEase(Ease.InOutBack)).OnComplete(ScaleAnimPlay);
+    //}
+
+
+
+    ////-------------------------------------------------------------
+    //public void ScaleAnimMake()
+    //{
+    //    scaleAnim.Append(transform.parent.DOScale(1.03f, 0.18f).SetEase(Ease.OutQuint))
+    //    .Append(transform.parent.DOScale(1f, 0.5f).SetEase(Ease.OutQuint)).SetLoops(-1, LoopType.Restart).Pause();
+    //}
+
+    ////-------------------------------------------------------------
+    //public void ScaleAnimStop()
+    //{
+    //    scaleAnim.Pause();
+    //}
+
+    //private void OnDisable()
+    //{
+    //    showItemAnim.Kill();
+    //    //pointEnterAnim.Kill();
+    //    //pointExitAnim.Kill();
+    //}
 }
