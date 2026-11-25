@@ -184,7 +184,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &788370301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -869,7 +869,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoneyManager
   _moenyText: {fileID: 1437466440}
-  <Money>k__BackingField: 100
 --- !u!4 &1998623024
 Transform:
   m_ObjectHideFlags: 0

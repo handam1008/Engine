@@ -1,5 +1,5 @@
-using System;
-using UnityEngine;
+Ôªøusing UnityEngine;
+using UnityEngine.InputSystem;
 
 public class BettleDefeat : GameState
 {
@@ -11,21 +11,26 @@ public class BettleDefeat : GameState
     public override void Enter()
     {
         base.Enter();
-        Debug.Log("∆–πË....");
-        
-        
+        Debug.Log("Ìå®Î∞∞....");
+        GameLoopManager.Instance.KillingField.SetActive(true);
+        GameLoopManager.Instance.BlueScreen.SetActive(true);
     }
 
     public override void StateUpdate()
     {
         base.StateUpdate();
 
-        // ¥Î√Ê ¡≥¿ª ∂ß «ÿ¡‡æﬂ «“∞≈ 
-        //_machine.ChangeState(CurrentGameType.Prepare);
+        bool keyPressed = Keyboard.current != null && Keyboard.current.anyKey.wasPressedThisFrame;
+        bool mousePressed = Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame;
+        if (!keyPressed && !mousePressed) return;   
+
+        GameLoopManager.Instance.EndTrigger.Lose();
+        _machine.ChangeState(CurrentGameType.Prepare);
     }
     public override void Exit()
     {
         base.Exit();
-
+        Time.timeScale = 1f;
+        GameLoopManager.Instance.BlueScreen.SetActive(false);
     }
 }

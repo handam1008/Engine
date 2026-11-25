@@ -1,3 +1,5 @@
+using DevLib.ServiceLocator;
+using RYU.Script.Service.PanelService;
 using UnityEngine;
 
 public class Bettleing : GameState
@@ -10,6 +12,13 @@ public class Bettleing : GameState
     {
         Debug.Log("Bettling");
         base.Enter();
+        GameLoopManager.Instance.KillingField.SetActive(false);
+        IPanelService panel = ServiceLocator.Get<IPanelService>();
+
+        if (!panel.WindowPanel.activeSelf)
+        {
+            panel.SetWindowPanelActive();
+        }
     }
 
     public override void StateUpdate()

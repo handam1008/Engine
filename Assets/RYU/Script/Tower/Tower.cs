@@ -20,6 +20,7 @@ namespace RYU.Script.Tower
 
         private void TowerDead()
         {
+            GameLoopManager.Instance.ChangeState(CurrentGameType.Victory);
             trigger.End(stage.getGold);
         }
 

@@ -1,14 +1,7 @@
-using DG.Tweening;
-using JetBrains.Annotations;
 using RYU.Script.Charcter;
-using System.Collections;
 using System.Collections.Generic;
-using System.Net;
-using System.Net.NetworkInformation;
-using TMPro;
+using System.Linq;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.UI;
 
 public class Gacha_probability_Manger : MonoBehaviour
 {
@@ -19,6 +12,8 @@ public class Gacha_probability_Manger : MonoBehaviour
     private float sumWeigh;
     
     public static Gacha_probability_Manger instance;
+
+    public CharacterDataSO CharacterDataSO { get; private set; }
 
     private void Awake()
     {
@@ -51,7 +46,9 @@ public class Gacha_probability_Manger : MonoBehaviour
         {
             if(n<pair.Value)
             {
-                return CharacterData.charcterDatas[pair.Key];   
+                CharacterDataSO = CharacterData.charcterDatas[pair.Key];
+                CharacterData.charcterDatas.Append(CharacterDataSO);
+                return CharacterData.charcterDatas[pair.Key];
             }
             n -= pair.Value;
         }

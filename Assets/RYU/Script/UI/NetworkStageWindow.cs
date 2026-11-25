@@ -53,6 +53,7 @@ namespace RYU.Script.UI
 
             _current = item;
             item.Stage.SetActive(true);
+            GameLoopManager.Instance.ChangeState(CurrentGameType.Bettling);
             gameObject.SetActive(false);
         }
 
@@ -67,6 +68,12 @@ namespace RYU.Script.UI
                 _current = null;
             }
 
+            window.Show();
+        }
+
+        public void OnStageFailed()
+        {
+            _current = null;
             window.Show();
         }
 

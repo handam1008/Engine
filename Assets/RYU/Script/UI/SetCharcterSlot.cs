@@ -9,9 +9,10 @@ namespace RYU.Script.UI
         [SerializeField] private CharacterDataSoList charcters;
         [SerializeField] private GameObject characterSlot;
 
-
-     
-
+        private void OnEnable()
+        {
+            SetCurrentCharacter();
+        }
 
         public void SetHaveCharacter()
         {
