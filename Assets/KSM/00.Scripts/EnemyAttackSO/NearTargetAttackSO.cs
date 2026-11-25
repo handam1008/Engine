@@ -9,7 +9,7 @@ namespace KSM._00.Scripts.EnemyAttackSO
         {
             Collider2D target = unit.NearTarget();
             if(target != null && target.TryGetComponent(out HealthSystem healthSystem))
-                healthSystem.Damage(unit.UnitSo.attackDmg);
+                healthSystem.Damage(unit.UnitSo.attackDmg,unit);
             
         }
     }

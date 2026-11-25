@@ -14,7 +14,7 @@ namespace KSM._00.Scripts.EnemyAttackSO
                 Wave wave = Instantiate(wavePrefab, new Vector3(target.transform.position.x,target.transform.position.y-0.5f), Quaternion.identity);
                 wave.WavePower(unit.UnitSo.whatIsDetect);
                 
-                target.HpCompo.Damage(unit.UnitSo.attackDmg);
+                target.HpCompo.Damage(unit.UnitSo.attackDmg,unit);
             }
             
             

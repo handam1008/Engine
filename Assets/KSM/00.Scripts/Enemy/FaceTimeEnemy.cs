@@ -36,9 +36,9 @@ namespace KSM._00.Scripts.Enemy
             Collider2D[] targets = Physics2D.OverlapBoxAll(pos, boxSize, 0, UnitSo.whatIsDetect);
             foreach (Collider2D t in targets)
             {
-                if (t.TryGetComponent(out HealthSystem health))
+                if (t.TryGetComponent(out AbstractUnit health))
                 {
-                    health.Damage(dmg);
+                    health.HpCompo.Damage(dmg, health);
                 }
             }
         }

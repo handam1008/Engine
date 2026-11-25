@@ -65,10 +65,10 @@ namespace RYU.Script.Charcter.Calculate
         {
             if (other.CompareTag("Character")) return;
             if (_hit) return;
-            if (other.TryGetComponent(out HealthSystem healthSystem) && !healthSystem.Dead)
+            if (other.TryGetComponent(out AbstractUnit healthSystem) && !healthSystem.HpCompo.Dead)
             {
                 _hit = true;
-                healthSystem.Damage(_random);
+                healthSystem.HpCompo.Damage(_random,healthSystem);
                 Destroy(gameObject);
             }
         }

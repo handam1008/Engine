@@ -47,8 +47,8 @@ namespace RYU.Script.Charcter.Internet
             var cols = Physics2D.OverlapCircleAll(impactPosition, 0.3f, _targetMask);
             foreach (var col in cols)
             {
-                if (!col.TryGetComponent(out HealthSystem health)) continue;
-                health.Damage(_attackDamage);
+                if (!col.TryGetComponent(out AbstractUnit health)) continue;
+                health.HpCompo.Damage(_attackDamage,health);
             }
             
             ReturnAfterBreakAsync(token).Forget();

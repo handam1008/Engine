@@ -13,6 +13,12 @@ public class HealthSystem : MonoBehaviour ,IDamageAble
     private readonly List<float> _knockbacks = new();
     private int _count;
     public event Action OnReceive;
+    private AbstractUnit _unit;
+
+    private void Awake()
+    {
+        _unit = GetComponent<AbstractUnit>();
+    }
 
 
     public void Init(int health,UnitSO unit)
@@ -35,11 +41,11 @@ public class HealthSystem : MonoBehaviour ,IDamageAble
     }
 
 
-    public void Damage(int dmg)
+    public void Damage(int dmg, AbstractUnit unit)
     {
         if (Dead) return;
 
-        Health -= dmg;
+        Health -= TypeDamageManager.instance.TypeChecking(_unit,unit,dmg);
 
         if (Dead)
         {
