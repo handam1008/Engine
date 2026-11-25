@@ -46,7 +46,7 @@ namespace RYU.Script.Charcter.MousePointer
             {
                 Release(false);
                 if (!HpCompo.Dead)
-                    HpCompo.Damage(HpCompo.Health);
+                    HpCompo.Damage(HpCompo.Health,this);
                 return;
             }
 
@@ -72,7 +72,7 @@ namespace RYU.Script.Charcter.MousePointer
             MoveCompo.RbCompo.simulated = false;
             transform.position = AnimCompo.transform.position;
             AnimCompo.transform.localPosition = Vector3.zero;
-            HpCompo.Damage(HpCompo.Health);
+            HpCompo.Damage(HpCompo.Health,this);
         }
 
         private void OnDisable() => Release(false);
@@ -94,7 +94,7 @@ namespace RYU.Script.Charcter.MousePointer
                 body.simulated = true;
                 enemy.RenderCompo.sharedMaterial = material;
                 if (landed)
-                    enemy.HpCompo.Damage(UnitSo.attackDmg);
+                    enemy.HpCompo.Damage(UnitSo.attackDmg,this);
             }
             _selected.Clear();
         }

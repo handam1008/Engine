@@ -52,9 +52,9 @@ public class StaticEnemy : MonoBehaviour
             foreach (var c in targets)
             {
                 if (count >= maxChainCount) break;
-                if (c.TryGetComponent<IDamageAble>(out IDamageAble damage))
+                if (c.TryGetComponent<AbstractUnit>(out AbstractUnit damage))
                 {
-                    damage.Damage(3);
+                    damage.HpCompo.Damage(3,damage);
                     Debug.Log(c.name+" 타격");
                 }
                 lineRenderer.positionCount++;

@@ -43,9 +43,9 @@ namespace RYU.Script.Charcter.Notepad
         {
             if (!gameObject.activeSelf) return;
             if (other.CompareTag("Character")) return;
-            if (other.TryGetComponent(out HealthSystem healthSystem) && !healthSystem.Dead)
+            if (other.TryGetComponent(out AbstractUnit healthSystem) && !healthSystem.HpCompo.Dead)
             {
-                healthSystem.Damage(_attackDamage);
+                healthSystem.HpCompo.Damage(_attackDamage,healthSystem);
                 PoolManager.Instance.Push(this);
                 var ps = PoolManager.Instance.Pop(hitParticles.name);
                 if (ps == null) return;

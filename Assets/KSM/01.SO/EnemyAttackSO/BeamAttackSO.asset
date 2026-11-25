@@ -9,7 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25f8d920487b02446ad3acf97221c069, type: 3}
+  m_Script: {fileID: 11500000, guid: 401ca4875b4159548f9b67c194681197, type: 3}
   m_Name: BeamAttackSO
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyBeam
+  m_EditorClassIdentifier: Assembly-CSharp::KSM.SherlockLight.SherlockLensAttack
   skillPrefab: {fileID: 2809931930576686636, guid: 4696bfe83439f5840b66be949756fcb8, type: 3}
+  lightMaterial: {fileID: 2100000, guid: 8bd3e6ea10dd48a3ad608a8d084e4caa, type: 2}
+  width: 1.67
+  lightIntensity: 0.881
+  lightAngle: 29.4
+  revealSeconds: 0.12
+  releaseSeconds: 0.12
+  magnifierPath: Sherlock-Magnifier_0
+  lensUV: {x: 0.364, y: 0.635}
