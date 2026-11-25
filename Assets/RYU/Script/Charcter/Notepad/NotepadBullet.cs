@@ -2,8 +2,8 @@
 using PrimeTween;
 using TMPro;
 using UnityEngine;
-using Random = UnityEngine.Random;
 using RYU.Script.Pool;
+using Random = UnityEngine.Random;
 
 namespace RYU.Script.Charcter.Notepad
 {
