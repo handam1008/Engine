@@ -11,7 +11,10 @@ namespace RYU.Script.Stage
         public EnemySO enemy;
         public float nextWaitTime;
         public int count;
+        public float countInterval = 0.5f;
         public float percent;
+        public bool once;
+        public EnemySO reviveEnemy;
         public bool isSpawn;
     }
     
