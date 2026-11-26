@@ -20,6 +20,7 @@ namespace RYU.Script.Tower
         private void OnDisable()
         {
             HpCompo.Init(UnitSo.maxHp, UnitSo);
+            StateMachine.ChangeState(State.Chase);
         }
     }
 }

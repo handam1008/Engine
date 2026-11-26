@@ -6,7 +6,7 @@ namespace RYU.Script.Service.GoldService
 {
     public class GoldService : MonoBehaviour, IGoldService
     {
-        public int Gold { get; private set; }
+        [field:SerializeField] public int Gold { get; private set; }
         public event Action OnChanged;
 
         private void Awake()
