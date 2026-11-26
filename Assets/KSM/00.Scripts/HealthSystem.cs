@@ -13,6 +13,7 @@ public class HealthSystem : MonoBehaviour ,IDamageAble
     private readonly List<float> _knockbacks = new();
     private int _count;
     public event Action OnReceive;
+    public event Func<int, bool> CanTakedamage;
 
 
     public void Init(int health,UnitSO unit)
@@ -38,6 +39,8 @@ public class HealthSystem : MonoBehaviour ,IDamageAble
     public void Damage(int dmg)
     {
         if (Dead) return;
+
+        if (CanTakedamage?.Invoke(dmg) == false) return;
 
         Health -= dmg;
 

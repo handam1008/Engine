@@ -31,6 +31,7 @@ public class Tux : AbstractUnit
             data.isSpawn = false;
         }
         HpCompo.OnDamaged += HandleDamage;
+        HpCompo.CanTakedamage += BarrialOff;
     }
 
     private void HandleDamage()
@@ -81,12 +82,18 @@ public class Tux : AbstractUnit
         HpCompo.Init(UnitSo.maxHp, UnitSo);
     }
 
-    public void BarrialOff(int dmg)
+    public bool BarrialOff(int dmg)
     {
-        if (dmg < 10) return;
-
-        nowbarrialing = false;
-        barria.SetActive(nowbarrialing);
+        if(dmg >= 300)
+        {
+            nowbarrialing = true;
+            Debug.Log("가드브레이크");
+        }
+        return nowbarrialing;
+    }
+    private void OnDestroy()
+    {
+        HpCompo.CanTakedamage -= BarrialOff;
     }
 }
 

@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 9181211078100575540}
   - component: {fileID: 1709407163796903988}
-  - component: {fileID: 5521010525656641054}
   - component: {fileID: 4643264329405701698}
   - component: {fileID: -2846080977497239036}
   - component: {fileID: 8723779431226959032}
   - component: {fileID: -6038004021258076251}
+  - component: {fileID: 4122726687126348960}
   m_Layer: 0
   m_Name: Tux
   m_TagString: Untagged
@@ -97,22 +97,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
---- !u!114 &5521010525656641054
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5463226076990399940}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c80f2689d8ab4c3790005f84a1e6ea9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BugEnemy
-  <UnitSo>k__BackingField: {fileID: 11400000, guid: 36362f8496a540047af02f4363695a52, type: 2}
-  <Attack>k__BackingField: {fileID: 11400000, guid: 06f9cdd81949f4044a187b51321416c0, type: 2}
-  target: {fileID: 0}
-  lastAttackTime: 0
 --- !u!114 &4643264329405701698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,3 +197,22 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &4122726687126348960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5463226076990399940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ecf4b11555a21848b10e2b1c1dfeafe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Tux
+  <UnitSo>k__BackingField: {fileID: 11400000, guid: 36362f8496a540047af02f4363695a52, type: 2}
+  <Attack>k__BackingField: {fileID: 11400000, guid: 06f9cdd81949f4044a187b51321416c0, type: 2}
+  target: {fileID: 0}
+  lastAttackTime: 0
+  barria: {fileID: 0}
+  stage: {fileID: 0}
+  trigger: {fileID: 0}
