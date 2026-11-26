@@ -1,0 +1,1456 @@
+fileFormatVersion: 2
+guid: 5d49ac39132253db83ea67978d9686bf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8291923836976643652
+    second: Mail_Midboss_130
+  - first:
+      213: 4119848209460410106
+    second: Mail_Midboss_131
+  - first:
+      213: 7245153753363325275
+    second: Mail_Midboss_132
+  - first:
+      213: 2041922370522447626
+    second: Mail_Midboss_133
+  - first:
+      213: 2420676075729260615
+    second: Mail_Midboss_134
+  - first:
+      213: 6560332620172259683
+    second: Mail_Midboss_135
+  - first:
+      213: 8253448446569191737
+    second: Mail_Midboss_136
+  - first:
+      213: 1210535905985203053
+    second: Mail_Midboss_137
+  - first:
+      213: 8541640183377495520
+    second: Mail_Midboss_138
+  - first:
+      213: 5851384611996445695
+    second: Mail_Midboss_139
+  - first:
+      213: 4014986829537362759
+    second: Mail_Midboss_140
+  - first:
+      213: 2387230763259369880
+    second: Mail_Midboss_141
+  - first:
+      213: 7058740388657170606
+    second: Mail_Midboss_142
+  - first:
+      213: 2587614446353842035
+    second: Mail_Midboss_143
+  - first:
+      213: 1739085776048939022
+    second: Mail_Midboss_144
+  - first:
+      213: 166073850866364244
+    second: Mail_Midboss_145
+  - first:
+      213: 7440634930729175695
+    second: Mail_Midboss_146
+  - first:
+      213: 582185831608375837
+    second: Mail_Midboss_147
+  - first:
+      213: 8149333101922353969
+    second: Mail_Midboss_148
+  - first:
+      213: 7072047323621482835
+    second: Mail_Midboss_149
+  - first:
+      213: 2968970405809392014
+    second: Mail_Midboss_150
+  - first:
+      213: 7797989127981302143
+    second: Mail_Midboss_151
+  - first:
+      213: 481664811668516177
+    second: Mail_Midboss_152
+  - first:
+      213: 4504685667578203884
+    second: Mail_Midboss_153
+  - first:
+      213: 3234163167885583496
+    second: Mail_Midboss_154
+  - first:
+      213: 6019094517215034732
+    second: Mail_Midboss_155
+  - first:
+      213: 3549918865656727627
+    second: Mail_Midboss_156
+  - first:
+      213: 9014248484421703074
+    second: Mail_Midboss_157
+  - first:
+      213: 2829858635435415312
+    second: Mail_Midboss_158
+  - first:
+      213: 6342045948261247719
+    second: Mail_Midboss_159
+  - first:
+      213: 104174551471117195
+    second: Mail_Midboss_160
+  - first:
+      213: 8621237292392624160
+    second: Mail_Midboss_161
+  - first:
+      213: 5868042145048698095
+    second: Mail_Midboss_162
+  - first:
+      213: 9036639986259339104
+    second: Mail_Midboss_163
+  - first:
+      213: 5741539805541010973
+    second: Mail_Midboss_164
+  - first:
+      213: 2602498959622187743
+    second: Mail_Midboss_165
+  - first:
+      213: 3562826488925080869
+    second: Mail_Midboss_166
+  - first:
+      213: 8195713191275176574
+    second: Mail_Midboss_167
+  - first:
+      213: 3306454886143022728
+    second: Mail_Midboss_168
+  - first:
+      213: 4489110970945779137
+    second: Mail_Midboss_169
+  - first:
+      213: 1504840576511568422
+    second: Mail_Midboss_170
+  - first:
+      213: 5402029081557159396
+    second: Mail_Midboss_171
+  - first:
+      213: 3408352122176358221
+    second: Mail_Midboss_172
+  - first:
+      213: 3916447466583649795
+    second: Mail_Midboss_173
+  - first:
+      213: 1875026701947879126
+    second: Mail_Midboss_174
+  - first:
+      213: 5304477119417647614
+    second: Mail_Midboss_175
+  - first:
+      213: 6903384432244052169
+    second: Mail_Midboss_176
+  - first:
+      213: 1481992611117165714
+    second: Mail_Midboss_177
+  - first:
+      213: 6535339166894182126
+    second: Mail_Midboss_178
+  - first:
+      213: 7337948967340563364
+    second: Mail_Midboss_179
+  - first:
+      213: 7321375203294174422
+    second: Mail_Midboss_180
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 9
+  spritePivot: {x: 0.76953125, y: 0.09202453988}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mail_Midboss_130
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 978
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44e36971cc4d21370000000000000000
+      internalID: 8291923836976643652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_131
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 978
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af6ba6d5e14ac2930000000000000000
+      internalID: 4119848209460410106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_132
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 978
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b512f44c3f4fb8460000000000000000
+      internalID: 7245153753363325275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_133
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 978
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0ff9e1d39d565c10000000000000000
+      internalID: 2041922370522447626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_134
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 978
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 740112ac018f79120000000000000000
+      internalID: 2420676075729260615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_135
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 978
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36176c982cbfa0b50000000000000000
+      internalID: 6560332620172259683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_136
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 978
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93991cd22a32a8270000000000000000
+      internalID: 8253448446569191737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_137
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 978
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6b8a182effacc010000000000000000
+      internalID: 1210535905985203053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_138
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 815
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e50b61cd700a8670000000000000000
+      internalID: 8541640183377495520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_139
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 815
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffb2c3a7d4b443150000000000000000
+      internalID: 5851384611996445695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_140
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 815
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7434278cf3918b730000000000000000
+      internalID: 4014986829537362759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_141
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 815
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89995f82bb5212120000000000000000
+      internalID: 2387230763259369880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_142
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 815
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea80d931cfea5f160000000000000000
+      internalID: 7058740388657170606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_143
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 815
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37ff69211ad09e320000000000000000
+      internalID: 2587614446353842035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_144
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 815
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e00e45b9c49722810000000000000000
+      internalID: 1739085776048939022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_145
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 815
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45fee5799430e4200000000000000000
+      internalID: 166073850866364244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_146
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 652
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8ac97d1c02724760000000000000000
+      internalID: 7440634930729175695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_147
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 652
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1a5846ede6541800000000000000000
+      internalID: 582185831608375837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_148
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 652
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1330a68774f381170000000000000000
+      internalID: 8149333101922353969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_149
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 652
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 351e53f4295f42260000000000000000
+      internalID: 7072047323621482835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_150
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 652
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e898ae29ad6e33920000000000000000
+      internalID: 2968970405809392014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_151
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 652
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f710fafdbc5083c60000000000000000
+      internalID: 7797989127981302143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_152
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 652
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15dae4028973fa600000000000000000
+      internalID: 481664811668516177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_153
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 652
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceecac07fbbd38e30000000000000000
+      internalID: 4504685667578203884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_154
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 489
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 884e87f044e02ec20000000000000000
+      internalID: 3234163167885583496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_155
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 489
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6d7a18a29e188350000000000000000
+      internalID: 6019094517215034732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_156
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 489
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b484de86668d34130000000000000000
+      internalID: 3549918865656727627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_157
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 489
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a51f0fac3b091d70000000000000000
+      internalID: 9014248484421703074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_158
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 489
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01713b98f6da54720000000000000000
+      internalID: 2829858635435415312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_159
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 489
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ea21573039730850000000000000000
+      internalID: 6342045948261247719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_160
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 489
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b83521fd33a127100000000000000000
+      internalID: 104174551471117195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_161
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 489
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 020b961e3a9c4a770000000000000000
+      internalID: 8621237292392624160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_162
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 326
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fec16ae9d397f6150000000000000000
+      internalID: 5868042145048698095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_163
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 326
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06724187038986d70000000000000000
+      internalID: 9036639986259339104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_164
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 326
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1e890d780c0eaf40000000000000000
+      internalID: 5741539805541010973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_165
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 326
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdaaa90e30fed1420000000000000000
+      internalID: 2602498959622187743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_166
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 326
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52d4bb4a0d3b17130000000000000000
+      internalID: 3562826488925080869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_167
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 326
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e72a0f689b50db170000000000000000
+      internalID: 8195713191275176574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_168
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 326
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 886d86a5333e2ed20000000000000000
+      internalID: 3306454886143022728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_169
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 326
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c5388cc4a68c4e30000000000000000
+      internalID: 4489110970945779137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_170
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 163
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62ae096088442e410000000000000000
+      internalID: 1504840576511568422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_171
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 163
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ed4b8814dcd7fa40000000000000000
+      internalID: 5402029081557159396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_172
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 163
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4745c76236ec4f20000000000000000
+      internalID: 3408352122176358221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_173
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 163
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30e623b78340a5630000000000000000
+      internalID: 3916447466583649795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_174
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 163
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6deb9f1e9de650a10000000000000000
+      internalID: 1875026701947879126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_175
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 163
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef18316f5d94d9940000000000000000
+      internalID: 5304477119417647614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_176
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 163
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c05edfb09fbdcf50000000000000000
+      internalID: 6903384432244052169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_177
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 163
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29c64698d68119410000000000000000
+      internalID: 1481992611117165714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_178
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeecc69b85032ba50000000000000000
+      internalID: 6535339166894182126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_179
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ab574a25b1a5d560000000000000000
+      internalID: 7337948967340563364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mail_Midboss_180
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 163
+      alignment: 9
+      pivot: {x: 0.76953125, y: 0.09202453988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dcd3b305ffba9560000000000000000
+      internalID: 7321375203294174422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f7364ee889015dbab8e6d9b7d273ba64
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Mail_Midboss_130: 8291923836976643652
+      Mail_Midboss_131: 4119848209460410106
+      Mail_Midboss_132: 7245153753363325275
+      Mail_Midboss_133: 2041922370522447626
+      Mail_Midboss_134: 2420676075729260615
+      Mail_Midboss_135: 6560332620172259683
+      Mail_Midboss_136: 8253448446569191737
+      Mail_Midboss_137: 1210535905985203053
+      Mail_Midboss_138: 8541640183377495520
+      Mail_Midboss_139: 5851384611996445695
+      Mail_Midboss_140: 4014986829537362759
+      Mail_Midboss_141: 2387230763259369880
+      Mail_Midboss_142: 7058740388657170606
+      Mail_Midboss_143: 2587614446353842035
+      Mail_Midboss_144: 1739085776048939022
+      Mail_Midboss_145: 166073850866364244
+      Mail_Midboss_146: 7440634930729175695
+      Mail_Midboss_147: 582185831608375837
+      Mail_Midboss_148: 8149333101922353969
+      Mail_Midboss_149: 7072047323621482835
+      Mail_Midboss_150: 2968970405809392014
+      Mail_Midboss_151: 7797989127981302143
+      Mail_Midboss_152: 481664811668516177
+      Mail_Midboss_153: 4504685667578203884
+      Mail_Midboss_154: 3234163167885583496
+      Mail_Midboss_155: 6019094517215034732
+      Mail_Midboss_156: 3549918865656727627
+      Mail_Midboss_157: 9014248484421703074
+      Mail_Midboss_158: 2829858635435415312
+      Mail_Midboss_159: 6342045948261247719
+      Mail_Midboss_160: 104174551471117195
+      Mail_Midboss_161: 8621237292392624160
+      Mail_Midboss_162: 5868042145048698095
+      Mail_Midboss_163: 9036639986259339104
+      Mail_Midboss_164: 5741539805541010973
+      Mail_Midboss_165: 2602498959622187743
+      Mail_Midboss_166: 3562826488925080869
+      Mail_Midboss_167: 8195713191275176574
+      Mail_Midboss_168: 3306454886143022728
+      Mail_Midboss_169: 4489110970945779137
+      Mail_Midboss_170: 1504840576511568422
+      Mail_Midboss_171: 5402029081557159396
+      Mail_Midboss_172: 3408352122176358221
+      Mail_Midboss_173: 3916447466583649795
+      Mail_Midboss_174: 1875026701947879126
+      Mail_Midboss_175: 5304477119417647614
+      Mail_Midboss_176: 6903384432244052169
+      Mail_Midboss_177: 1481992611117165714
+      Mail_Midboss_178: 6535339166894182126
+      Mail_Midboss_179: 7337948967340563364
+      Mail_Midboss_180: 7321375203294174422
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
