@@ -62,6 +62,11 @@ public abstract class AbstractUnit : MonoBehaviour
         };
     }
 
+    public virtual void EndAttack()
+    {
+        
+    }
+
     protected virtual void Update()
     {
         StateMachine.CurrentState.UpdateState();
