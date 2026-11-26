@@ -7,7 +7,7 @@ public class Gacha_probability_Manger : MonoBehaviour
 {
     [SerializeField] private CharacterDataSoList CharacterData;
 
-    [SerializeField] private int fristCharacterNumber = 0;
+    [SerializeField] private CharacterDataSO fristCharacter;
 
     private Dictionary<int, float> weighsDic = new();
 
@@ -48,11 +48,11 @@ public class Gacha_probability_Manger : MonoBehaviour
         {
             if(n<pair.Value)
             {
-                if(CharacterData.currentCharacter.Length <= 1)
+                if(CharacterData.currentCharacter.Length <= 2)
                 {
-                    CharacterDataSO = CharacterData.charcterDatas[fristCharacterNumber];
+                    CharacterDataSO = fristCharacter;
                     CharacterData.charcterDatas.Append(CharacterDataSO);
-                    return CharacterData.charcterDatas[fristCharacterNumber];
+                    return fristCharacter;
                 }
                 CharacterDataSO = CharacterData.charcterDatas[pair.Key];
                 CharacterData.charcterDatas.Append(CharacterDataSO);

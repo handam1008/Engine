@@ -28,8 +28,9 @@ MonoBehaviour:
   attackDmg: 0
   charcterRank: 0
   number: 2
+  <WhatIsStrong>k__BackingField: []
   level: 1
   spawnStorage: 200
   attackStorage: 5
-  <Weight>k__BackingField: 0
+  <Weight>k__BackingField: 5
   spawnCoolTime: 20

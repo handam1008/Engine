@@ -1,6 +1,6 @@
-using System.Collections;
 using KSM._00.Scripts;
 using UnityEngine;
+using System.Collections;
 public enum UnitType
 {
     Enemy,

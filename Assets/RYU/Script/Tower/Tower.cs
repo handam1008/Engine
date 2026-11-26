@@ -55,7 +55,7 @@ namespace RYU.Script.Tower
                 if (HpCompo.GetPercentage() > data.percent) continue;
 
                 data.isSpawn = true;
-                Instantiate(data.enemy.prefab, transform.position, Quaternion.identity);
+                StartCoroutine(SpawnGroup(data));
             }
         }
 
@@ -70,24 +70,35 @@ namespace RYU.Script.Tower
 
                 StageData data = stage.stageDates[_count++];
 
-                if (!Mathf.Approximately(data.percent, 100f)) 
+                if (!Mathf.Approximately(data.percent, 100f) || data.isSpawn)
                     continue;
 
-                StartCoroutine(CreateEnemy(data.enemy.prefab, data.nextWaitTime));
+                StartCoroutine(CreateEnemy(data));
                 break;
             }
-            
+
         }
 
 
-        private IEnumerator CreateEnemy(GameObject gg, float waitTime)
+        private IEnumerator CreateEnemy(StageData data)
         {
-            _canCreate = false; 
-            Instantiate(gg, transform.position, Quaternion.identity);
-            Debug.Log(gg.name + "소환!");
-            _count++;
-            yield return new WaitForSeconds(waitTime);
+            _canCreate = false;
+            data.isSpawn = data.once;
+            yield return SpawnGroup(data);
+            yield return new WaitForSeconds(data.nextWaitTime);
             _canCreate = true;
+        }
+
+        private IEnumerator SpawnGroup(StageData data)
+        {
+            for (int i = 0; i < Mathf.Max(1, data.count); i++)
+            {
+                if (i > 0) yield return new WaitForSeconds(data.countInterval);
+                GameObject enemy = Instantiate(data.enemy.prefab, transform.position, Quaternion.identity);
+                Debug.Log(enemy.name + "소환!");
+                if (data.reviveEnemy != null)
+                    enemy.GetComponent<HealthSystem>().OnReceive += () => Instantiate(data.reviveEnemy.prefab, transform.position, Quaternion.identity);
+            }
         }
 
         private void OnDisable()
