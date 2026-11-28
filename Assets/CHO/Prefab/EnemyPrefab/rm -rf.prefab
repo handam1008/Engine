@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c80f2689d8ab4c3790005f84a1e6ea9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BugEnemy
-  <UnitSo>k__BackingField: {fileID: 11400000, guid: a307a09e13f8d244993bf53256b5ea61, type: 2}
+  <UnitSo>k__BackingField: {fileID: 11400000, guid: e0d81966eb9e40d4c91c3292ae1f78b7, type: 2}
   <Attack>k__BackingField: {fileID: 11400000, guid: 2fe1c125b0d544846a1fffcbe96334d5, type: 2}
   target: {fileID: 0}
   lastAttackTime: 0
@@ -65,6 +65,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b105695aea9407d8419f253d2816b3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveSystem
+  SpeedMultiplier: 1
 --- !u!61 &4944797291905518826
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -151,7 +152,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthSystem
   <Health>k__BackingField: 0
-  _maxHealth: 0
 --- !u!1 &2857786706028373276
 GameObject:
   m_ObjectHideFlags: 0
