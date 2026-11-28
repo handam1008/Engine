@@ -1,6 +1,6 @@
-using System.Collections;
 using KSM._00.Scripts;
 using UnityEngine;
+using System.Collections;
 public enum UnitType
 {
     Enemy,
@@ -60,6 +60,11 @@ public abstract class AbstractUnit : MonoBehaviour
         {
             StateMachine.ChangeState(State.Hit);
         };
+    }
+
+    public virtual void EndAttack()
+    {
+        
     }
 
     protected virtual void Update()

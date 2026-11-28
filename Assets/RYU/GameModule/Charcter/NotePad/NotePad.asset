@@ -25,11 +25,12 @@ MonoBehaviour:
   knockbackList: []
   attackRange: 3.5
   attackCoolTime: 1.2
-  attackDmg: 5
+  attackDmg: 20
   charcterRank: 0
   number: 0
+  <WhatIsStrong>k__BackingField: []
   level: 1
   spawnStorage: 80
-  attackStorage: 1
-  <Weight>k__BackingField: 0
+  attackStorage: 20
+  <Weight>k__BackingField: 12
   spawnCoolTime: 3

@@ -17139,6 +17139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Gacha_probability_Manger
   CharacterData: {fileID: 11400000, guid: c1fe10547a837ae4ea7d2847df7117a1, type: 2}
+  fristCharacter: {fileID: 11400000, guid: 574fda8e87a6db441b68cb631c89ecc0, type: 2}
 --- !u!4 &1987615060
 Transform:
   m_ObjectHideFlags: 0

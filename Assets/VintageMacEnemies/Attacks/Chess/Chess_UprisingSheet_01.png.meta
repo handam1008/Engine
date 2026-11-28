@@ -1,0 +1,1612 @@
+fileFormatVersion: 2
+guid: 2e663d6fdc6d5ad4a41e2bd2e9e49543
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1859929138023089129
+    second: Chess_UprisingSheet_01_000
+  - first:
+      213: 7888430624235174880
+    second: Chess_UprisingSheet_01_004
+  - first:
+      213: 3614879404209000657
+    second: Chess_UprisingSheet_01_006
+  - first:
+      213: 1777261283102736458
+    second: Chess_UprisingSheet_01_007
+  - first:
+      213: 5058726554929954863
+    second: Chess_UprisingSheet_01_008
+  - first:
+      213: 5636193819917636420
+    second: Chess_UprisingSheet_01_009
+  - first:
+      213: 5806731829807468606
+    second: Chess_UprisingSheet_01_010
+  - first:
+      213: 6730556814194232019
+    second: Chess_UprisingSheet_01_011
+  - first:
+      213: 5139566864748892968
+    second: Chess_UprisingSheet_01_012
+  - first:
+      213: 628602339434301114
+    second: Chess_UprisingSheet_01_013
+  - first:
+      213: 6206806062349486792
+    second: Chess_UprisingSheet_01_014
+  - first:
+      213: 3260530418979876534
+    second: Chess_UprisingSheet_01_015
+  - first:
+      213: 3129770172251789897
+    second: Chess_UprisingSheet_01_016
+  - first:
+      213: 4594580985584584484
+    second: Chess_UprisingSheet_01_017
+  - first:
+      213: 3773403213971586697
+    second: Chess_UprisingSheet_01_018
+  - first:
+      213: 348452761195837515
+    second: Chess_UprisingSheet_01_019
+  - first:
+      213: 3572936346613119811
+    second: Chess_UprisingSheet_01_020
+  - first:
+      213: 2851543890954980124
+    second: Chess_UprisingSheet_01_021
+  - first:
+      213: 7784086127878674900
+    second: Chess_UprisingSheet_01_022
+  - first:
+      213: 5940423906967718032
+    second: Chess_UprisingSheet_01_023
+  - first:
+      213: 3934802576212971565
+    second: Chess_UprisingSheet_01_024
+  - first:
+      213: 7752669227698722155
+    second: Chess_UprisingSheet_01_025
+  - first:
+      213: 449480665840330772
+    second: Chess_UprisingSheet_01_026
+  - first:
+      213: 7007565203794306969
+    second: Chess_UprisingSheet_01_027
+  - first:
+      213: 4344396047585123108
+    second: Chess_UprisingSheet_01_028
+  - first:
+      213: 6904526346856809130
+    second: Chess_UprisingSheet_01_029
+  - first:
+      213: 8522408392053485311
+    second: Chess_UprisingSheet_01_031
+  - first:
+      213: 6569624927242953854
+    second: Chess_UprisingSheet_01_032
+  - first:
+      213: 6274830741658639721
+    second: Chess_UprisingSheet_01_033
+  - first:
+      213: 3030300821208872943
+    second: Chess_UprisingSheet_01_034
+  - first:
+      213: 7189684168740300758
+    second: Chess_UprisingSheet_01_037
+  - first:
+      213: 6264671528996924388
+    second: Chess_UprisingSheet_01_038
+  - first:
+      213: 4692602286023346086
+    second: Chess_UprisingSheet_01_039
+  - first:
+      213: 4552661532723964352
+    second: Chess_UprisingSheet_01_040
+  - first:
+      213: 764989951538309616
+    second: Chess_UprisingSheet_01_041
+  - first:
+      213: 3962053655890152703
+    second: Chess_UprisingSheet_01_042
+  - first:
+      213: 8159511586915450166
+    second: Chess_UprisingSheet_01_043
+  - first:
+      213: 1528342957074015178
+    second: Chess_UprisingSheet_01_044
+  - first:
+      213: 8667951588933143838
+    second: Chess_UprisingSheet_01_045
+  - first:
+      213: 7837230259602999795
+    second: Chess_UprisingSheet_01_046
+  - first:
+      213: 931283050134243991
+    second: Chess_UprisingSheet_01_047
+  - first:
+      213: 4909752154770818814
+    second: Chess_UprisingSheet_01_048
+  - first:
+      213: 2483048552607410510
+    second: Chess_UprisingSheet_01_049
+  - first:
+      213: 1827835615617768095
+    second: Chess_UprisingSheet_01_050
+  - first:
+      213: 3928911261048352983
+    second: Chess_UprisingSheet_01_051
+  - first:
+      213: 150164992202606375
+    second: Chess_UprisingSheet_01_052
+  - first:
+      213: 4908134907367442735
+    second: Chess_UprisingSheet_01_053
+  - first:
+      213: 1562181710774493987
+    second: Chess_UprisingSheet_01_054
+  - first:
+      213: 4983847702172318944
+    second: Chess_UprisingSheet_01_055
+  - first:
+      213: 6406347594952105061
+    second: Chess_UprisingSheet_01_056
+  - first:
+      213: 2266465287870977883
+    second: Chess_UprisingSheet_01_057
+  - first:
+      213: 8360594547725805522
+    second: Chess_UprisingSheet_01_058
+  - first:
+      213: 6764272009410364477
+    second: Chess_UprisingSheet_01_059
+  - first:
+      213: 2172033736465851319
+    second: Chess_UprisingSheet_01_060
+  - first:
+      213: 5615179600483885021
+    second: Chess_UprisingSheet_01_061
+  - first:
+      213: 7517060630127475393
+    second: Chess_UprisingSheet_01_062
+  - first:
+      213: 8244042292665203213
+    second: Chess_UprisingSheet_01_063
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 9
+  spritePivot: {x: 0.7, y: 0.0520833333}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_000
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1344
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e3c34b52bbcfc910000000000000000
+      internalID: 1859929138023089129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_004
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1344
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ebb9d8abd5597d60000000000000000
+      internalID: 7888430624235174880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_006
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1344
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d0d0c96aa1aa2230000000000000000
+      internalID: 3614879404209000657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_007
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1344
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a40c46c78b91aa810000000000000000
+      internalID: 1777261283102736458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_008
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1248
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f208f6adff4343640000000000000000
+      internalID: 5058726554929954863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_009
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1248
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4435179da68c73e40000000000000000
+      internalID: 5636193819917636420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_010
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1248
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e30d0a575d7a59050000000000000000
+      internalID: 5806731829807468606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_011
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1248
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dac1a233cdb76d50000000000000000
+      internalID: 6730556814194232019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_012
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1152
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 823d9b835d8635740000000000000000
+      internalID: 5139566864748892968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_013
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1152
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab606fa4f7e39b800000000000000000
+      internalID: 628602339434301114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_014
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1152
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ca05188a31032650000000000000000
+      internalID: 6206806062349486792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_015
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1152
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bea6aa142bbf3d20000000000000000
+      internalID: 3260530418979876534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_016
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1056
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94a5ea1b36d2f6b20000000000000000
+      internalID: 3129770172251789897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_017
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1056
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4278881301b33cf30000000000000000
+      internalID: 4594580985584584484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_018
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1056
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98ef7131b32dd5430000000000000000
+      internalID: 3773403213971586697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_019
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1056
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b48f41ca0f3f5d400000000000000000
+      internalID: 348452761195837515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_020
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34bf4f05dae959130000000000000000
+      internalID: 3572936346613119811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_021
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 960
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1b8ec98f08b29720000000000000000
+      internalID: 2851543890954980124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_022
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 960
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d911496711a60c60000000000000000
+      internalID: 7784086127878674900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_023
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 960
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0988c06d110a07250000000000000000
+      internalID: 5940423906967718032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_024
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 864
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d205778781a3b9630000000000000000
+      internalID: 3934802576212971565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_025
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 864
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6595125693079b60000000000000000
+      internalID: 7752669227698722155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_026
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 864
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 418a1dcb840ec3600000000000000000
+      internalID: 449480665840330772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_027
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 864
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9972c88dc6fdf3160000000000000000
+      internalID: 7007565203794306969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_028
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42b1ceb00356a4c30000000000000000
+      internalID: 4344396047585123108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_029
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 768
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa2c9b6712ec1df50000000000000000
+      internalID: 6904526346856809130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_031
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 768
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffee727674da54670000000000000000
+      internalID: 8522408392053485311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_032
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 768
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e742edf501ffb2b50000000000000000
+      internalID: 6569624927242953854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_033
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 672
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96d9346605da41750000000000000000
+      internalID: 6274830741658639721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_034
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 672
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe7babaaa8acd0a20000000000000000
+      internalID: 3030300821208872943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_037
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 672
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d7e30da8a3e6c360000000000000000
+      internalID: 7189684168740300758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_038
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 672
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eb6d50609590f650000000000000000
+      internalID: 6264671528996924388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_039
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a78b9aaae87f1140000000000000000
+      internalID: 4692602286023346086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_040
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 576
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c9e8900b8d4e2f30000000000000000
+      internalID: 4552661532723964352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_041
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 576
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f92f2ece4acd9a00000000000000000
+      internalID: 764989951538309616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_042
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 576
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffcce54eeca0cf630000000000000000
+      internalID: 3962053655890152703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_043
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63d77ceae886c3170000000000000000
+      internalID: 8159511586915450166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_044
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 480
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac3ed5b62d3c53510000000000000000
+      internalID: 1528342957074015178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_045
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 480
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1d84ac9b00ca4870000000000000000
+      internalID: 8667951588933143838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_046
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 480
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f9449ec56f63cc60000000000000000
+      internalID: 7837230259602999795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_047
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79a089cfff49cec00000000000000000
+      internalID: 931283050134243991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_048
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 384
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef6c2506291f22440000000000000000
+      internalID: 4909752154770818814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_049
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 384
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e49663ab08f857220000000000000000
+      internalID: 2483048552607410510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_050
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 384
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9a54b0eec6cd5910000000000000000
+      internalID: 1827835615617768095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_051
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d0b1d4c9fb468630000000000000000
+      internalID: 3928911261048352983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_052
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 288
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7278fe9c34e751200000000000000000
+      internalID: 150164992202606375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_053
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 288
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f29c45f91b23d1440000000000000000
+      internalID: 4908134907367442735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_054
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 288
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32363593dfbfda510000000000000000
+      internalID: 1562181710774493987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_055
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ecb0ae541f2a2540000000000000000
+      internalID: 4983847702172318944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_056
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56c5cc0023be7e850000000000000000
+      internalID: 6406347594952105061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_057
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b579d4bcb2a147f10000000000000000
+      internalID: 2266465287870977883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_058
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 192
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d7a340e17cc60470000000000000000
+      internalID: 8360594547725805522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_059
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d34c50dcd858fdd50000000000000000
+      internalID: 6764272009410364477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_060
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b32636ec2d942e10000000000000000
+      internalID: 2172033736465851319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_061
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 96
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddf9cdc98102ded40000000000000000
+      internalID: 5615179600483885021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_062
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 96
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ca72d5e0d6f15860000000000000000
+      internalID: 7517060630127475393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_UprisingSheet_01_063
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.7, y: 0.0520833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0a3b9f49c8b86270000000000000000
+      internalID: 8244042292665203213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 99a42f29540355508587307a12ce3ad2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Chess_UprisingSheet_01_000: 1859929138023089129
+      Chess_UprisingSheet_01_004: 7888430624235174880
+      Chess_UprisingSheet_01_006: 3614879404209000657
+      Chess_UprisingSheet_01_007: 1777261283102736458
+      Chess_UprisingSheet_01_008: 5058726554929954863
+      Chess_UprisingSheet_01_009: 5636193819917636420
+      Chess_UprisingSheet_01_010: 5806731829807468606
+      Chess_UprisingSheet_01_011: 6730556814194232019
+      Chess_UprisingSheet_01_012: 5139566864748892968
+      Chess_UprisingSheet_01_013: 628602339434301114
+      Chess_UprisingSheet_01_014: 6206806062349486792
+      Chess_UprisingSheet_01_015: 3260530418979876534
+      Chess_UprisingSheet_01_016: 3129770172251789897
+      Chess_UprisingSheet_01_017: 4594580985584584484
+      Chess_UprisingSheet_01_018: 3773403213971586697
+      Chess_UprisingSheet_01_019: 348452761195837515
+      Chess_UprisingSheet_01_020: 3572936346613119811
+      Chess_UprisingSheet_01_021: 2851543890954980124
+      Chess_UprisingSheet_01_022: 7784086127878674900
+      Chess_UprisingSheet_01_023: 5940423906967718032
+      Chess_UprisingSheet_01_024: 3934802576212971565
+      Chess_UprisingSheet_01_025: 7752669227698722155
+      Chess_UprisingSheet_01_026: 449480665840330772
+      Chess_UprisingSheet_01_027: 7007565203794306969
+      Chess_UprisingSheet_01_028: 4344396047585123108
+      Chess_UprisingSheet_01_029: 6904526346856809130
+      Chess_UprisingSheet_01_031: 8522408392053485311
+      Chess_UprisingSheet_01_032: 6569624927242953854
+      Chess_UprisingSheet_01_033: 6274830741658639721
+      Chess_UprisingSheet_01_034: 3030300821208872943
+      Chess_UprisingSheet_01_037: 7189684168740300758
+      Chess_UprisingSheet_01_038: 6264671528996924388
+      Chess_UprisingSheet_01_039: 4692602286023346086
+      Chess_UprisingSheet_01_040: 4552661532723964352
+      Chess_UprisingSheet_01_041: 764989951538309616
+      Chess_UprisingSheet_01_042: 3962053655890152703
+      Chess_UprisingSheet_01_043: 8159511586915450166
+      Chess_UprisingSheet_01_044: 1528342957074015178
+      Chess_UprisingSheet_01_045: 8667951588933143838
+      Chess_UprisingSheet_01_046: 7837230259602999795
+      Chess_UprisingSheet_01_047: 931283050134243991
+      Chess_UprisingSheet_01_048: 4909752154770818814
+      Chess_UprisingSheet_01_049: 2483048552607410510
+      Chess_UprisingSheet_01_050: 1827835615617768095
+      Chess_UprisingSheet_01_051: 3928911261048352983
+      Chess_UprisingSheet_01_052: 150164992202606375
+      Chess_UprisingSheet_01_053: 4908134907367442735
+      Chess_UprisingSheet_01_054: 1562181710774493987
+      Chess_UprisingSheet_01_055: 4983847702172318944
+      Chess_UprisingSheet_01_056: 6406347594952105061
+      Chess_UprisingSheet_01_057: 2266465287870977883
+      Chess_UprisingSheet_01_058: 8360594547725805522
+      Chess_UprisingSheet_01_059: 6764272009410364477
+      Chess_UprisingSheet_01_060: 2172033736465851319
+      Chess_UprisingSheet_01_061: 5615179600483885021
+      Chess_UprisingSheet_01_062: 7517060630127475393
+      Chess_UprisingSheet_01_063: 8244042292665203213
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

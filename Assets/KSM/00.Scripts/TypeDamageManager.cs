@@ -44,7 +44,7 @@ public class TypeDamageManager : MonoBehaviour
             }
         }
 
-        return attacker.attackDmg;
+        return dmg;
     }
 
     public int EnemyTypeChecking(EnemySO hitTarget,CharacterDataSO attacker, int dmg)
@@ -57,7 +57,7 @@ public class TypeDamageManager : MonoBehaviour
             }
         }
 
-        return attacker.attackDmg;
+        return dmg;
     }
     
 }
