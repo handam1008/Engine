@@ -24,6 +24,8 @@ public class GachaArchiveRevealModule : MonoBehaviour, IGachaEnterModule, IGacha
 
     private TaskCompletionSource<bool> _exit;
 
+    private int filenumber = 0;
+
     public void Init()
     {
         if (_file[0] == null || _file[1] == null || _file[2] == null)
@@ -94,18 +96,44 @@ public class GachaArchiveRevealModule : MonoBehaviour, IGachaEnterModule, IGacha
 
     public async Task SelectFieldSeq()
     {
-        foreach(GameObject file in _file)
+        if(!_selectFieldSeq.IsActive() || _selectFieldSeq == null)
+            _selectFieldSeq = DOTween.Sequence();
+
+        if (filenumber == 0)
         {
-            if(!_selectFieldSeq.IsActive()  || _selectFieldSeq == null)
-                _selectFieldSeq = DOTween.Sequence();
-
-            _selectFieldSeq.Append(file.transform
-                .DOLocalMoveY(800, 0.5f)
-                .SetEase(Ease.InOutBack))
+            _selectFieldSeq.Append(_fileTrm[1]
+                .DOLocalMoveY(800, 0.5f))
+                .SetEase(Ease.InOutBack)
+                .Join(_fileTrm[2]
+                .DOLocalMoveY(800, 0.5f))
+                .SetEase(Ease.InOutBack)
+                .Join(_fileTrm[0]
+                .DOLocalMoveX(600,0.5f))
                 .Play();
-
-            await Task.Delay(500);
         }
+        else if (filenumber == 1)
+        {
+            _selectFieldSeq.Append(_fileTrm[0]
+                .DOLocalMoveY(800, 0.5f))
+                .SetEase(Ease.InOutBack)
+                .Join(_fileTrm[2]
+                .DOLocalMoveY(800, 0.5f))
+                .SetEase(Ease.InOutBack)
+                .Play();
+        }
+        else if (filenumber == 2)
+        {
+            _selectFieldSeq.Append(_fileTrm[0]
+                .DOLocalMoveY(800, 0.5f))
+                .SetEase(Ease.InOutBack)
+                .Join(_fileTrm[1]
+                .DOLocalMoveY(800, 0.5f))
+                .SetEase(Ease.InOutBack)
+                .Join(_fileTrm[2]
+                .DOLocalMoveX(-600,0.5f))
+                .Play();
+        }
+        await Task.Delay(500);
     }
 
     public void Point_Enter(CanvasGroup canvasGroup)
@@ -129,5 +157,10 @@ public class GachaArchiveRevealModule : MonoBehaviour, IGachaEnterModule, IGacha
         {
             file.SetActive(false);
         }
+    }
+
+    public void FileNumberSelet(int count)
+    {
+        filenumber = count;
     }
 }

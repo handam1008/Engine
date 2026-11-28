@@ -10,7 +10,7 @@ namespace KSM._00.Scripts.EnemyAttackSO
             Collider2D[] col = unit.DetecPlayer();
             foreach (Collider2D c in col)
             {
-                if(c.TryGetComponent<IDamageAble>(out IDamageAble d))d.Damage(unit.UnitSo.attackDmg);
+                if(c.TryGetComponent<IDamageAble>(out IDamageAble d))d.Damage(unit.UnitSo.attackDmg,unit);
             }
         }
     }

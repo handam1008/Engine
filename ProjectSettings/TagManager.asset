@@ -43,11 +43,14 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: UI
-    uniqueID: 3893535233
-    locked: 0
   - name: GameObject
     uniqueID: 2024296733
+    locked: 0
+  - name: Tower
+    uniqueID: 1650472365
+    locked: 0
+  - name: UI
+    uniqueID: 3893535233
     locked: 0
   m_RenderingLayers:
   - Default

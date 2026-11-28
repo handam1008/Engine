@@ -1,5 +1,6 @@
 using Assets.PJW._0._4Clean_Up_Code;
 using RYU.Script.Charcter;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,6 +9,8 @@ public class GachaRealResultDisplayMoudule : MonoBehaviour,IGachaEnterModule,IGa
     [SerializeField] private GameObject resultUi;
 
     [SerializeField] private Image imageUI;
+
+    [SerializeField] private TextMeshProUGUI textUI;
 
     public void Init()
     {
@@ -23,6 +26,7 @@ public class GachaRealResultDisplayMoudule : MonoBehaviour,IGachaEnterModule,IGa
     {
         Debug.Log($"{characterDataSO.Name}");
         imageUI.sprite = characterDataSO.sprite;
+        textUI.text = $"{characterDataSO.charcterRank}";
     }
 
     public void Exit()

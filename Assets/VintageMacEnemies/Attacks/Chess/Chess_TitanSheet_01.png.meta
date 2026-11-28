@@ -1,0 +1,1638 @@
+fileFormatVersion: 2
+guid: 08cca584b85557f69069c41d616a6560
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4948479502277253079
+    second: Chess_Titan_000
+  - first:
+      213: 3195193341736274233
+    second: Chess_Titan_001
+  - first:
+      213: 7969402529432177901
+    second: Chess_Titan_002
+  - first:
+      213: 4639572242832391824
+    second: Chess_Titan_003
+  - first:
+      213: 9062070325355329977
+    second: Chess_Titan_004
+  - first:
+      213: 3463855910985697320
+    second: Chess_Titan_005
+  - first:
+      213: 3995843431332426208
+    second: Chess_Titan_006
+  - first:
+      213: 7913407887140426081
+    second: Chess_Titan_007
+  - first:
+      213: 613305235529573700
+    second: Chess_Titan_008
+  - first:
+      213: 38717145982532847
+    second: Chess_Titan_009
+  - first:
+      213: 8460805090940932001
+    second: Chess_Titan_010
+  - first:
+      213: 3826525194574023381
+    second: Chess_Titan_011
+  - first:
+      213: 3804747847057093130
+    second: Chess_Titan_012
+  - first:
+      213: 7334173049281940675
+    second: Chess_Titan_013
+  - first:
+      213: 8131703979476696520
+    second: Chess_Titan_014
+  - first:
+      213: 612329407631705008
+    second: Chess_Titan_015
+  - first:
+      213: 6883354517146646648
+    second: Chess_Titan_016
+  - first:
+      213: 2954900263896463805
+    second: Chess_Titan_017
+  - first:
+      213: 9187676870767020790
+    second: Chess_Titan_018
+  - first:
+      213: 8368983261745844705
+    second: Chess_Titan_019
+  - first:
+      213: 4984761978648301778
+    second: Chess_Titan_020
+  - first:
+      213: 8847155096996658831
+    second: Chess_Titan_021
+  - first:
+      213: 4447999653804896999
+    second: Chess_Titan_022
+  - first:
+      213: 6525994466828139304
+    second: Chess_Titan_023
+  - first:
+      213: 2140393129674235079
+    second: Chess_Titan_024
+  - first:
+      213: 6362212210243561945
+    second: Chess_Titan_025
+  - first:
+      213: 8005683525186778382
+    second: Chess_Titan_026
+  - first:
+      213: 209151901246180111
+    second: Chess_Titan_027
+  - first:
+      213: 7078922065845306544
+    second: Chess_Titan_028
+  - first:
+      213: 2848039631743763221
+    second: Chess_Titan_029
+  - first:
+      213: 4669407035045197410
+    second: Chess_Titan_030
+  - first:
+      213: 6750869480038803536
+    second: Chess_Titan_031
+  - first:
+      213: 5876167793233460274
+    second: Chess_Titan_032
+  - first:
+      213: 5009426685954746360
+    second: Chess_Titan_033
+  - first:
+      213: 3130908286317804075
+    second: Chess_Titan_034
+  - first:
+      213: 503924667378127178
+    second: Chess_Titan_035
+  - first:
+      213: 2900081447923235291
+    second: Chess_Titan_036
+  - first:
+      213: 4018638638752198450
+    second: Chess_Titan_037
+  - first:
+      213: 4788547481976892543
+    second: Chess_Titan_038
+  - first:
+      213: 4043540921597729842
+    second: Chess_Titan_039
+  - first:
+      213: 4539872303926243698
+    second: Chess_Titan_040
+  - first:
+      213: 3879111846012586191
+    second: Chess_Titan_041
+  - first:
+      213: 2315405612795900893
+    second: Chess_Titan_042
+  - first:
+      213: 5131296362115874376
+    second: Chess_Titan_043
+  - first:
+      213: 285183868260166122
+    second: Chess_Titan_044
+  - first:
+      213: 7176523504796075914
+    second: Chess_Titan_045
+  - first:
+      213: 2170245224321129657
+    second: Chess_Titan_046
+  - first:
+      213: 3749779241147236895
+    second: Chess_Titan_047
+  - first:
+      213: 429021857408104642
+    second: Chess_Titan_048
+  - first:
+      213: 7958852750566605263
+    second: Chess_Titan_049
+  - first:
+      213: 2369493389476506726
+    second: Chess_Titan_050
+  - first:
+      213: 7608526655711049189
+    second: Chess_Titan_051
+  - first:
+      213: 4147279202694064529
+    second: Chess_Titan_052
+  - first:
+      213: 2509514358117439822
+    second: Chess_Titan_053
+  - first:
+      213: 4730257234744966369
+    second: Chess_Titan_054
+  - first:
+      213: 294607483900226607
+    second: Chess_Titan_055
+  - first:
+      213: 6453165445227588511
+    second: Chess_Titan_056
+  - first:
+      213: 5359540572613098133
+    second: Chess_Titan_057
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 9
+  spritePivot: {x: 0.6538461538, y: 0.09285714286}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Chess_Titan_000
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1120
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d7998f93e78ca440000000000000000
+      internalID: 4948479502277253079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_001
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1120
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93942ea5a6b975c20000000000000000
+      internalID: 3195193341736274233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_002
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1120
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dec87e67061099e60000000000000000
+      internalID: 7969402529432177901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_003
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1120
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09e79c39f52136040000000000000000
+      internalID: 4639572242832391824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_004
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1120
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b9b960b2f0f2cd70000000000000000
+      internalID: 9062070325355329977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_005
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 1120
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82880774996121030000000000000000
+      internalID: 3463855910985697320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_006
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 1120
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e1b5ae0e66147730000000000000000
+      internalID: 3995843431332426208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_007
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 980
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16197cbdb8212dd60000000000000000
+      internalID: 7913407887140426081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_008
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 980
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 445a0aebcd5e28800000000000000000
+      internalID: 613305235529573700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_009
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 980
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fec71050a0d898000000000000000000
+      internalID: 38717145982532847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_010
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 980
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1afc9572761da6570000000000000000
+      internalID: 8460805090940932001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_011
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 980
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dacaa2046c8a1530000000000000000
+      internalID: 3826525194574023381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_012
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 980
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0235cb220e2dc430000000000000000
+      internalID: 3804747847057093130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_013
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 980
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cc81bbb78738c560000000000000000
+      internalID: 7334173049281940675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_014
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 840
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cdb65b8fad99d070000000000000000
+      internalID: 8131703979476696520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_015
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 840
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b3c96b1a5e6f7800000000000000000
+      internalID: 612329407631705008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_016
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 840
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8783b99b676968f50000000000000000
+      internalID: 6883354517146646648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_017
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 840
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db9b140622ae10920000000000000000
+      internalID: 2954900263896463805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_018
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 840
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fa04218f6f218f70000000000000000
+      internalID: 9187676870767020790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_019
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 840
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e11d8f8fe9942470000000000000000
+      internalID: 8368983261745844705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_020
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 840
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d09433fb9e6d2540000000000000000
+      internalID: 4984761978648301778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_021
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 700
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8eb54dbfa867ca70000000000000000
+      internalID: 8847155096996658831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_022
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 700
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e2f91e5e187abd30000000000000000
+      internalID: 4447999653804896999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_023
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 700
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82bb471346df09a50000000000000000
+      internalID: 6525994466828139304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_024
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 700
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cc5bed063434bd10000000000000000
+      internalID: 2140393129674235079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_025
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 700
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d96839fb4e1b4850000000000000000
+      internalID: 6362212210243561945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_026
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 700
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0574fe00c6e91f60000000000000000
+      internalID: 8005683525186778382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_027
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 700
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0b40e9cb8e07e200000000000000000
+      internalID: 209151901246180111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_028
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 560
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b44267fc126d3260000000000000000
+      internalID: 7078922065845306544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_029
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 560
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 513425c94f4468720000000000000000
+      internalID: 2848039631743763221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_030
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 560
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 266349375f01dc040000000000000000
+      internalID: 4669407035045197410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_031
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 560
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0582db24608efad50000000000000000
+      internalID: 6750869480038803536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_032
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 560
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23c754489775c8150000000000000000
+      internalID: 5876167793233460274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_033
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 560
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f7e1b0a70f058540000000000000000
+      internalID: 5009426685954746360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_034
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 560
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2abc468f78337b20000000000000000
+      internalID: 3130908286317804075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_035
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 420
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4151a8a0dc4ef600000000000000000
+      internalID: 503924667378127178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_036
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 420
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd93a2b26b82f3820000000000000000
+      internalID: 2900081447923235291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_037
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 420
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23feb7fdc8215c730000000000000000
+      internalID: 4018638638752198450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_038
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 420
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7ce2556096547240000000000000000
+      internalID: 4788547481976892543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_039
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 420
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23c969a6b0b8d1830000000000000000
+      internalID: 4043540921597729842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_040
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 420
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2717821aecdd00f30000000000000000
+      internalID: 4539872303926243698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_041
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 420
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc80799ebaf55d530000000000000000
+      internalID: 3879111846012586191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_042
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 280
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd335a52329f12020000000000000000
+      internalID: 2315405612795900893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_043
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 280
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84ebb25cad6063740000000000000000
+      internalID: 5131296362115874376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_044
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 280
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae9a15b973d25f300000000000000000
+      internalID: 285183868260166122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_045
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 280
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a878c91da12289360000000000000000
+      internalID: 7176523504796075914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_046
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 280
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bc162778824e1e10000000000000000
+      internalID: 2170245224321129657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_047
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 280
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1207b64a54e90430000000000000000
+      internalID: 3749779241147236895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_048
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 280
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c830b33b1134f500000000000000000
+      internalID: 429021857408104642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_049
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 140
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc1c929a866837e60000000000000000
+      internalID: 7958852750566605263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_050
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 140
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66c22610fa122e020000000000000000
+      internalID: 2369493389476506726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_051
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 140
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e57fb18eaae69960000000000000000
+      internalID: 7608526655711049189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_052
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 140
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 199e1fc26781e8930000000000000000
+      internalID: 4147279202694064529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_053
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 140
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e491552430693d220000000000000000
+      internalID: 2509514358117439822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_054
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 140
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ecf13d94ef35a140000000000000000
+      internalID: 4730257234744966369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_055
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 140
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2c6b0a12f7a61400000000000000000
+      internalID: 294607483900226607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_056
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9bad9738cf3e8950000000000000000
+      internalID: 6453165445227588511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chess_Titan_057
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 208
+        height: 140
+      alignment: 9
+      pivot: {x: 0.6538461538, y: 0.09285714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59ab5e531c9e06a40000000000000000
+      internalID: 5359540572613098133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 15cb2d9106365992a7b2fdd463112918
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Chess_Titan_000: 4948479502277253079
+      Chess_Titan_001: 3195193341736274233
+      Chess_Titan_002: 7969402529432177901
+      Chess_Titan_003: 4639572242832391824
+      Chess_Titan_004: 9062070325355329977
+      Chess_Titan_005: 3463855910985697320
+      Chess_Titan_006: 3995843431332426208
+      Chess_Titan_007: 7913407887140426081
+      Chess_Titan_008: 613305235529573700
+      Chess_Titan_009: 38717145982532847
+      Chess_Titan_010: 8460805090940932001
+      Chess_Titan_011: 3826525194574023381
+      Chess_Titan_012: 3804747847057093130
+      Chess_Titan_013: 7334173049281940675
+      Chess_Titan_014: 8131703979476696520
+      Chess_Titan_015: 612329407631705008
+      Chess_Titan_016: 6883354517146646648
+      Chess_Titan_017: 2954900263896463805
+      Chess_Titan_018: 9187676870767020790
+      Chess_Titan_019: 8368983261745844705
+      Chess_Titan_020: 4984761978648301778
+      Chess_Titan_021: 8847155096996658831
+      Chess_Titan_022: 4447999653804896999
+      Chess_Titan_023: 6525994466828139304
+      Chess_Titan_024: 2140393129674235079
+      Chess_Titan_025: 6362212210243561945
+      Chess_Titan_026: 8005683525186778382
+      Chess_Titan_027: 209151901246180111
+      Chess_Titan_028: 7078922065845306544
+      Chess_Titan_029: 2848039631743763221
+      Chess_Titan_030: 4669407035045197410
+      Chess_Titan_031: 6750869480038803536
+      Chess_Titan_032: 5876167793233460274
+      Chess_Titan_033: 5009426685954746360
+      Chess_Titan_034: 3130908286317804075
+      Chess_Titan_035: 503924667378127178
+      Chess_Titan_036: 2900081447923235291
+      Chess_Titan_037: 4018638638752198450
+      Chess_Titan_038: 4788547481976892543
+      Chess_Titan_039: 4043540921597729842
+      Chess_Titan_040: 4539872303926243698
+      Chess_Titan_041: 3879111846012586191
+      Chess_Titan_042: 2315405612795900893
+      Chess_Titan_043: 5131296362115874376
+      Chess_Titan_044: 285183868260166122
+      Chess_Titan_045: 7176523504796075914
+      Chess_Titan_046: 2170245224321129657
+      Chess_Titan_047: 3749779241147236895
+      Chess_Titan_048: 429021857408104642
+      Chess_Titan_049: 7958852750566605263
+      Chess_Titan_050: 2369493389476506726
+      Chess_Titan_051: 7608526655711049189
+      Chess_Titan_052: 4147279202694064529
+      Chess_Titan_053: 2509514358117439822
+      Chess_Titan_054: 4730257234744966369
+      Chess_Titan_055: 294607483900226607
+      Chess_Titan_056: 6453165445227588511
+      Chess_Titan_057: 5359540572613098133
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

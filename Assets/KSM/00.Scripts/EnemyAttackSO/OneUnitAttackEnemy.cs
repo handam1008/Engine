@@ -8,7 +8,7 @@ namespace KSM._00.Scripts.EnemyAttackSO
     {
         public override void Attacking(AbstractUnit unit)
         {
-            if(unit.target.TryGetComponent(out IDamageAble damageAble)) damageAble.Damage(unit.UnitSo.attackDmg);
+            if(unit.target.TryGetComponent(out IDamageAble damageAble)) damageAble.Damage(unit.UnitSo.attackDmg,unit);
             
         }
     }

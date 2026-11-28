@@ -1,17 +1,25 @@
-using System;
-using System.Threading;
-using UnityEngine;
+ï»¿using UnityEngine;
 
 public class GameLoopManager : GameLoop
 {
+    public static GameLoopManager Instance { get; private set; }
+
     GameStateMachine _machine = new GameStateMachine();
-    [SerializeField] private GameObject BlueScreen;
-    public bool isdefeated = false;
+    [field:SerializeField] public GameObject BlueScreen { get; private set; }
+    [field:SerializeField] public TestGameEndTrigger EndTrigger { get; private set; }
+    [field:SerializeField] public GameObject KillingField { get; private set; }
+
 
     private void Awake()
     {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+
         _machine.AddState(CurrentGameType.Prepare, new BettlePrepare(_machine, this));
-        _machine.AddState(CurrentGameType.StartBettle, new BettleStart(_machine, this));
         _machine.AddState(CurrentGameType.Bettling, new Bettleing(_machine, this));
         _machine.AddState(CurrentGameType.Victory, new BettleWin(_machine, this));
         _machine.AddState(CurrentGameType.Defeat, new BettleDefeat(_machine, this));
@@ -21,16 +29,14 @@ public class GameLoopManager : GameLoop
 
     
 
+    public void ChangeState(CurrentGameType type)
+    {
+        _machine.ChangeState(type);
+    }
+
     private void Update()
     {
         _machine.CurState.StateUpdate();
-        BlueScreen?.SetActive(isdefeated);
-        if(isdefeated)
-        {
-            // ³ªÁß¿¡ ÆÐ¹è¿¡ ¸¸¾à Action ¾²¸é ±×¿¡ ¸ÂÃç ¹Ù²Ü ¿¹Á¤
-            _machine.ChangeState(CurrentGameType.Defeat);
-            Thread.Sleep(1000);
-        }
     }
 
    

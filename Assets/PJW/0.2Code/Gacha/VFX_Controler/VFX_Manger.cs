@@ -1,5 +1,4 @@
 using MoreMountains.Feedbacks;
-using System;
 using UnityEngine;
 
 public class VFX_Manger : MonoBehaviour

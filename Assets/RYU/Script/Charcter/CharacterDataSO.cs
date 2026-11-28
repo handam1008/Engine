@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 namespace RYU.Script.Charcter
 {
@@ -15,6 +16,8 @@ namespace RYU.Script.Charcter
         [Header("기본")]
         public CharcterRank charcterRank;
         public int number = 0;
+        [Header("강한상대")]
+       [field:SerializeField] public List<TypeDamage> WhatIsStrong { get; private set; }
         
         [Header("레벨")]
         public int level = 1; // 맥스는 20

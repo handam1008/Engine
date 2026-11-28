@@ -5,7 +5,7 @@ using UnityEngine;
 public class HealthSystem : MonoBehaviour ,IDamageAble
 {
     [field:SerializeField] public int Health { get; private set; }
-    [SerializeField] private int _maxHealth;
+    public int _maxHealth { get; private set; }
     public event Action OnKnockbacked;
     public event Action OnDamaged;
     public event Action OnDeath;
@@ -13,7 +13,12 @@ public class HealthSystem : MonoBehaviour ,IDamageAble
     private readonly List<float> _knockbacks = new();
     private int _count;
     public event Action OnReceive;
-    public event Func<int, bool> CanTakedamage;
+    private AbstractUnit _unit;
+
+    private void Awake()
+    {
+        _unit = GetComponent<AbstractUnit>();
+    }
 
 
     public void Init(int health,UnitSO unit)
@@ -36,13 +41,11 @@ public class HealthSystem : MonoBehaviour ,IDamageAble
     }
 
 
-    public void Damage(int dmg)
+    public void Damage(int dmg, AbstractUnit unit)
     {
         if (Dead) return;
 
-        if (CanTakedamage?.Invoke(dmg) == false) return;
-
-        Health -= dmg;
+        Health -= TypeDamageManager.instance.TypeChecking(_unit,unit,dmg);
 
         if (Dead)
         {
@@ -66,4 +69,5 @@ public class HealthSystem : MonoBehaviour ,IDamageAble
     {
         return (float)Health / _maxHealth * 100f;
     }
+   
 }

@@ -15,7 +15,7 @@ namespace KSM._00.Scripts.EnemyAttackSO
             foreach (var col in hit)
             {
                 
-                if (col.TryGetComponent(out HealthSystem heal)) heal.Damage(unit.UnitSo.attackDmg);
+                if (col.TryGetComponent(out HealthSystem heal)) heal.Damage(unit.UnitSo.attackDmg,unit);
                 
             }
             

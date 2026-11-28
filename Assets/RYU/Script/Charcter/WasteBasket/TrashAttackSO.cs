@@ -15,7 +15,7 @@ namespace RYU.Script.Charcter.WasteBasket
                 {
                     if (coll.TryGetComponent(out HealthSystem healthSystem))
                     {
-                        healthSystem.Damage(unit.UnitSo.attackDmg);
+                        healthSystem.Damage(unit.UnitSo.attackDmg,unit);
                     }
                 }
             }

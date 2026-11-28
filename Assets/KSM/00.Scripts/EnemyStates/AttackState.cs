@@ -18,6 +18,7 @@ using UnityEngine;
         {
             base.Exit();
              _abstractUnit.lastAttackTime = Time.time;
+             _abstractUnit.EndAttack();
              
         }
 

@@ -43,7 +43,7 @@ namespace KSM._00.Scripts.EnemyAttack
                 currentTime += Time.deltaTime;
                 if (currentTime > hitTime)
                 {
-                    if (unit.target.TryGetComponent<IDamageAble>(out IDamageAble target)) target.Damage(dmg);
+                    if (unit.target.TryGetComponent<IDamageAble>(out IDamageAble target)) target.Damage(dmg, unit);
                     hitTime += attackCool;
                 }
                 lineRenderer.SetPosition(1, unit.target.position);

@@ -372,6 +372,9 @@ namespace Papyrus.Ide.Editor
 
         static int s_IdePid;
 
+        /// <summary>The connected IDE's main process (it owns the IDE's windows), or 0 before its hello.</summary>
+        internal static uint IdePid => s_IdePid > 0 ? (uint)s_IdePid : 0;
+
         static void Handle(string line)
         {
             Command cmd;

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using Cysharp.Threading.Tasks.Triggers;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace KSM._00.Scripts.Enemy
 {
@@ -18,34 +15,46 @@ namespace KSM._00.Scripts.Enemy
             UnitAnimCompo.OnAttacked += HandleAttacked;
             UnitAnimCompo.OnAnimEnd += HandleAnimEnd;
         }
-       
+
+        public override void EndAttack()
+        {
+            base.EndAttack();
+            count = 0;
+
+            if (v != null)
+            {
+                Destroy(v.gameObject);
+                v = null;
+            }
+        }
+
 
         private void HandleAnimEnd()
         {
             count = 0;
             Destroy(v.gameObject);
         }
+        
 
         private void OnDestroy()
         {
             UnitAnimCompo.OnAttacked -= HandleAttacked;
+            EndAttack();
+            
         }
 
+        
         public void DetectTarget(Vector2 pos,Vector2 boxSize,  int dmg)
         {
             Collider2D[] targets = Physics2D.OverlapBoxAll(pos, boxSize, 0, UnitSo.whatIsDetect);
             foreach (Collider2D t in targets)
             {
-                if (t.TryGetComponent(out HealthSystem health))
+                if (t.TryGetComponent(out AbstractUnit health))
                 {
-                    health.Damage(dmg);
+                    health.HpCompo.Damage(dmg, health);
                 }
             }
         }
-
-       
-        
-
         private void HandleAttacked()
         {
             if (target == null) return;

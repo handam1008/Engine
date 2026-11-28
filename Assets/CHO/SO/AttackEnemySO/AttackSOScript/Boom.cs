@@ -14,11 +14,11 @@ public class Boom : AbstractAttackSO
         {
             if (c.TryGetComponent(out AbstractUnit targetUnit))
             {
-                targetUnit.HpCompo.Damage(unit.UnitSo.attackDmg);
+                targetUnit.HpCompo.Damage(unit.UnitSo.attackDmg,unit);
             }
         }
         
-        unit.HpCompo.Damage(damage);
+        unit.HpCompo.Damage(damage,unit);
     }
 
     private Collider2D[] DetectedBoomRange(AbstractUnit unit)

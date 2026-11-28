@@ -29,7 +29,7 @@ namespace RYU.Script.Charcter.Paint
                {
                    if (coll.TryGetComponent(out HealthSystem healthSystem))
                    {
-                      healthSystem.Damage(unit.UnitSo.attackDmg * _attackMultiple[combo]);
+                      healthSystem.Damage(unit.UnitSo.attackDmg * _attackMultiple[combo],unit);
                       Debug.Log(unit.UnitSo.attackDmg * _attackMultiple[combo]);
                    }
                }
