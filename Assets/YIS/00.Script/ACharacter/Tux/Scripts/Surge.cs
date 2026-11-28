@@ -34,10 +34,10 @@ public class Surge : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Character")) return;
-        if (other.TryGetComponent(out HealthSystem healthSystem))
+        if (other.CompareTag("Enemy")) return;
+        if (other.TryGetComponent(out AbstractUnit healthSystem))
         {
-            healthSystem.Damage(_random);
+            healthSystem.HpCompo.Damage(_random, healthSystem);
             Destroy(gameObject);
         }
     }

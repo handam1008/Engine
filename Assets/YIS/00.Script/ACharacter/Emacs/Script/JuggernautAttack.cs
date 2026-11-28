@@ -1,5 +1,3 @@
-using System;
-using Unity.Burst.Intrinsics;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "JuggernautAttack", menuName = "SO/JuggernautAttack")]
@@ -17,7 +15,7 @@ public class JuggernautAttack : AbstractAttackSO
             {
                 if (coll.TryGetComponent(out HealthSystem healthSystem))
                 {
-                    healthSystem.Damage(unit.UnitSo.attackDmg );
+                    healthSystem.Damage(unit.UnitSo.attackDmg, unit);
                     CountKillUnits(healthSystem, unit);
                     Debug.Log(unit.UnitSo.attackDmg);
                 }

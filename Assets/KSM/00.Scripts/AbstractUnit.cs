@@ -21,6 +21,7 @@ public abstract class AbstractUnit : MonoBehaviour
     public float lastAttackTime;
     public StateMachine StateMachine { get; private set; }
     public Collider2D ColliderCompo { get; private set; }
+    public AbstractUnit unit;
 
     public event Action<Transform> OnAttackStarted;
 
@@ -72,6 +73,11 @@ public abstract class AbstractUnit : MonoBehaviour
         {
             StateMachine.ChangeState(State.Hit);
         };
+    }
+
+    public virtual void EndAttack()
+    {
+        
     }
 
     protected virtual void Update()

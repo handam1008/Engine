@@ -36,16 +36,16 @@ public class BudyBullet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Character")) return;
-        if (other.TryGetComponent(out HealthSystem healthSystem))
+        if (other.TryGetComponent(out AbstractUnit healthSystem))
         {
-            healthSystem.Damage(_random);
+            healthSystem.HpCompo.Damage(_random, healthSystem);
             Destroy(gameObject);
         }
     }
 
     public void Shoot(Transform target)
     {
-        Vector2 launchDir = (target.position - transform.position).normalized;
+        Vector2 launchDir = (target.position - transform.position);
 
         _rigidbody2D.linearVelocity = launchDir * speed;
 

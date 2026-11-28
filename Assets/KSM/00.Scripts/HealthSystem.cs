@@ -15,6 +15,8 @@ public class HealthSystem : MonoBehaviour ,IDamageAble
     public event Action OnReceive;
     private AbstractUnit _unit;
 
+    public event Func<int, bool> CanTakedamage;
+
     private void Awake()
     {
         _unit = GetComponent<AbstractUnit>();
@@ -44,6 +46,8 @@ public class HealthSystem : MonoBehaviour ,IDamageAble
     public void Damage(int dmg, AbstractUnit unit)
     {
         if (Dead) return;
+
+        if (CanTakedamage?.Invoke(dmg) == false) return;
 
         Health -= TypeDamageManager.instance.TypeChecking(_unit,unit,dmg);
 
